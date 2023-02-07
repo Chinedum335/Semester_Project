@@ -1,0 +1,595 @@
+IQ-TREE 2.2.0 COVID-edition built Jun  1 2022
+
+Input file name: L3_NEW_cleaned.fas
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 980821
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 207 sequences with 1043 nucleotide sites
+Number of constant sites: 696 (= 66.7306% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 696 (= 66.7306% of all sites)
+Number of parsimony informative sites: 287
+Number of distinct site patterns: 564
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: HKY+F+G4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+HKY+F+G4          -5935.680   12691.360 +   0.0539   13224.620 +     0.43   14720.802 +    0.637
+K3Pu+F+G4         -5933.758   12689.516 +    0.136   13226.226 +    0.192   14723.907 +    0.135
+TPM2u+F+G4        -5933.935   12689.870 +    0.114   13226.580 +    0.161   14724.261 +    0.113
+HKY+F+I+G4        -5935.176   12692.353 -   0.0328   13229.063 -   0.0466   14726.744 -   0.0326
+TN+F+G4           -5935.558   12693.116 -   0.0224   13229.826 -   0.0318   14727.507 -   0.0223
+TPM3u+F+G4        -5935.600   12693.200 -   0.0215   13229.910 -   0.0305   14727.591 -   0.0214
+HKY+F+R2          -5936.611   12695.223 -  0.00782   13231.933 -   0.0111   14729.614 -  0.00777
+K3Pu+F+I+G4       -5933.186   12690.372 +   0.0883   13230.550 -   0.0221   14729.713 -   0.0074
+TPM2u+F+I+G4      -5933.226   12690.451 +   0.0849   13230.629 -   0.0213   14729.792 -  0.00711
+TIM+F+G4          -5933.634   12691.268 +   0.0565   13231.445 -   0.0142   14730.608 -  0.00473
+TIM2+F+G4         -5933.822   12691.644 -   0.0468   13231.822 -   0.0117   14730.985 -  0.00392
+K3Pu+F+R2         -5934.654   12693.307 -   0.0204   13233.485 -  0.00511   14732.648 -  0.00171
+TPM2u+F+R2        -5934.784   12693.567 -   0.0179   13233.745 -  0.00448   14732.908 -   0.0015
+TN+F+I+G4         -5935.042   12694.084 -   0.0138   13234.262 -  0.00346   14733.425 -  0.00116
+TPM3u+F+I+G4      -5935.060   12694.121 -   0.0136   13234.299 -   0.0034   14733.462 -  0.00114
+TIM3+F+G4         -5935.473   12694.946 -  0.00897   13235.124 -  0.00225   14734.287 - 0.000751
+TVM+F+G4          -5932.747   12691.494 +   0.0504   13235.157 -  0.00221   14735.785 - 0.000355
+TIM+F+I+G4        -5932.969   12691.938 -   0.0404   13235.601 -  0.00177   14736.229 - 0.000285
+TIM2+F+I+G4       -5933.024   12692.047 -   0.0382   13235.710 -  0.00168   14736.338 - 0.000269
+TN+F+R2           -5936.518   12697.036 -  0.00316   13237.214 - 0.000791   14736.377 - 0.000264
+TPM3u+F+R2        -5936.548   12697.097 -  0.00306   13237.275 - 0.000767   14736.438 - 0.000256
+TIM+F+R2          -5934.556   12695.112 -  0.00826   13238.775 - 0.000363   14739.402 - 5.82e-05
+TIM2+F+R2         -5934.686   12695.372 -  0.00725   13239.035 - 0.000318   14739.663 - 5.11e-05
+TIM3+F+I+G4       -5934.833   12695.665 -  0.00626   13239.328 - 0.000275   14739.956 - 4.41e-05
+TVM+F+I+G4        -5931.896   12691.791 -   0.0435   13238.957 - 0.000331   14741.032 - 2.58e-05
+GTR+F+G4          -5932.626   12693.252 -   0.0209   13240.418 - 0.000159   14742.493 - 1.24e-05
+TIM3+F+R2         -5936.452   12698.904 -  0.00124   13242.567 - 5.44e-05   14743.195 - 8.74e-06
+TVM+F+R2          -5933.591   12695.182 -  0.00798   13242.347 - 6.08e-05   14744.422 - 4.73e-06
+GTR+F+I+G4        -5931.679   12693.357 -   0.0199   13244.043 -  2.6e-05   14747.548 - 9.92e-07
+GTR+F+R2          -5933.491   12696.982 -  0.00324   13247.668 - 4.25e-06   14751.172 - 1.62e-07
+GTR+F+I+I+R2      -5931.991   12695.982 -  0.00535   13250.206 - 1.19e-06   14755.123 - 2.25e-08
+GTR+F+R3          -5932.744   12699.487 - 0.000927   13257.266 -  3.5e-08   14763.577 - 3.28e-10
+GTR+F+I           -5945.148   12718.296 - 7.63e-08   13265.462 - 5.81e-10   14767.537 - 4.53e-11
+GTR+F+I+I+R3      -5931.381   12698.762 -  0.00133   13260.114 - 8.42e-09   14767.802 - 3.96e-11
+TPM3+G4           -5981.659   12779.319 - 4.28e-21   13305.729 - 1.05e-18   14798.860 - 7.14e-18
+K2P+G4            -5987.916   12789.831 - 2.23e-23   13312.842 - 2.99e-20   14804.423 - 4.43e-19
+TIM3e+G4          -5981.644   12781.288 -  1.6e-21   13311.115 - 7.09e-20   14805.780 - 2.25e-19
+TPM3+I+G4         -5982.848   12783.695 -  4.8e-22   13313.521 - 2.13e-20   14808.186 - 6.74e-20
+TPM3+R2           -5983.011   12784.021 - 4.08e-22   13313.847 - 1.81e-20   14808.513 - 5.73e-20
+K3P+G4            -5986.842   12789.684 -  2.4e-23   13316.094 - 5.88e-21   14809.225 - 4.01e-20
+TVMe+G4           -5980.429   12780.858 - 1.98e-21   13314.118 - 1.58e-20   14810.299 - 2.34e-20
+TPM2+G4           -5987.689   12791.379 - 1.03e-23   13317.789 - 2.52e-21   14810.920 - 1.72e-20
+TNe+G4            -5987.916   12791.832 - 8.21e-24   13318.242 - 2.01e-21   14811.374 - 1.37e-20
+K2P+I+G4          -5988.695   12793.390 - 3.77e-24   13319.800 - 9.22e-22   14812.931 - 6.29e-21
+K2P+R2            -5988.942   12793.885 - 2.94e-24   13320.295 -  7.2e-22   14813.426 - 4.91e-21
+TIM3e+I+G4        -5982.822   12785.644 - 1.81e-22   13318.904 - 1.44e-21   14815.085 - 2.14e-21
+TIM3e+R2          -5982.990   12785.979 - 1.53e-22   13319.239 - 1.22e-21   14815.421 - 1.81e-21
+TIMe+G4           -5986.841   12791.683 - 8.85e-24   13321.509 - 3.92e-22   14816.174 - 1.24e-21
+SYM+G4            -5980.412   12782.824 - 7.42e-22   13319.534 - 1.05e-21   14817.215 - 7.38e-22
+K3P+I+G4          -5987.600   12793.200 - 4.14e-24   13323.026 - 1.84e-22   14817.691 - 5.82e-22
+TIM2e+G4          -5987.689   12793.379 - 3.79e-24   13323.205 - 1.68e-22   14817.870 - 5.32e-22
+K3P+R2            -5987.850   12793.699 - 3.23e-24   13323.526 - 1.43e-22   14818.191 - 4.53e-22
+TPM2+I+G4         -5988.381   12794.763 -  1.9e-24   13324.589 - 8.41e-23   14819.254 - 2.66e-22
+TVMe+I+G4         -5981.637   12785.275 - 2.18e-22   13321.985 - 3.09e-22   14819.666 - 2.17e-22
+TNe+I+G4          -5988.691   12795.382 - 1.39e-24   13325.208 - 6.17e-23   14819.873 - 1.95e-22
+TPM2+R2           -5988.708   12795.416 - 1.37e-24   13325.242 - 6.07e-23   14819.907 - 1.92e-22
+TVMe+R2           -5981.785   12785.570 - 1.88e-22   13322.280 - 2.67e-22   14819.961 - 1.87e-22
+TNe+R2            -5988.942   12795.884 - 1.08e-24   13325.710 -  4.8e-23   14820.375 - 1.52e-22
+TIMe+I+G4         -5987.596   12795.193 - 1.53e-24   13328.452 - 1.22e-23   14824.634 - 1.81e-23
+TIMe+R2           -5987.850   12795.701 - 1.19e-24   13328.960 - 9.46e-24   14825.142 -  1.4e-23
+TIM2e+I+G4        -5988.379   12796.758 -    7e-25   13330.017 - 5.58e-24   14826.199 - 8.27e-24
+SYM+I+G4          -5981.610   12787.220 - 8.24e-23   13327.397 - 2.07e-23   14826.560 -  6.9e-24
+TIM2e+R2          -5988.707   12797.413 - 5.04e-25   13330.673 - 4.02e-24   14826.854 - 5.96e-24
+SYM+R2            -5981.763   12787.526 - 7.07e-23   13327.704 - 1.77e-23   14826.867 - 5.92e-24
+F81+F+G4          -6009.274   12836.548 -  1.6e-33   13366.374 -  7.1e-32   14861.039 - 2.25e-31
+F81+F+I+G4        -6009.372   12838.743 - 5.34e-34   13372.003 - 4.26e-33   14868.184 - 6.32e-33
+F81+F+R2          -6010.324   12840.647 - 2.06e-34   13373.907 - 1.64e-33   14870.088 - 2.44e-33
+JC+G4             -6054.061   12920.123 - 1.14e-51   13439.752 - 8.27e-48   14929.765 - 2.68e-46
+JC+I+G4           -6054.806   12923.612 - 1.99e-52   13446.623 - 2.67e-49   14938.203 - 3.94e-48
+JC+R2             -6055.246   12924.492 - 1.28e-52   13447.503 - 1.72e-49   14939.084 - 2.54e-48
+GTR+F             -6038.247   12902.494 - 7.66e-48   13446.157 - 3.36e-49   14946.785 -  5.4e-50
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: HKY+F+G4
+
+Rate parameter R:
+
+  A-C: 1.0000
+  A-G: 2.6144
+  A-T: 1.0000
+  C-G: 1.0000
+  C-T: 2.6144
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2718
+  pi(C) = 0.1725
+  pi(G) = 0.2242
+  pi(T) = 0.3315
+
+Rate matrix Q:
+
+  A   -0.9754    0.1544    0.5244    0.2966
+  C    0.2432    -1.219    0.2006    0.7755
+  G    0.6359    0.1544    -1.087    0.2966
+  T    0.2432    0.4035    0.2006   -0.8474
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.7625
+
+ Category  Relative_rate  Proportion
+  1         0.08756        0.25
+  2         0.3916         0.25
+  3         0.946          0.25
+  4         2.575          0.25
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -5927.5262 (s.e. 231.7807)
+Unconstrained log-likelihood (without tree): -5960.6199
+Number of free parameters (#branches + #model parameters): 410
+Akaike information criterion (AIC) score: 12675.0525
+Corrected Akaike information criterion (AICc) score: 13208.3120
+Bayesian information criterion (BIC) score: 14704.4936
+
+Total tree length (sum of branch lengths): 1.8244
+Sum of internal branch lengths: 1.0420 (57.1163% of tree length)
+
+WARNING: 81 near-zero internal branches (<0.0010) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Acystopteris_tenuisectaB_UNK__3' is drawn at root
+
++**Acystopteris_tenuisectaB_UNK__3
+|
+|        +**Acystopteris_tenuisectaB_UNK__1
+|     +**|
+|     |  |        +--Acystopteris_tenuisectaE_4x__1
+|     |  |     +--|
+|     |  |     |  +**Acystopteris_tenuisectaA_2x__REF
+|     |  |  +**|
+|     |  |  |  +**Acystopteris_taiwanianaA_UNK__1
+|     |  +**|
+|     |     +**Acystopteris_japonicaA_4x__1
+|  +--|
+|  |  |  +**Acystopteris_tenuisectaD_UNK__2
+|  |  +--|
+|  |     +--Acystopteris_tenuisectaD_UNK__4
++--|
+|  |                       +--Acystopteris_tenuisectaD_UNK__1
+|  |                    +--|
+|  |                    |  +**Acystopteris_tenuisectaD_UNK__3
+|  |                 +**|
+|  |                 |  |     +**Acystopteris_taiwanianaB_UNK__2
+|  |                 |  |  +--|
+|  |                 |  |  |  +**Acystopteris_tenuisectaC_4x__1
+|  |                 |  +--|
+|  |                 |     +**Acystopteris_taiwanianaB_UNK__4
+|  |              +--|
+|  |              |  +**Acystopteris_taiwanianaC_4x__2
+|  |           +--|
+|  |           |  |     +--Acystopteris_taiwanianaA_UNK__4
+|  |           |  |  +--|
+|  |           |  |  |  +--Acystopteris_japonicaC_6x__1
+|  |           |  +--|
+|  |           |     |        +**Acystopteris_taiwanianaA_UNK__3
+|  |           |     |     +**|
+|  |           |     |     |  |  +**Acystopteris_japonicaB_2x__REF
+|  |           |     |     |  +**|
+|  |           |     |     |     +**Acystopteris_taiwanianaC_4x__1
+|  |           |     |  +**|
+|  |           |     |  |  +**Acystopteris_japonicaA_4x__2
+|  |           |     +**|
+|  |           |        +**Acystopteris_japonicaC_6x__3
+|  |        +**|
+|  |        |  |                        +-------------------------------------------Hymenasplenium_repandulum_UNK__REF
+|  |        |  |                    +---|
+|  |        |  |                    |   |             +**Woodsia_ilvenis_UNK__REF
+|  |        |  |                    |   |        +----|
+|  |        |  |                    |   |        |    +**Cystopteris_alpinaA_6x__3
+|  |        |  |                    |   |     +--|
+|  |        |  |                    |   |     |  +**Cystopteris_alpinaA_6x__2
+|  |        |  |                    |   +-----|
+|  |        |  |                    |         +--Cystopteris_alpinaA_6x__1
+|  |        |  |                 +--|
+|  |        |  |                 |  |  +-------Rhachidosorus_blotianus_UNK__REF
+|  |        |  |                 |  +--|
+|  |        |  |                 |     |               +--Desmophlebium_lechleri_UNK__1
+|  |        |  |                 |     |            +--|
+|  |        |  |                 |     |            |  +**Desmophlebium_lechleri_UNK__4
+|  |        |  |                 |     |  +---------|
+|  |        |  |                 |     |  |         |  +**Desmophlebium_lechleri_UNK__2
+|  |        |  |                 |     |  |         +--|
+|  |        |  |                 |     |  |            +--Desmophlebium_lechleri_UNK__3
+|  |        |  |                 |     +--|
+|  |        |  |                 |        |  +--------Hemidictyum_marginatum_UNK__REF
+|  |        |  |                 |        +--|
+|  |        |  |                 |           +-----Diplaziopsis_javanica_UNK__REF
+|  |        |  |              +--|
+|  |        |  |              |  |                            +**Blechnum_polypodioides_UNK__1
+|  |        |  |              |  |                         +--|
+|  |        |  |              |  |                         |  +**Blechnum_polypodioides_UNK__4
+|  |        |  |              |  |                      +--|
+|  |        |  |              |  |                      |  +**Blechnum_polypodioides_UNK__2
+|  |        |  |              |  |         +------------|
+|  |        |  |              |  |         |            +--Blechnum_polypodioides_UNK__3
+|  |        |  |              |  |     +---|
+|  |        |  |              |  |     |   |                                +--Pentarhizidium_intermedium_UNK__1
+|  |        |  |              |  |     |   |                             +--|
+|  |        |  |              |  |     |   |                             |  +**Pentarhizidium_intermedium_UNK__4
+|  |        |  |              |  |     |   |                          +--|
+|  |        |  |              |  |     |   |                          |  +**Pentarhizidium_intermedium_UNK__2
+|  |        |  |              |  |     |   +--------------------------|
+|  |        |  |              |  |     |                              +**Pentarhizidium_intermedium_UNK__3
+|  |        |  |              |  |  +**|
+|  |        |  |              |  |  |  |         +--Deparia_japonica_UNK__1
+|  |        |  |              |  |  |  |      +**|
+|  |        |  |              |  |  |  |      |  +**Deparia_japonica_UNK__3
+|  |        |  |              |  |  |  +------|
+|  |        |  |              |  |  |         +**Deparia_japonica_UNK__4
+|  |        |  |              |  +--|
+|  |        |  |              |     |              +--Phegopteris_connectilis_UNK__1
+|  |        |  |              |     |           +--|
+|  |        |  |              |     |           |  +--Phegopteris_connectilis_UNK__4
+|  |        |  |              |     |        +--|
+|  |        |  |              |     |        |  +**Phegopteris_connectilis_UNK__3
+|  |        |  |              |     |  +-----|
+|  |        |  |              |     |  |     +**Phegopteris_connectilis_UNK__2
+|  |        |  |              |     +--|
+|  |        |  |              |        |                      +**Desmophlebium_longisorum_UNK__1
+|  |        |  |              |        |                   +--|
+|  |        |  |              |        |                   |  +--Desmophlebium_longisorum_UNK__3
+|  |        |  |              |        |     +-------------|
+|  |        |  |              |        |     |             +**Desmophlebium_longisorum_UNK__4
+|  |        |  |              |        |  +--|
+|  |        |  |              |        |  |  |       +--Cyclogramma_flexilis_UNK__1
+|  |        |  |              |        |  |  |    +--|
+|  |        |  |              |        |  |  |    |  +--Cyclogramma_flexilis_UNK__2
+|  |        |  |              |        |  |  +----|
+|  |        |  |              |        |  |       +--Cyclogramma_flexilis_UNK__3
+|  |        |  |              |        +--|
+|  |        |  |              |           |     +--Parathelypteris_nipponica_UNK__1
+|  |        |  |              |           |  +--|
+|  |        |  |              |           |  |  +**Parathelypteris_nipponica_UNK__4
+|  |        |  |              |           +--|
+|  |        |  |              |              +--Parathelypteris_nipponica_UNK__2
+|  |        |  |           +--|
+|  |        |  |           |  |                             +--Gymnocarpium_spA_4x__1
+|  |        |  |           |  |                          +**|
+|  |        |  |           |  |                          |  +--Gymnocarpium_spA_4x__2
+|  |        |  |           |  |                       +--|
+|  |        |  |           |  |                       |  |           +**Gymnocarpium_remotepinnatumA_4x__1
+|  |        |  |           |  |                       |  |        +**|
+|  |        |  |           |  |                       |  |        |  +**Gymnocarpium_jessoenseA_UNK__2
+|  |        |  |           |  |                       |  |     +**|
+|  |        |  |           |  |                       |  |     |  +**Gymnocarpium_jessoenseB_UNK__1
+|  |        |  |           |  |                       |  |  +**|
+|  |        |  |           |  |                       |  |  |  +**Gymnocarpium_spB_UNK__1
+|  |        |  |           |  |                       |  +--|
+|  |        |  |           |  |                       |     +--Gymnocarpium_spB_UNK__3
+|  |        |  |           |  |                    +**|
+|  |        |  |           |  |                    |  +--Gymnocarpium_robertianumA_4x__1
+|  |        |  |           |  |                 +**|
+|  |        |  |           |  |                 |  +**Gymnocarpium_continentale_4x__1
+|  |        |  |           |  |              +--|
+|  |        |  |           |  |              |  +**Gymnocarpium_robertianumB_4x__REF
+|  |        |  |           |  |           +--|
+|  |        |  |           |  |           |  +**Gymnocarpium_xintermedium_8x__4
+|  |        |  |           |  |        +--|
+|  |        |  |           |  |        |  |        +--Cystocarpium_roskamianum_8x__2
+|  |        |  |           |  |        |  |     +--|
+|  |        |  |           |  |        |  |     |  |     +**Gymnocarpium_appalachianum_2x__1
+|  |        |  |           |  |        |  |     |  |  +--|
+|  |        |  |           |  |        |  |     |  |  |  +**Gymnocarpium_xintermedium_8x__1
+|  |        |  |           |  |        |  |     |  +**|
+|  |        |  |           |  |        |  |     |     +**Gymnocarpium_xbrittonianum_3x__1
+|  |        |  |           |  |        |  |  +**|
+|  |        |  |           |  |        |  |  |  +--Gymnocarpium_appalachianum_2x__2
+|  |        |  |           |  |        |  +**|
+|  |        |  |           |  |        |     |  +**Gymnocarpium_xintermedium_8x__2
+|  |        |  |           |  |        |     +--|
+|  |        |  |           |  |        |        |  +--Gymnocarpium_continentale_4x__2
+|  |        |  |           |  |        |        +**|
+|  |        |  |           |  |        |           +--Gymnocarpium_dryopterisB_4x__1
+|  |        |  |           |  |     +--|
+|  |        |  |           |  |     |  |           +**Gymnocarpium_oyamenseB_4x__2
+|  |        |  |           |  |     |  |        +--|
+|  |        |  |           |  |     |  |        |  +**Gymnocarpium_oyamenseC_4x__REF
+|  |        |  |           |  |     |  |     +--|
+|  |        |  |           |  |     |  |     |  +--Gymnocarpium_oyamenseB_4x__1
+|  |        |  |           |  |     |  |  +--|
+|  |        |  |           |  |     |  |  |  |  +--Gymnocarpium_oyamenseA_2x__1
+|  |        |  |           |  |     |  |  |  +--|
+|  |        |  |           |  |     |  |  |     +--Gymnocarpium_oyamenseA_2x__2
+|  |        |  |           |  |     |  +**|
+|  |        |  |           |  |     |     |     +**Cystocarpium_roskamianum_8x__1
+|  |        |  |           |  |     |     |  +**|
+|  |        |  |           |  |     |     |  |  +**Gymnocarpium_xintermedium_8x__3
+|  |        |  |           |  |     |     +--|
+|  |        |  |           |  |     |        |        +**Gymnocarpium_dryopterisA_4x__REF
+|  |        |  |           |  |     |        |     +--|
+|  |        |  |           |  |     |        |     |  +**Gymnocarpium_dryopterisB_4x__2
+|  |        |  |           |  |     |        |  +**|
+|  |        |  |           |  |     |        |  |  |  +--Gymnocarpium_xbrittonianum_3x__2
+|  |        |  |           |  |     |        |  |  +--|
+|  |        |  |           |  |     |        |  |     +**Gymnocarpium_disjunctum_2x__REF
+|  |        |  |           |  |     |        +**|
+|  |        |  |           |  |     |           +**Gymnocarpium_xbrittonianum_3x__3
+|  |        |  |           |  |  +--|
+|  |        |  |           |  |  |  |                 +--Gymnocarpium_remotepinnatumB_4x__1
+|  |        |  |           |  |  |  |              +**|
+|  |        |  |           |  |  |  |              |  +--Gymnocarpium_remotepinnatumB_4x__2
+|  |        |  |           |  |  |  |           +**|
+|  |        |  |           |  |  |  |           |  +--Gymnocarpium_jessoenseA_UNK__1
+|  |        |  |           |  |  |  |        +--|
+|  |        |  |           |  |  |  |        |  +--Gymnocarpium_remotepinnatumA_4x__2
+|  |        |  |           |  |  |  |     +**|
+|  |        |  |           |  |  |  |     |  +**Gymnocarpium_jessoenseB_UNK__2
+|  |        |  |           |  |  |  |  +--|
+|  |        |  |           |  |  |  |  |  +--Gymnocarpium_jessoenseB_UNK__3
+|  |        |  |           |  |  |  +--|
+|  |        |  |           |  |  |     +**Gymnocarpium_jessoenseB_UNK__4
+|  |        |  |           |  +--|
+|  |        |  |           |     +--Gymnocarpium_robertianumA_4x__2
+|  |        |  |        +--|
+|  |        |  |        |  |     +--Cystocarpium_roskamianum_8x__3
+|  |        |  |        |  |  +--|
+|  |        |  |        |  |  |  |  +--Cystocarpium_roskamianum_8x__4
+|  |        |  |        |  |  |  +**|
+|  |        |  |        |  |  |     +**Cystopteris_cuzco_UNK__REF
+|  |        |  |        |  +--|
+|  |        |  |        |     +--Gymnocarpium_spB_UNK__4
+|  |        |  |     +**|
+|  |        |  |     |  |           +--Cystopteris_chinensis_UNK__4
+|  |        |  |     |  |        +**|
+|  |        |  |     |  |        |  +--Cystopteris_chinensis_UNK__2
+|  |        |  |     |  |     +--|
+|  |        |  |     |  |     |  |                                               +--Cystopteris_utahensis_4x__1
+|  |        |  |     |  |     |  |                                            +**|
+|  |        |  |     |  |     |  |                                            |  |                    +--Cystopteris_haufleri_6x__1
+|  |        |  |     |  |     |  |                                            |  |                 +**|
+|  |        |  |     |  |     |  |                                            |  |                 |  |  +**Cystopteris_dickieana_UNK__2
+|  |        |  |     |  |     |  |                                            |  |                 |  +--|
+|  |        |  |     |  |     |  |                                            |  |                 |     +**Cystopteris_dickieana_UNK__3
+|  |        |  |     |  |     |  |                                            |  |              +--|
+|  |        |  |     |  |     |  |                                            |  |              |  |  +**Cystopteris_dickieana_UNK__1
+|  |        |  |     |  |     |  |                                            |  |              |  +**|
+|  |        |  |     |  |     |  |                                            |  |              |     |  +**Cystopteris_tenuisA_4x__REF
+|  |        |  |     |  |     |  |                                            |  |              |     +**|
+|  |        |  |     |  |     |  |                                            |  |              |        |                             +--Cystopteris_fragilisA_5x__1
+|  |        |  |     |  |     |  |                                            |  |              |        |                          +--|
+|  |        |  |     |  |     |  |                                            |  |              |        |                          |  |  +--Cystopteris_fragilisA_5x__4
+|  |        |  |     |  |     |  |                                            |  |              |        |                          |  +--|
+|  |        |  |     |  |     |  |                                            |  |              |        |                          |     +--Cystopteris_alpinaB_6x__3
+|  |        |  |     |  |     |  |                                            |  |              |        |                       +**|
+|  |        |  |     |  |     |  |                                            |  |              |        |                       |  +**Cystopteris_fragilisA_5x__3
+|  |        |  |     |  |     |  |                                            |  |              |        |                    +--|
+|  |        |  |     |  |     |  |                                            |  |              |        |                    |  +--Cystopteris_fragilisA_5x__2
+|  |        |  |     |  |     |  |                                            |  |              |        |                 +**|
+|  |        |  |     |  |     |  |                                            |  |              |        |                 |  +**Cystopteris_fragilisD_6x__REF
+|  |        |  |     |  |     |  |                                            |  |              |        |              +**|
+|  |        |  |     |  |     |  |                                            |  |              |        |              |  +**Cystopteris_altajensis_UNK__2
+|  |        |  |     |  |     |  |                                            |  |              |        |           +**|
+|  |        |  |     |  |     |  |                                            |  |              |        |           |  +**Cystopteris_tenuisW_4x__REF
+|  |        |  |     |  |     |  |                                            |  |              |        |        +**|
+|  |        |  |     |  |     |  |                                            |  |              |        |        |  +**Cystopteris_fragilisC_4x__REF
+|  |        |  |     |  |     |  |                                            |  |              |        |     +**|
+|  |        |  |     |  |     |  |                                            |  |              |        |     |  +--Cystopteris_alpinaB_6x__2
+|  |        |  |     |  |     |  |                                            |  |              |        |  +**|
+|  |        |  |     |  |     |  |                                            |  |              |        |  |  +**Cystopteris_alpinaB_6x__1
+|  |        |  |     |  |     |  |                                            |  |              |        +**|
+|  |        |  |     |  |     |  |                                            |  |              |           +**Cystopteris_fragilisK_UNK__REF
+|  |        |  |     |  |     |  |                                            |  |           +**|
+|  |        |  |     |  |     |  |                                            |  |           |  +--Cystopteris_fragilisJ_6x__1
+|  |        |  |     |  |     |  |                                            |  |        +**|
+|  |        |  |     |  |     |  |                                            |  |        |  +**Cystopteris_dickieana_UNK__4
+|  |        |  |     |  |     |  |                                            |  |     +--|
+|  |        |  |     |  |     |  |                                            |  |     |  |  +**Cystopteris_brittonii_6x__3
+|  |        |  |     |  |     |  |                                            |  |     |  +**|
+|  |        |  |     |  |     |  |                                            |  |     |     |     +--Cystopteris_vermont_2x__2
+|  |        |  |     |  |     |  |                                            |  |     |     |  +**|
+|  |        |  |     |  |     |  |                                            |  |     |     |  |  +**Cystopteris_woodsioides_8x__3
+|  |        |  |     |  |     |  |                                            |  |     |     +**|
+|  |        |  |     |  |     |  |                                            |  |     |        +**Cystopteris_fragilisG_6x__1
+|  |        |  |     |  |     |  |                                            |  |  +**|
+|  |        |  |     |  |     |  |                                            |  |  |  +**Cystopteris_fragilisG_6x__2
+|  |        |  |     |  |     |  |                                            |  +--|
+|  |        |  |     |  |     |  |                                            |     |  +--Cystopteris_douglasii_UNK__3
+|  |        |  |     |  |     |  |                                            |     +--|
+|  |        |  |     |  |     |  |                                            |        +--Cystopteris_douglasii_UNK__4
+|  |        |  |     |  |     |  |                                         +**|
+|  |        |  |     |  |     |  |                                         |  |           +**Cystopteris_fragilisE_4x__1
+|  |        |  |     |  |     |  |                                         |  |        +--|
+|  |        |  |     |  |     |  |                                         |  |        |  +**Cystopteris_brittonii_6x__2
+|  |        |  |     |  |     |  |                                         |  |     +--|
+|  |        |  |     |  |     |  |                                         |  |     |  |  +--Cystopteris_haufleri_6x__3
+|  |        |  |     |  |     |  |                                         |  |     |  +**|
+|  |        |  |     |  |     |  |                                         |  |     |     +**Cystopteris_woodsioides_8x__2
+|  |        |  |     |  |     |  |                                         |  |  +--|
+|  |        |  |     |  |     |  |                                         |  |  |  +--Cystopteris_tasmanicaB_4x__2
+|  |        |  |     |  |     |  |                                         |  +**|
+|  |        |  |     |  |     |  |                                         |     |     +**Cystopteris_fragilisE_4x__2
+|  |        |  |     |  |     |  |                                         |     |  +**|
+|  |        |  |     |  |     |  |                                         |     |  |  |  +**Cystopteris_brittonii_6x__1
+|  |        |  |     |  |     |  |                                         |     |  |  +**|
+|  |        |  |     |  |     |  |                                         |     |  |     +**Cystopteris_woodsioides_8x__1
+|  |        |  |     |  |     |  |                                         |     +--|
+|  |        |  |     |  |     |  |                                         |        +--Cystopteris_haufleri_6x__2
+|  |        |  |     |  |     |  |                                      +**|
+|  |        |  |     |  |     |  |                                      |  |        +**Cystopteris_altajensis_UNK__3
+|  |        |  |     |  |     |  |                                      |  |     +--|
+|  |        |  |     |  |     |  |                                      |  |     |  +--Cystopteris_fragilisB_4x__1
+|  |        |  |     |  |     |  |                                      |  |  +--|
+|  |        |  |     |  |     |  |                                      |  |  |  +**Cystopteris_altajensis_UNK__4
+|  |        |  |     |  |     |  |                                      |  +--|
+|  |        |  |     |  |     |  |                                      |     +--Cystopteris_reevesiana_2x__1
+|  |        |  |     |  |     |  |                                   +**|
+|  |        |  |     |  |     |  |                                   |  |  +**Cystopteris_altajensis_UNK__1
+|  |        |  |     |  |     |  |                                   |  +--|
+|  |        |  |     |  |     |  |                                   |     +--Cystopteris_fragilisB_4x__2
+|  |        |  |     |  |     |  |                                +**|
+|  |        |  |     |  |     |  |                                |  |  +**Cystopteris_tasmanicaA_4x__REF
+|  |        |  |     |  |     |  |                                |  +--|
+|  |        |  |     |  |     |  |                                |     +**Cystopteris_tasmanicaB_4x__1
+|  |        |  |     |  |     |  |                             +**|
+|  |        |  |     |  |     |  |                             |  +--Cystopteris_fragilisH_4x__2
+|  |        |  |     |  |     |  |                          +**|
+|  |        |  |     |  |     |  |                          |  |        +**Cystopteris_apiiformis_UNK__1
+|  |        |  |     |  |     |  |                          |  |     +--|
+|  |        |  |     |  |     |  |                          |  |     |  |  +**Cystopteris_fragilisJ_6x__2
+|  |        |  |     |  |     |  |                          |  |     |  +--|
+|  |        |  |     |  |     |  |                          |  |     |     +--Cystopteris_fragilisJ_6x__3
+|  |        |  |     |  |     |  |                          |  |  +**|
+|  |        |  |     |  |     |  |                          |  |  |  +**Cystopteris_fragilisF_UNK__1
+|  |        |  |     |  |     |  |                          |  +**|
+|  |        |  |     |  |     |  |                          |     |  +--Cystopteris_douglasii_UNK__1
+|  |        |  |     |  |     |  |                          |     +--|
+|  |        |  |     |  |     |  |                          |        +--Cystopteris_douglasii_UNK__2
+|  |        |  |     |  |     |  |                       +**|
+|  |        |  |     |  |     |  |                       |  +**Cystopteris_woodsioides_8x__4
+|  |        |  |     |  |     |  |                    +**|
+|  |        |  |     |  |     |  |                    |  +**Cystopteris_membranifolia_2x__REF
+|  |        |  |     |  |     |  |                 +**|
+|  |        |  |     |  |     |  |                 |  +--Cystopteris_millefolia_UNK__REF
+|  |        |  |     |  |     |  |              +**|
+|  |        |  |     |  |     |  |              |  |                 +--Cystopteris_apiiformis_UNK__2
+|  |        |  |     |  |     |  |              |  |              +--|
+|  |        |  |     |  |     |  |              |  |              |  +--Cystopteris_fragilisG_6x__3
+|  |        |  |     |  |     |  |              |  |           +**|
+|  |        |  |     |  |     |  |              |  |           |  |     +--Cystopteris_protrusa_2x__1
+|  |        |  |     |  |     |  |              |  |           |  |  +**|
+|  |        |  |     |  |     |  |              |  |           |  |  |  +--Cystopteris_tennesseensis_4x__1
+|  |        |  |     |  |     |  |              |  |           |  +--|
+|  |        |  |     |  |     |  |              |  |           |     |  +--Cystopteris_protrusa_2x__2
+|  |        |  |     |  |     |  |              |  |           |     +**|
+|  |        |  |     |  |     |  |              |  |           |        |  +--Cystopteris_tenuisB_4x__1
+|  |        |  |     |  |     |  |              |  |           |        +--|
+|  |        |  |     |  |     |  |              |  |           |           +**Cystopteris_vermont_2x__1
+|  |        |  |     |  |     |  |              |  |        +--|
+|  |        |  |     |  |     |  |              |  |        |  +**Cystopteris_fragilisI_UNK__2
+|  |        |  |     |  |     |  |              |  |     +--|
+|  |        |  |     |  |     |  |              |  |     |  +**Cystopteris_fragilisI_UNK__4
+|  |        |  |     |  |     |  |              |  |  +--|
+|  |        |  |     |  |     |  |              |  |  |  +**Cystopteris_fragilisI_UNK__1
+|  |        |  |     |  |     |  |              |  +--|
+|  |        |  |     |  |     |  |              |     |     +--Cystopteris_fragilisH_4x__1
+|  |        |  |     |  |     |  |              |     |  +--|
+|  |        |  |     |  |     |  |              |     |  |  +**Cystopteris_reevesiana_2x__2
+|  |        |  |     |  |     |  |              |     +**|
+|  |        |  |     |  |     |  |              |        +--Cystopteris_idaho_2x__1
+|  |        |  |     |  |     |  |           +**|
+|  |        |  |     |  |     |  |           |  +**Cystopteris_oxapampa_UNK__REF
+|  |        |  |     |  |     |  |        +--|
+|  |        |  |     |  |     |  |        |  +**Cystopteris_diaphana_4x__REF
+|  |        |  |     |  |     |  |     +--|
+|  |        |  |     |  |     |  |     |  +--Cystopteris_chinensis_UNK__1
+|  |        |  |     |  |     |  |  +--|
+|  |        |  |     |  |     |  |  |  +--Cystopteris_chinensis_UNK__3
+|  |        |  |     |  |     |  +--|
+|  |        |  |     |  |     |     +--Cystopteris_fragilisF_UNK__4
+|  |        |  |     |  |  +--|
+|  |        |  |     |  |  |  +--Cystopteris_sudetica_4x__2
+|  |        |  |     |  +**|
+|  |        |  |     |     |     +--Cystopteris_sudetica_4x__1
+|  |        |  |     |     |  +--|
+|  |        |  |     |     |  |  +**Cystopteris_moupinensisE_2x__1
+|  |        |  |     |     +--|
+|  |        |  |     |        |              +**Cystopteris_moupinensisB_4x__REF
+|  |        |  |     |        |           +--|
+|  |        |  |     |        |           |  +**Cystopteris_moupinensisA_4x__REF
+|  |        |  |     |        |        +**|
+|  |        |  |     |        |        |  |           +**Cystopteris_moupinensisD_4x__1
+|  |        |  |     |        |        |  |        +**|
+|  |        |  |     |        |        |  |        |  +**Cystopteris_pellucidaB_UNK__REF
+|  |        |  |     |        |        |  |     +--|
+|  |        |  |     |        |        |  |     |  +**Cystopteris_deqinensis_UNK__2
+|  |        |  |     |        |        |  |  +**|
+|  |        |  |     |        |        |  |  |  |  +**Cystopteris_deqinensis_UNK__1
+|  |        |  |     |        |        |  |  |  +--|
+|  |        |  |     |        |        |  |  |     +**Cystopteris_deqinensis_UNK__3
+|  |        |  |     |        |        |  +**|
+|  |        |  |     |        |        |     +--Cystopteris_moupinensisD_4x__2
+|  |        |  |     |        |     +--|
+|  |        |  |     |        |     |  |  +--Cystopteris_pellucidaA_4x__1
+|  |        |  |     |        |     |  +--|
+|  |        |  |     |        |     |     +**Cystopteris_pellucidaA_4x__2
+|  |        |  |     |        |  +--|
+|  |        |  |     |        |  |  +**Cystopteris_deqinensis_UNK__4
+|  |        |  |     |        +**|
+|  |        |  |     |           |     +**Cystopteris_moupinensisC_2x__REF
+|  |        |  |     |           |  +**|
+|  |        |  |     |           |  |  +**Cystopteris_moupinensisF_4x__REF
+|  |        |  |     |           +--|
+|  |        |  |     |              +**Cystopteris_moupinensisE_2x__2
+|  |        |  |  +--|
+|  |        |  |  |  |  +--Cystopteris_utahensis_4x__2
+|  |        |  |  |  +--|
+|  |        |  |  |     |  +**Cystopteris_bulbifera_2x__REF
+|  |        |  |  |     +--|
+|  |        |  |  |        |  +--Cystopteris_laurentiana_6x__3
+|  |        |  |  |        +**|
+|  |        |  |  |           +**Cystopteris_tennesseensis_4x__2
+|  |        |  +--|
+|  |        |     |     +--Cystopteris_montanaB_4x__1
+|  |        |     |  +**|
+|  |        |     |  |  |  +**Cystopteris_montanaB_4x__2
+|  |        |     |  |  +--|
+|  |        |     |  |     +**Cystopteris_montanaA_4x__2
+|  |        |     +--|
+|  |        |        +--Cystopteris_montanaA_4x__1
+|  |     +--|
+|  |     |  +--Acystopteris_taiwanianaA_UNK__2
+|  |  +**|
+|  |  |  +--Acystopteris_japonicaC_6x__2
+|  +**|
+|     |  +**Acystopteris_taiwanianaB_UNK__1
+|     +--|
+|        +**Acystopteris_tenuisectaC_4x__2
+|
++--Acystopteris_tenuisectaE_4x__2
+
+Tree in newick format:
+
+(Acystopteris_tenuisectaB_UNK__3:0.0000010000,(((Acystopteris_tenuisectaB_UNK__1:0.0000010000,(((Acystopteris_tenuisectaE_4x__1:0.0016614505,Acystopteris_tenuisectaA_2x__REF:0.0000010000):0.0016595381,Acystopteris_taiwanianaA_UNK__1:0.0000010000):0.0000020653,Acystopteris_japonicaA_4x__1:0.0000010000):0.0000028040):0.0000020059,(Acystopteris_tenuisectaD_UNK__2:0.0000010000,Acystopteris_tenuisectaD_UNK__4:0.0015292326):0.0030680456):0.0030686040,((((((((Acystopteris_tenuisectaD_UNK__1:0.0015287005,Acystopteris_tenuisectaD_UNK__3:0.0000010000):0.0015359108,((Acystopteris_taiwanianaB_UNK__2:0.0000010000,Acystopteris_tenuisectaC_4x__1:0.0000010000):0.0017213250,Acystopteris_taiwanianaB_UNK__4:0.0000027842):0.0017200630):0.0000025197,Acystopteris_taiwanianaC_4x__2:0.0000010000):0.0046438908,((Acystopteris_taiwanianaA_UNK__4:0.0018731618,Acystopteris_japonicaC_6x__1:0.0018458831):0.0018376183,(((Acystopteris_taiwanianaA_UNK__3:0.0000010000,(Acystopteris_japonicaB_2x__REF:0.0000010000,Acystopteris_taiwanianaC_4x__1:0.0000010000):0.0000010000):0.0000010000,Acystopteris_japonicaA_4x__2:0.0000010000):0.0000010000,Acystopteris_japonicaC_6x__3:0.0000010000):0.0000027083):0.0036949713):0.0015397291,((((((((Hymenasplenium_repandulum_UNK__REF:0.2613921955,(((Woodsia_ilvenis_UNK__REF:0.0000027034,Cystopteris_alpinaA_6x__3:0.0000026550):0.0320213973,Cystopteris_alpinaA_6x__2:0.0000026596):0.0179384189,Cystopteris_alpinaA_6x__1:0.0017713353):0.0378246064):0.0254421055,(Rhachidosorus_blotianus_UNK__REF:0.0505422148,(((Desmophlebium_lechleri_UNK__1:0.0029687517,Desmophlebium_lechleri_UNK__4:0.0000010000):0.0119218105,(Desmophlebium_lechleri_UNK__2:0.0000010000,Desmophlebium_lechleri_UNK__3:0.0029653677):0.0127184997):0.0611119429,(Hemidictyum_marginatum_UNK__REF:0.0558763261,Diplaziopsis_javanica_UNK__REF:0.0370569359):0.0031153352):0.0023664895):0.0022553547):0.0023392193,((((((Blechnum_polypodioides_UNK__1:0.0000010000,Blechnum_polypodioides_UNK__4:0.0000010000):0.0082482769,Blechnum_polypodioides_UNK__2:0.0000010000):0.0080960486,Blechnum_polypodioides_UNK__3:0.0064016758):0.0807630080,(((Pentarhizidium_intermedium_UNK__1:0.0143491295,Pentarhizidium_intermedium_UNK__4:0.0000026328):0.0020189442,Pentarhizidium_intermedium_UNK__2:0.0000028065):0.0020165836,Pentarhizidium_intermedium_UNK__3:0.0000020183):0.1590142125):0.0252580488,((Deparia_japonica_UNK__1:0.0029388077,Deparia_japonica_UNK__3:0.0000010000):0.0000010000,Deparia_japonica_UNK__4:0.0000010000):0.0417902036):0.0000020105,((((Phegopteris_connectilis_UNK__1:0.0019640530,Phegopteris_connectilis_UNK__4:0.0019503531):0.0059116763,Phegopteris_connectilis_UNK__3:0.0000029986):0.0019570392,Phegopteris_connectilis_UNK__2:0.0000024607):0.0404903697,((((Desmophlebium_longisorum_UNK__1:0.0000021111,Desmophlebium_longisorum_UNK__3:0.0228584079):0.0088960076,Desmophlebium_longisorum_UNK__4:0.0000029429):0.0839740325,((Cyclogramma_flexilis_UNK__1:0.0023601082,Cyclogramma_flexilis_UNK__2:0.0025818239):0.0143277969,Cyclogramma_flexilis_UNK__3:0.0188470535):0.0321356436):0.0129650884,((Parathelypteris_nipponica_UNK__1:0.0024068257,Parathelypteris_nipponica_UNK__4:0.0000010000):0.0023551685,Parathelypteris_nipponica_UNK__2:0.0048938961):0.0138611860):0.0078399019):0.0056260511):0.0070458204):0.0143150500,((((((((((Gymnocarpium_spA_4x__1:0.0032446200,Gymnocarpium_spA_4x__2:0.0016178006):0.0000029413,((((Gymnocarpium_remotepinnatumA_4x__1:0.0000010000,Gymnocarpium_jessoenseA_UNK__2:0.0000010000):0.0000010000,Gymnocarpium_jessoenseB_UNK__1:0.0000010000):0.0000010000,Gymnocarpium_spB_UNK__1:0.0000010000):0.0000025020,Gymnocarpium_spB_UNK__3:0.0021411270):0.0052849246):0.0022730124,Gymnocarpium_robertianumA_4x__1:0.0017000227):0.0000025728,Gymnocarpium_continentale_4x__1:0.0000010000):0.0000028938,Gymnocarpium_robertianumB_4x__REF:0.0000010000):0.0022708259,Gymnocarpium_xintermedium_8x__4:0.0000025128):0.0030347229,(((Cystocarpium_roskamianum_8x__2:0.0048713264,((Gymnocarpium_appalachianum_2x__1:0.0000010000,Gymnocarpium_xintermedium_8x__1:0.0000010000):0.0016139490,Gymnocarpium_xbrittonianum_3x__1:0.0000025024):0.0000025969):0.0032319890,Gymnocarpium_appalachianum_2x__2:0.0032323728):0.0000025352,(Gymnocarpium_xintermedium_8x__2:0.0000022971,(Gymnocarpium_continentale_4x__2:0.0016119850,Gymnocarpium_dryopterisB_4x__1:0.0020761784):0.0000093142):0.0032292832):0.0000024780):0.0045659134,((((Gymnocarpium_oyamenseB_4x__2:0.0000010000,Gymnocarpium_oyamenseC_4x__REF:0.0000010000):0.0047126998,Gymnocarpium_oyamenseB_4x__1:0.0018055072):0.0039522553,(Gymnocarpium_oyamenseA_2x__1:0.0023233663,Gymnocarpium_oyamenseA_2x__2:0.0036624224):0.0042339110):0.0106051353,((Cystocarpium_roskamianum_8x__1:0.0000010000,Gymnocarpium_xintermedium_8x__3:0.0000010000):0.0000010000,(((Gymnocarpium_dryopterisA_4x__REF:0.0000010000,Gymnocarpium_dryopterisB_4x__2:0.0000010000):0.0012899138,(Gymnocarpium_xbrittonianum_3x__2:0.0017285595,Gymnocarpium_disjunctum_2x__REF:0.0000028222):0.0017234621):0.0003181443,Gymnocarpium_xbrittonianum_3x__3:0.0000010000):0.0000020294):0.0016161380):0.0000021574):0.0030228252,((((((Gymnocarpium_remotepinnatumB_4x__1:0.0018999564,Gymnocarpium_remotepinnatumB_4x__2:0.0018964851):0.0000010000,Gymnocarpium_jessoenseA_UNK__1:0.0018363609):0.0000020830,Gymnocarpium_remotepinnatumA_4x__2:0.0035054389):0.0025100659,Gymnocarpium_jessoenseB_UNK__2:0.0000010000):0.0000020346,Gymnocarpium_jessoenseB_UNK__3:0.0040885407):0.0050127455,Gymnocarpium_jessoenseB_UNK__4:0.0000020336):0.0076062498):0.0023472402,Gymnocarpium_robertianumA_4x__2:0.0134634455):0.0078565288):0.0119803252,((Cystocarpium_roskamianum_8x__3:0.0048766533,(Cystocarpium_roskamianum_8x__4:0.0047594457,Cystopteris_cuzco_UNK__REF:0.0000010000):0.0000869152):0.0040411839,Gymnocarpium_spB_UNK__4:0.0028970388):0.0150937973):0.0156803240,((((Cystopteris_chinensis_UNK__4:0.0046378448,Cystopteris_chinensis_UNK__2:0.0061930654):0.0000029451,((((((((((((((((Cystopteris_utahensis_4x__1:0.0033284689,(((((((Cystopteris_haufleri_6x__1:0.0031262328,(Cystopteris_dickieana_UNK__2:0.0000010000,Cystopteris_dickieana_UNK__3:0.0000010000):0.0015254914):0.0000024387,(Cystopteris_dickieana_UNK__1:0.0000010000,(Cystopteris_tenuisA_4x__REF:0.0000010000,((((((((((Cystopteris_fragilisA_5x__1:0.0029562599,(Cystopteris_fragilisA_5x__4:0.0014861126,Cystopteris_alpinaB_6x__3:0.0018394835):0.0014785757):0.0014801400,Cystopteris_fragilisA_5x__3:0.0000010000):0.0000010000,Cystopteris_fragilisA_5x__2:0.0014780266):0.0087845723,Cystopteris_fragilisD_6x__REF:0.0000010000):0.0000010000,Cystopteris_altajensis_UNK__2:0.0000010000):0.0000010000,Cystopteris_tenuisW_4x__REF:0.0000010000):0.0000010000,Cystopteris_fragilisC_4x__REF:0.0000010000):0.0000023399,Cystopteris_alpinaB_6x__2:0.0018318393):0.0000010000,Cystopteris_alpinaB_6x__1:0.0000010000):0.0000010000,Cystopteris_fragilisK_UNK__REF:0.0000010000):0.0000010000):0.0000024595):0.0000010000):0.0015244780,Cystopteris_fragilisJ_6x__1:0.0021749465):0.0000047402,Cystopteris_dickieana_UNK__4:0.0000010000):0.0000010000,(Cystopteris_brittonii_6x__3:0.0000010000,((Cystopteris_vermont_2x__2:0.0018328141,Cystopteris_woodsioides_8x__3:0.0000010000):0.0000010000,Cystopteris_fragilisG_6x__1:0.0000010000):0.0000010000):0.0000010000):0.0015276197,Cystopteris_fragilisG_6x__2:0.0000010000):0.0000040021,(Cystopteris_douglasii_UNK__3:0.0023285795,Cystopteris_douglasii_UNK__4:0.0023158449):0.0023264738):0.0015247445):0.0000021792,((((Cystopteris_fragilisE_4x__1:0.0000010000,Cystopteris_brittonii_6x__2:0.0000010000):0.0015308899,(Cystopteris_haufleri_6x__3:0.0015627526,Cystopteris_woodsioides_8x__2:0.0000010000):0.0000021328):0.0030860915,Cystopteris_tasmanicaB_4x__2:0.0037286221):0.0015221779,((Cystopteris_fragilisE_4x__2:0.0000010000,(Cystopteris_brittonii_6x__1:0.0000010000,Cystopteris_woodsioides_8x__1:0.0000010000):0.0000010000):0.0000010000,Cystopteris_haufleri_6x__2:0.0015664113):0.0030779636):0.0000021668):0.0000024854,(((Cystopteris_altajensis_UNK__3:0.0000025781,Cystopteris_fragilisB_4x__1:0.0038909630):0.0036974482,Cystopteris_altajensis_UNK__4:0.0000024052):0.0018382374,Cystopteris_reevesiana_2x__1:0.0037005000):0.0018481530):0.0000025186,(Cystopteris_altajensis_UNK__1:0.0000010000,Cystopteris_fragilisB_4x__2:0.0019354385):0.0055411881):0.0000010000,(Cystopteris_tasmanicaA_4x__REF:0.0000010000,Cystopteris_tasmanicaB_4x__1:0.0000010000):0.0055310668):0.0000027240,Cystopteris_fragilisH_4x__2:0.0038306205):0.0000027529,(((Cystopteris_apiiformis_UNK__1:0.0000022456,(Cystopteris_fragilisJ_6x__2:0.0000029769,Cystopteris_fragilisJ_6x__3:0.0021804481):0.0058972148):0.0025695957,Cystopteris_fragilisF_UNK__1:0.0000010000):0.0000014904,(Cystopteris_douglasii_UNK__1:0.0023188254,Cystopteris_douglasii_UNK__2:0.0023381466):0.0023331492):0.0000020241):0.0000023778,Cystopteris_woodsioides_8x__4:0.0000010000):0.0000021773,Cystopteris_membranifolia_2x__REF:0.0000010000):0.0000026779,Cystopteris_millefolia_UNK__REF:0.0019515429):0.0000023320,((((((Cystopteris_apiiformis_UNK__2:0.0021612760,Cystopteris_fragilisG_6x__3:0.0018450148):0.0018335791,((Cystopteris_protrusa_2x__1:0.0018359670,Cystopteris_tennesseensis_4x__1:0.0018352520):0.0000021353,(Cystopteris_protrusa_2x__2:0.0036800193,(Cystopteris_tenuisB_4x__1:0.0018385696,Cystopteris_vermont_2x__1:0.0000026182):0.0018353130):0.0000029356):0.0018372725):0.0000025522,Cystopteris_fragilisI_UNK__2:0.0000010000):0.0022778981,Cystopteris_fragilisI_UNK__4:0.0000021185):0.0045716613,Cystopteris_fragilisI_UNK__1:0.0000027623):0.0022904060,((Cystopteris_fragilisH_4x__1:0.0038265194,Cystopteris_reevesiana_2x__2:0.0000023448):0.0036799249,Cystopteris_idaho_2x__1:0.0036940286):0.0000026851):0.0018233571):0.0000011584,Cystopteris_oxapampa_UNK__REF:0.0000010000):0.0000023446,Cystopteris_diaphana_4x__REF:0.0000010000):0.0076342516,Cystopteris_chinensis_UNK__1:0.0046329414):0.0014811601,Cystopteris_chinensis_UNK__3:0.0015330831):0.0016528583,Cystopteris_fragilisF_UNK__4:0.0048428676):0.0104939556):0.0030946836,Cystopteris_sudetica_4x__2:0.0080482937):0.0028684162,((Cystopteris_sudetica_4x__1:0.0015831013,Cystopteris_moupinensisE_2x__1:0.0000010000):0.0015629822,(((((Cystopteris_moupinensisB_4x__REF:0.0000010000,Cystopteris_moupinensisA_4x__REF:0.0000010000):0.0018304867,((((Cystopteris_moupinensisD_4x__1:0.0000010000,Cystopteris_pellucidaB_UNK__REF:0.0000010000):0.0000026377,Cystopteris_deqinensis_UNK__2:0.0000010000):0.0033547626,(Cystopteris_deqinensis_UNK__1:0.0000010000,Cystopteris_deqinensis_UNK__3:0.0000010000):0.0022777037):0.0000017063,Cystopteris_moupinensisD_4x__2:0.0035234124):0.0000027672):0.0000029038,(Cystopteris_pellucidaA_4x__1:0.0039843414,Cystopteris_pellucidaA_4x__2:0.0000022149):0.0019814008):0.0026213990,Cystopteris_deqinensis_UNK__4:0.0000010000):0.0052588942,((Cystopteris_moupinensisC_2x__REF:0.0000010000,Cystopteris_moupinensisF_4x__REF:0.0000010000):0.0000010000,Cystopteris_moupinensisE_2x__2:0.0000010000):0.0035354307):0.0000027235):0.0036706389):0.0000028772):0.0000026071,(Cystopteris_utahensis_4x__2:0.0038056137,(Cystopteris_bulbifera_2x__REF:0.0000010000,(Cystopteris_laurentiana_6x__3:0.0036868319,Cystopteris_tennesseensis_4x__2:0.0000010000):0.0000010000):0.0018809317):0.0101251589):0.0014717500,((Cystopteris_montanaB_4x__1:0.0035049794,(Cystopteris_montanaB_4x__2:0.0000010000,Cystopteris_montanaA_4x__2:0.0000010000):0.0017485986):0.0000027492,Cystopteris_montanaA_4x__1:0.0042421486):0.0035827157):0.0156926903):0.0000022706,Acystopteris_taiwanianaA_UNK__2:0.0018726825):0.0030341330,Acystopteris_japonicaC_6x__2:0.0055661770):0.0000024511,(Acystopteris_taiwanianaB_UNK__1:0.0000010000,Acystopteris_tenuisectaC_4x__2:0.0000010000):0.0017221609):0.0000020399):0.0015321420,Acystopteris_tenuisectaE_4x__2:0.0016614121);
+
+TIME STAMP
+----------
+
+Date and time: Sat Jan 07 22:40:26 2023
+Total CPU time used: 142.703 seconds (0h:2m:22s)
+Total wall-clock time used: 493.202 seconds (0h:8m:13s)
+

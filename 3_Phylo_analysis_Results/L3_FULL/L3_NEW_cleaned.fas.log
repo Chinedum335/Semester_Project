@@ -1,0 +1,575 @@
+IQ-TREE multicore version 2.2.0 COVID-edition for Windows 64-bit built Jun  1 2022
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan.
+
+Host:    DESKTOP-IJRST34 (AVX2, FMA3, 7 GB RAM)
+Command: iqtree2 -s L3_NEW_cleaned.fas
+Seed:    980821 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat Jan 07 22:31:00 2023
+Kernel:  AVX+FMA - 1 threads (4 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 4 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file L3_NEW_cleaned.fas ... Fasta format detected
+Reading fasta file: done in 0.0052676 secs using 296.6% CPU
+Alignment most likely contains DNA/RNA sequences
+Constructing alignment: done in 0.003482 secs using 448.7% CPU
+WARNING: 1 sites contain only gaps or ambiguous characters.
+Alignment has 207 sequences with 1043 columns, 564 distinct patterns
+287 parsimony-informative, 60 singleton sites, 696 constant sites
+                                    Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0006284 secs
+   1  Acystopteris_tenuisectaB_UNK__3      38.06%    passed     89.98%
+   2  Acystopteris_tenuisectaB_UNK__1      38.06%    passed     92.67%
+   3  Acystopteris_tenuisectaD_UNK__2      38.06%    passed     90.65%
+   4  Acystopteris_tenuisectaD_UNK__4      38.06%    passed     90.71%
+   5  Acystopteris_tenuisectaD_UNK__1      38.06%    passed     90.65%
+   6  Acystopteris_tenuisectaD_UNK__3      38.06%    passed     90.71%
+   7  Acystopteris_tenuisectaE_4x__2       43.05%    passed     99.82%
+   8  Acystopteris_tenuisectaE_4x__1       43.05%    passed     99.27%
+   9  Hymenasplenium_repandulum_UNK__REF   63.09%    passed     62.49%
+  10  Blechnum_polypodioides_UNK__1        50.91%    passed     90.41%
+  11  Blechnum_polypodioides_UNK__2        50.91%    passed     90.41%
+  12  Blechnum_polypodioides_UNK__3        50.91%    passed     91.76%
+  13  Blechnum_polypodioides_UNK__4        50.91%    passed     90.41%
+  14  Acystopteris_taiwanianaB_UNK__1      44.77%    passed     99.43%
+  15  Acystopteris_taiwanianaB_UNK__2      44.77%    passed     98.23%
+  16  Acystopteris_taiwanianaB_UNK__4      44.77%    passed     97.65%
+  17  Acystopteris_tenuisectaC_4x__1       44.77%    passed     98.23%
+  18  Acystopteris_tenuisectaC_4x__2       44.77%    passed     99.43%
+  19  Pentarhizidium_intermedium_UNK__1    50.53%    passed     37.88%
+  20  Pentarhizidium_intermedium_UNK__2    50.53%    passed     51.23%
+  21  Pentarhizidium_intermedium_UNK__3    50.53%    passed     44.39%
+  22  Pentarhizidium_intermedium_UNK__4    50.53%    passed     53.04%
+  23  Acystopteris_taiwanianaA_UNK__1      49.19%    passed     96.50%
+  24  Acystopteris_taiwanianaA_UNK__4      49.19%    passed     97.83%
+  25  Acystopteris_taiwanianaA_UNK__2      49.19%    passed     96.50%
+  26  Acystopteris_taiwanianaA_UNK__3      49.19%    passed     97.83%
+  27  Acystopteris_japonicaA_4x__1         48.71%    passed     99.09%
+  28  Acystopteris_tenuisectaA_2x__REF     48.71%    passed     98.87%
+  29  Acystopteris_japonicaA_4x__2         48.71%    passed     99.47%
+  30  Acystopteris_japonicaB_2x__REF       50.91%    passed     93.13%
+  31  Acystopteris_japonicaC_6x__1         48.61%    passed     98.93%
+  32  Acystopteris_japonicaC_6x__2         48.61%    passed     99.89%
+  33  Acystopteris_japonicaC_6x__3         48.61%    passed     98.98%
+  34  Acystopteris_taiwanianaC_4x__1       50.53%    passed     96.19%
+  35  Acystopteris_taiwanianaC_4x__2       50.53%    passed     93.57%
+  36  Gymnocarpium_spA_4x__1               40.94%    passed     73.62%
+  37  Gymnocarpium_spA_4x__2               40.94%    passed     84.38%
+  38  Rhachidosorus_blotianus_UNK__REF     51.58%    passed     99.03%
+  39  Gymnocarpium_oyamenseB_4x__2         40.94%    passed     70.54%
+  40  Cystocarpium_roskamianum_8x__1       40.94%    passed     94.24%
+  41  Cystocarpium_roskamianum_8x__2       40.94%    passed     92.70%
+  42  Cystocarpium_roskamianum_8x__3       40.94%    passed     93.91%
+  43  Cystocarpium_roskamianum_8x__4       40.94%    passed     88.72%
+  44  Gymnocarpium_appalachianum_2x__1     40.94%    passed     84.69%
+  45  Gymnocarpium_appalachianum_2x__2     40.94%    passed     84.62%
+  46  Gymnocarpium_dryopterisA_4x__REF     40.94%    passed     92.76%
+  47  Gymnocarpium_oyamenseB_4x__1         40.94%    passed     83.92%
+  48  Gymnocarpium_xintermedium_8x__1      40.94%    passed     84.69%
+  49  Gymnocarpium_xintermedium_8x__2      40.94%    passed     78.64%
+  50  Gymnocarpium_xintermedium_8x__3      40.94%    passed     94.24%
+  51  Gymnocarpium_xintermedium_8x__4      40.94%    passed     84.76%
+  52  Cystopteris_chinensis_UNK__4         38.16%    passed     89.65%
+  53  Cystopteris_utahensis_4x__1          41.80%    passed     95.66%
+  54  Cystopteris_utahensis_4x__2          41.80%    passed     99.78%
+  55  Cystopteris_fragilisE_4x__1          38.16%    passed     87.86%
+  56  Cystopteris_haufleri_6x__3           38.83%    passed     92.55%
+  57  Cystopteris_chinensis_UNK__1         38.16%    passed     81.27%
+  58  Cystopteris_chinensis_UNK__2         38.16%    passed     83.83%
+  59  Cystopteris_chinensis_UNK__3         38.16%    passed     84.40%
+  60  Cystopteris_fragilisE_4x__2          38.16%    passed     76.65%
+  61  Cystopteris_haufleri_6x__1           38.83%    passed     84.33%
+  62  Cystopteris_haufleri_6x__2           38.83%    passed     84.09%
+  63  Cystopteris_dickieana_UNK__1         37.97%    passed     82.37%
+  64  Cystopteris_dickieana_UNK__2         37.97%    passed     86.75%
+  65  Cystopteris_dickieana_UNK__3         37.97%    passed     86.75%
+  66  Cystopteris_dickieana_UNK__4         37.97%    passed     81.51%
+  67  Gymnocarpium_robertianumA_4x__2      43.34%    passed     89.01%
+  68  Deparia_japonica_UNK__1              53.98%    passed     82.49%
+  69  Gymnocarpium_oyamenseC_4x__REF       45.64%    passed     65.98%
+  70  Gymnocarpium_robertianumA_4x__1      43.34%    passed     75.28%
+  71  Gymnocarpium_xbrittonianum_3x__1     44.30%    passed     86.13%
+  72  Gymnocarpium_xbrittonianum_3x__2     44.30%    passed     97.30%
+  73  Gymnocarpium_xbrittonianum_3x__3     44.30%    passed     97.08%
+  74  Gymnocarpium_continentale_4x__1      40.94%    passed     79.85%
+  75  Gymnocarpium_continentale_4x__2      40.94%    passed     74.11%
+  76  Gymnocarpium_robertianumB_4x__REF    41.04%    passed     80.40%
+  77  Cystopteris_bulbifera_2x__REF        41.99%    passed     99.49%
+  78  Gymnocarpium_disjunctum_2x__REF      47.84%    passed     94.07%
+  79  Cystopteris_sudetica_4x__1           39.88%    passed     99.44%
+  80  Cystopteris_sudetica_4x__2           39.88%    passed     97.03%
+  81  Cystopteris_brittonii_6x__2          39.21%    passed     93.01%
+  82  Cystopteris_tenuisA_4x__REF          38.64%    passed     87.86%
+  83  Cystopteris_brittonii_6x__1          39.21%    passed     84.03%
+  84  Cystopteris_brittonii_6x__3          39.21%    passed     89.37%
+  85  Phegopteris_connectilis_UNK__1       48.90%    passed     85.28%
+  86  Phegopteris_connectilis_UNK__2       48.90%    passed     77.64%
+  87  Phegopteris_connectilis_UNK__3       48.90%    passed     79.12%
+  88  Phegopteris_connectilis_UNK__4       48.90%    passed     84.00%
+  89  Desmophlebium_longisorum_UNK__1      75.36%    passed     71.28%
+  90  Desmophlebium_longisorum_UNK__3      75.36%    passed     80.63%
+  91  Desmophlebium_longisorum_UNK__4      75.36%    passed     75.84%
+  92  Woodsia_ilvenis_UNK__REF             88.49%    passed     29.72%
+  93  Deparia_japonica_UNK__3              56.18%    passed     95.85%
+  94  Deparia_japonica_UNK__4              56.18%    passed     95.85%
+  95  Gymnocarpium_remotepinnatumB_4x__1   49.86%    passed     97.99%
+  96  Gymnocarpium_remotepinnatumB_4x__2   49.86%    passed     98.83%
+  97  Cystopteris_montanaB_4x__1           46.21%    passed     96.91%
+  98  Cystopteris_montanaB_4x__2           46.21%    passed     96.60%
+  99  Cystopteris_cuzco_UNK__REF           74.02%    passed     84.17%
+ 100  Cystopteris_montanaA_4x__1           53.98%    passed     91.57%
+ 101  Cystopteris_montanaA_4x__2           53.98%    passed     87.64%
+ 102  Desmophlebium_lechleri_UNK__1        65.87%    passed     47.75%
+ 103  Desmophlebium_lechleri_UNK__2        65.87%    passed     71.71%
+ 104  Desmophlebium_lechleri_UNK__3        65.87%    passed     75.75%
+ 105  Desmophlebium_lechleri_UNK__4        65.87%    passed     54.07%
+ 106  Cyclogramma_flexilis_UNK__1          58.29%    passed     62.84%
+ 107  Cyclogramma_flexilis_UNK__2          58.29%    passed     55.32%
+ 108  Cyclogramma_flexilis_UNK__3          58.10%    passed     53.89%
+ 109  Parathelypteris_nipponica_UNK__1     57.72%    passed     85.28%
+ 110  Parathelypteris_nipponica_UNK__2     57.72%    passed     81.75%
+ 111  Parathelypteris_nipponica_UNK__4     57.72%    passed     88.98%
+ 112  Gymnocarpium_remotepinnatumA_4x__2   45.93%    passed     87.30%
+ 113  Gymnocarpium_jessoenseA_UNK__1       47.65%    passed     97.64%
+ 114  Cystopteris_moupinensisB_4x__REF     48.13%    passed     93.48%
+ 115  Cystopteris_pellucidaA_4x__1         51.39%    passed     87.57%
+ 116  Cystopteris_moupinensisA_4x__REF     55.70%    passed     92.59%
+ 117  Gymnocarpium_jessoenseB_UNK__2       52.44%    passed     95.46%
+ 118  Gymnocarpium_jessoenseB_UNK__3       52.44%    passed     89.92%
+ 119  Gymnocarpium_remotepinnatumA_4x__1   45.93%    passed     82.70%
+ 120  Gymnocarpium_jessoenseA_UNK__2       47.65%    passed     95.30%
+ 121  Cystopteris_alpinaA_6x__1            49.38%    passed     90.25%
+ 122  Cystopteris_alpinaA_6x__2            49.38%    passed     95.16%
+ 123  Cystopteris_alpinaA_6x__3            49.38%    passed     73.04%
+ 124  Cystopteris_fragilisA_5x__1          35.76%    passed     95.32%
+ 125  Cystopteris_fragilisA_5x__2          35.76%    passed     97.54%
+ 126  Cystopteris_fragilisA_5x__3          35.76%    passed     96.46%
+ 127  Cystopteris_fragilisA_5x__4          35.76%    passed     95.70%
+ 128  Cystopteris_moupinensisD_4x__1       45.93%    passed     85.68%
+ 129  Cystopteris_moupinensisD_4x__2       45.93%    passed     80.79%
+ 130  Cystopteris_moupinensisC_2x__REF     49.09%    passed     74.24%
+ 131  Cystopteris_pellucidaA_4x__2         51.39%    passed     87.57%
+ 132  Hemidictyum_marginatum_UNK__REF      60.79%    passed     90.83%
+ 133  Cystopteris_apiiformis_UNK__1        54.46%    passed     97.40%
+ 134  Cystopteris_apiiformis_UNK__2        54.46%    passed     97.40%
+ 135  Cystopteris_fragilisI_UNK__1         55.32%    passed     97.15%
+ 136  Cystopteris_fragilisI_UNK__2         55.32%    passed     96.94%
+ 137  Cystopteris_fragilisI_UNK__4         55.32%    passed     97.18%
+ 138  Cystopteris_fragilisF_UNK__1         57.43%    passed     98.20%
+ 139  Cystopteris_fragilisF_UNK__4         57.43%    passed     97.82%
+ 140  Cystopteris_altajensis_UNK__1        52.06%    passed     90.19%
+ 141  Cystopteris_altajensis_UNK__2        52.06%    passed     93.85%
+ 142  Cystopteris_altajensis_UNK__3        52.06%    passed     91.66%
+ 143  Cystopteris_altajensis_UNK__4        52.06%    passed     94.01%
+ 144  Cystopteris_deqinensis_UNK__1        56.76%    passed     83.01%
+ 145  Cystopteris_deqinensis_UNK__2        56.76%    passed     88.12%
+ 146  Cystopteris_deqinensis_UNK__3        56.76%    passed     83.01%
+ 147  Cystopteris_deqinensis_UNK__4        56.76%    passed     83.34%
+ 148  Cystopteris_douglasii_UNK__1         57.14%    passed     99.59%
+ 149  Cystopteris_douglasii_UNK__2         57.14%    passed     99.58%
+ 150  Cystopteris_douglasii_UNK__3         57.14%    passed     99.18%
+ 151  Cystopteris_douglasii_UNK__4         57.14%    passed     99.15%
+ 152  Cystopteris_fragilisJ_6x__1          54.84%    passed     99.23%
+ 153  Cystopteris_fragilisJ_6x__2          54.84%    passed     98.33%
+ 154  Cystopteris_fragilisJ_6x__3          54.84%    passed     99.52%
+ 155  Diplaziopsis_javanica_UNK__REF       54.55%    passed     88.58%
+ 156  Gymnocarpium_dryopterisB_4x__1       52.83%    passed     89.61%
+ 157  Gymnocarpium_dryopterisB_4x__2       52.83%    passed     95.83%
+ 158  Gymnocarpium_jessoenseB_UNK__1       52.35%    passed     84.45%
+ 159  Gymnocarpium_jessoenseB_UNK__4       52.44%    passed     94.92%
+ 160  Gymnocarpium_oyamenseA_2x__1         51.29%    passed     94.20%
+ 161  Gymnocarpium_oyamenseA_2x__2         51.29%    passed     96.84%
+ 162  Gymnocarpium_spB_UNK__1              54.27%    passed     86.52%
+ 163  Gymnocarpium_spB_UNK__3              54.27%    passed     82.61%
+ 164  Gymnocarpium_spB_UNK__4              54.27%    passed     97.58%
+ 165  Cystopteris_moupinensisE_2x__1       50.05%    passed     88.68%
+ 166  Cystopteris_moupinensisE_2x__2       50.05%    passed     92.58%
+ 167  Cystopteris_fragilisD_6x__REF        48.99%    passed     93.17%
+ 168  Cystopteris_fragilisH_4x__1          50.14%    passed     91.36%
+ 169  Cystopteris_fragilisH_4x__2          50.14%    passed     96.61%
+ 170  Cystopteris_tasmanicaA_4x__REF       49.57%    passed     88.96%
+ 171  Cystopteris_fragilisG_6x__3          48.61%    passed     96.55%
+ 172  Cystopteris_protrusa_2x__1           48.61%    passed     97.77%
+ 173  Cystopteris_protrusa_2x__2           48.61%    passed     99.00%
+ 174  Cystopteris_tennesseensis_4x__1      48.61%    passed     99.61%
+ 175  Cystopteris_tenuisB_4x__1            48.61%    passed     99.11%
+ 176  Cystopteris_vermont_2x__1            48.61%    passed     99.61%
+ 177  Cystopteris_vermont_2x__2            48.61%    passed     96.31%
+ 178  Cystopteris_tasmanicaB_4x__2         48.61%    passed     96.28%
+ 179  Cystopteris_woodsioides_8x__2        49.38%    passed     98.83%
+ 180  Cystopteris_diaphana_4x__REF         46.50%    passed     90.21%
+ 181  Cystopteris_oxapampa_UNK__REF        46.50%    passed     90.21%
+ 182  Cystopteris_alpinaB_6x__1            48.61%    passed     94.87%
+ 183  Cystopteris_alpinaB_6x__2            48.61%    passed     95.98%
+ 184  Cystopteris_alpinaB_6x__3            48.61%    passed     95.70%
+ 185  Cystopteris_fragilisB_4x__1          50.43%    passed     99.19%
+ 186  Cystopteris_fragilisB_4x__2          50.43%    passed     98.35%
+ 187  Cystopteris_fragilisC_4x__REF        49.38%    passed     98.20%
+ 188  Cystopteris_fragilisG_6x__1          48.61%    passed     94.39%
+ 189  Cystopteris_fragilisG_6x__2          48.61%    passed     94.87%
+ 190  Cystopteris_fragilisK_UNK__REF       48.61%    passed     94.87%
+ 191  Cystopteris_idaho_2x__1              48.61%    passed     99.61%
+ 192  Cystopteris_idaho_2x__2              48.61%    passed     94.87%
+ 193  Cystopteris_laurentiana_6x__1        48.61%    passed     94.87%
+ 194  Cystopteris_laurentiana_6x__3        48.61%    passed     96.45%
+ 195  Cystopteris_membranifolia_2x__REF    48.32%    passed     94.88%
+ 196  Cystopteris_millefolia_UNK__REF      51.01%    passed     99.71%
+ 197  Cystopteris_moupinensisF_4x__REF     48.42%    passed     94.36%
+ 198  Cystopteris_pellucidaB_UNK__REF      48.61%    passed     97.65%
+ 199  Cystopteris_reevesiana_2x__1         48.61%    passed     91.11%
+ 200  Cystopteris_reevesiana_2x__2         48.61%    passed     97.55%
+ 201  Cystopteris_tasmanicaB_4x__1         48.61%    passed     93.07%
+ 202  Cystopteris_tennesseensis_4x__2      48.61%    passed     98.98%
+ 203  Cystopteris_tenuisB_4x__2            48.61%    passed     94.87%
+ 204  Cystopteris_tenuisW_4x__REF          48.90%    passed     94.35%
+ 205  Cystopteris_woodsioides_8x__1        49.38%    passed     98.60%
+ 206  Cystopteris_woodsioides_8x__3        49.38%    passed     97.29%
+ 207  Cystopteris_woodsioides_8x__4        49.38%    passed     98.20%
+WARNING: 78 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                48.86%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: Blechnum_polypodioides_UNK__4 is identical to Blechnum_polypodioides_UNK__1 but kept for subsequent analysis
+NOTE: Acystopteris_tenuisectaC_4x__2 is identical to Acystopteris_taiwanianaB_UNK__1 but kept for subsequent analysis
+NOTE: Acystopteris_tenuisectaC_4x__1 is identical to Acystopteris_taiwanianaB_UNK__2 but kept for subsequent analysis
+NOTE: Gymnocarpium_xintermedium_8x__3 is identical to Cystocarpium_roskamianum_8x__1 but kept for subsequent analysis
+NOTE: Gymnocarpium_xintermedium_8x__1 is identical to Gymnocarpium_appalachianum_2x__1 but kept for subsequent analysis
+NOTE: Cystopteris_dickieana_UNK__3 is identical to Cystopteris_dickieana_UNK__2 but kept for subsequent analysis
+NOTE: Deparia_japonica_UNK__4 is identical to Deparia_japonica_UNK__3 but kept for subsequent analysis
+NOTE: Cystopteris_deqinensis_UNK__3 is identical to Cystopteris_deqinensis_UNK__1 but kept for subsequent analysis
+NOTE: Cystopteris_oxapampa_UNK__REF is identical to Cystopteris_diaphana_4x__REF but kept for subsequent analysis
+NOTE: Cystopteris_fragilisK_UNK__REF is identical to Cystopteris_alpinaB_6x__1 but kept for subsequent analysis
+Checking for duplicate sequences: done in 0.120412 secs using 12.98% CPU
+Identifying sites to remove: done in 0.0035476 secs
+NOTE: 3 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: Cystopteris_idaho_2x__2 (identical to Cystopteris_alpinaB_6x__1) is ignored but added at the end
+NOTE: Cystopteris_laurentiana_6x__1 (identical to Cystopteris_alpinaB_6x__1) is ignored but added at the end
+NOTE: Cystopteris_tenuisB_4x__2 (identical to Cystopteris_alpinaB_6x__1) is ignored but added at the end
+Alignment was printed to L3_NEW_cleaned.fas.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to L3_NEW_cleaned.fas.uniqueseq.phy
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.035 seconds
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Optimizing NNI: done in 0.659296 secs using 82.95% CPU
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -5932.404
+Optimal log-likelihood: -5932.161
+Rate parameters:  A-C: 0.88871  A-G: 2.08470  A-T: 0.68042  C-G: 0.90398  C-T: 2.25283  G-T: 1.00000
+Base frequencies:  A: 0.272  C: 0.173  G: 0.224  T: 0.331
+Proportion of invariable sites: 0.291
+Gamma shape alpha: 2.705
+Parameters optimization took 1 rounds (0.246 sec)
+Time for fast ML tree search: 1.923 seconds
+
+NOTE: ModelFinder requires 37 MB RAM!
+ModelFinder will test up to 484 DNA models (sample size: 1043) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR+F         6038.247     413 12902.494    13446.157    14946.785
+  2  GTR+F+I       5945.148     414 12718.296    13265.462    14767.537
+  3  GTR+F+G4      5932.626     414 12693.252    13240.418    14742.493
+  4  GTR+F+I+G4    5931.679     415 12693.357    13244.043    14747.548
+  5  GTR+F+R2      5933.491     415 12696.982    13247.668    14751.172
+  6  GTR+F+R3      5932.744     417 12699.487    13257.266    14763.577
+ 14  GTR+F+I+I+R2  5931.991     416 12695.982    13250.206    14755.123
+ 15  GTR+F+I+I+R3  5931.381     418 12698.762    13260.114    14767.802
+ 25  SYM+G4        5980.412     411 12782.824    13319.534    14817.215
+ 26  SYM+I+G4      5981.610     412 12787.220    13327.397    14826.560
+ 27  SYM+R2        5981.763     412 12787.526    13327.704    14826.867
+ 47  TVM+F+G4      5932.747     413 12691.494    13235.157    14735.785
+ 48  TVM+F+I+G4    5931.896     414 12691.791    13238.957    14741.032
+ 49  TVM+F+R2      5933.591     414 12695.182    13242.347    14744.422
+ 69  TVMe+G4       5980.429     410 12780.858    13314.118    14810.299
+ 70  TVMe+I+G4     5981.637     411 12785.275    13321.985    14819.666
+ 71  TVMe+R2       5981.785     411 12785.570    13322.280    14819.961
+ 91  TIM3+F+G4     5935.473     412 12694.946    13235.124    14734.287
+ 92  TIM3+F+I+G4   5934.833     413 12695.665    13239.328    14739.956
+ 93  TIM3+F+R2     5936.452     413 12698.904    13242.567    14743.195
+113  TIM3e+G4      5981.644     409 12781.288    13311.115    14805.780
+114  TIM3e+I+G4    5982.822     410 12785.644    13318.904    14815.085
+115  TIM3e+R2      5982.990     410 12785.979    13319.239    14815.421
+135  TIM2+F+G4     5933.822     412 12691.644    13231.822    14730.985
+136  TIM2+F+I+G4   5933.024     413 12692.047    13235.710    14736.338
+137  TIM2+F+R2     5934.686     413 12695.372    13239.035    14739.663
+157  TIM2e+G4      5987.689     409 12793.379    13323.205    14817.870
+158  TIM2e+I+G4    5988.379     410 12796.758    13330.017    14826.199
+159  TIM2e+R2      5988.707     410 12797.413    13330.673    14826.854
+179  TIM+F+G4      5933.634     412 12691.268    13231.445    14730.608
+180  TIM+F+I+G4    5932.969     413 12691.938    13235.601    14736.229
+181  TIM+F+R2      5934.556     413 12695.112    13238.775    14739.402
+201  TIMe+G4       5986.841     409 12791.683    13321.509    14816.174
+202  TIMe+I+G4     5987.596     410 12795.193    13328.452    14824.634
+203  TIMe+R2       5987.850     410 12795.701    13328.960    14825.142
+223  TPM3u+F+G4    5935.600     411 12693.200    13229.910    14727.591
+224  TPM3u+F+I+G4  5935.060     412 12694.121    13234.299    14733.462
+225  TPM3u+F+R2    5936.548     412 12697.097    13237.275    14736.438
+245  TPM3+G4       5981.659     408 12779.319    13305.729    14798.860
+246  TPM3+I+G4     5982.848     409 12783.695    13313.521    14808.186
+247  TPM3+R2       5983.011     409 12784.021    13313.847    14808.513
+267  TPM2u+F+G4    5933.935     411 12689.870    13226.580    14724.261
+268  TPM2u+F+I+G4  5933.226     412 12690.451    13230.629    14729.792
+269  TPM2u+F+R2    5934.784     412 12693.567    13233.745    14732.908
+289  TPM2+G4       5987.689     408 12791.379    13317.789    14810.920
+290  TPM2+I+G4     5988.381     409 12794.763    13324.589    14819.254
+291  TPM2+R2       5988.708     409 12795.416    13325.242    14819.907
+311  K3Pu+F+G4     5933.758     411 12689.516    13226.226    14723.907
+312  K3Pu+F+I+G4   5933.186     412 12690.372    13230.550    14729.713
+313  K3Pu+F+R2     5934.654     412 12693.307    13233.485    14732.648
+333  K3P+G4        5986.842     408 12789.684    13316.094    14809.225
+334  K3P+I+G4      5987.600     409 12793.200    13323.026    14817.691
+335  K3P+R2        5987.850     409 12793.699    13323.526    14818.191
+355  TN+F+G4       5935.558     411 12693.116    13229.826    14727.507
+356  TN+F+I+G4     5935.042     412 12694.084    13234.262    14733.425
+357  TN+F+R2       5936.518     412 12697.036    13237.214    14736.377
+377  TNe+G4        5987.916     408 12791.832    13318.242    14811.374
+378  TNe+I+G4      5988.691     409 12795.382    13325.208    14819.873
+379  TNe+R2        5988.942     409 12795.884    13325.710    14820.375
+399  HKY+F+G4      5935.680     410 12691.360    13224.620    14720.802
+400  HKY+F+I+G4    5935.176     411 12692.353    13229.063    14726.744
+401  HKY+F+R2      5936.611     411 12695.223    13231.933    14729.614
+421  K2P+G4        5987.916     407 12789.831    13312.842    14804.423
+422  K2P+I+G4      5988.695     408 12793.390    13319.800    14812.931
+423  K2P+R2        5988.942     408 12793.885    13320.295    14813.426
+443  F81+F+G4      6009.274     409 12836.548    13366.374    14861.039
+444  F81+F+I+G4    6009.372     410 12838.743    13372.003    14868.184
+445  F81+F+R2      6010.324     410 12840.647    13373.907    14870.088
+465  JC+G4         6054.061     406 12920.123    13439.752    14929.765
+466  JC+I+G4       6054.806     407 12923.612    13446.623    14938.203
+467  JC+R2         6055.246     407 12924.492    13447.503    14939.084
+Akaike Information Criterion:           K3Pu+F+G4
+Corrected Akaike Information Criterion: HKY+F+G4
+Bayesian Information Criterion:         HKY+F+G4
+Best-fit model: HKY+F+G4 chosen according to BIC
+
+All model information printed to L3_NEW_cleaned.fas.model.gz
+CPU time for ModelFinder: 68.062 seconds (0h:1m:8s)
+Wall-clock time for ModelFinder: 71.879 seconds (0h:1m:11s)
+
+NOTE: 15 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -5935.680
+Optimal log-likelihood: -5935.680
+Rate parameters:  A-C: 1.00000  A-G: 2.53412  A-T: 1.00000  C-G: 1.00000  C-T: 2.53412  G-T: 1.00000
+Base frequencies:  A: 0.272  C: 0.173  G: 0.224  T: 0.331
+Gamma shape alpha: 0.781
+Parameters optimization took 1 rounds (0.103 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.297687 secs using 99.73% CPU
+Computing ML distances took 0.313489 sec (of wall-clock time) 0.296875 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.0010878 secs
+Constructing RapidNJ tree: done in 0.0050209 secs
+Computing RapidNJ tree took 0.015602 sec (of wall-clock time) 0.000000 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -6043.530
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 3.560 second
+Computing log-likelihood of 98 initial trees ... 3.501 seconds
+Current best score: -5935.680
+
+Do NNI search on 20 best initial trees
+Optimizing NNI: done in 0.189544 secs using 107.2% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -5935.598
+Optimizing NNI: done in 0.801583 secs using 95.51% CPU
+Optimizing NNI: done in 0.6689 secs using 100.4% CPU
+Optimizing NNI: done in 0.649859 secs using 96.17% CPU
+Optimizing NNI: done in 0.585149 secs using 96.13% CPU
+Optimizing NNI: done in 0.727144 secs using 98.85% CPU
+Optimizing NNI: done in 0.733924 secs using 100.1% CPU
+Optimizing NNI: done in 0.681602 secs using 96.28% CPU
+Optimizing NNI: done in 1.0091 secs using 100.6% CPU
+Optimizing NNI: done in 0.787688 secs using 97.2% CPU
+Iteration 10 / LogL: -5959.888 / Time: 0h:0m:15s
+Optimizing NNI: done in 0.706846 secs using 97.26% CPU
+Optimizing NNI: done in 0.682736 secs using 93.83% CPU
+Optimizing NNI: done in 0.72876 secs using 98.63% CPU
+Optimizing NNI: done in 0.765951 secs using 97.92% CPU
+Optimizing NNI: done in 0.57611 secs using 97.64% CPU
+Optimizing NNI: done in 0.722295 secs using 99.51% CPU
+Optimizing NNI: done in 0.635945 secs using 93.37% CPU
+Optimizing NNI: done in 0.730416 secs using 98.4% CPU
+Optimizing NNI: done in 0.779314 secs using 100.2% CPU
+Optimizing NNI: done in 0.703493 secs using 97.73% CPU
+Iteration 20 / LogL: -5948.375 / Time: 0h:0m:22s
+Finish initializing candidate tree set (20)
+Current best tree score: -5935.598 / CPU time: 21.404
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Optimizing NNI: done in 0.918147 secs using 98.7% CPU
+Optimizing NNI: done in 1.04642 secs using 98.55% CPU
+Optimizing NNI: done in 0.822584 secs using 91.18% CPU
+Optimizing NNI: done in 0.979736 secs using 97.28% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 24: -5929.499
+Optimizing NNI: done in 0.965568 secs using 95.47% CPU
+Optimizing NNI: done in 0.979343 secs using 98.92% CPU
+Optimizing NNI: done in 0.952862 secs using 100% CPU
+Optimizing NNI: done in 0.778841 secs using 98.3% CPU
+Optimizing NNI: done in 0.965577 secs using 100.3% CPU
+Optimizing NNI: done in 1.16214 secs using 98.15% CPU
+Iteration 30 / LogL: -5938.140 / Time: 0h:0m:32s (0h:1m:44s left)
+Optimizing NNI: done in 1.00644 secs using 93.15% CPU
+Optimizing NNI: done in 0.947361 secs using 100.6% CPU
+Optimizing NNI: done in 0.776029 secs using 98.66% CPU
+Optimizing NNI: done in 0.842174 secs using 96.48% CPU
+Optimizing NNI: done in 1.13901 secs using 96.03% CPU
+Optimizing NNI: done in 0.99004 secs using 96.27% CPU
+Optimizing NNI: done in 1.03368 secs using 98.25% CPU
+Optimizing NNI: done in 0.922982 secs using 94.8% CPU
+Optimizing NNI: done in 1.02952 secs using 98.65% CPU
+Optimizing NNI: done in 0.874162 secs using 98.31% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 40: -5928.899
+Iteration 40 / LogL: -5928.899 / Time: 0h:0m:42s (0h:1m:48s left)
+Optimizing NNI: done in 0.905837 secs using 100% CPU
+Optimizing NNI: done in 0.978145 secs using 95.84% CPU
+Optimizing NNI: done in 1.06024 secs using 97.27% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 43: -5927.526
+Optimizing NNI: done in 1.2001 secs using 97.65% CPU
+Optimizing NNI: done in 1.2913 secs using 96.8% CPU
+Optimizing NNI: done in 0.940699 secs using 98% CPU
+Optimizing NNI: done in 1.03892 secs using 94.75% CPU
+Optimizing NNI: done in 1.16242 secs using 98.12% CPU
+Optimizing NNI: done in 1.20539 secs using 97.22% CPU
+Optimizing NNI: done in 0.902539 secs using 100.4% CPU
+Iteration 50 / LogL: -5938.792 / Time: 0h:0m:53s (0h:1m:41s left)
+Optimizing NNI: done in 0.974986 secs using 94.55% CPU
+Optimizing NNI: done in 1.11573 secs using 99.43% CPU
+Optimizing NNI: done in 0.955296 secs using 99.77% CPU
+Optimizing NNI: done in 0.826022 secs using 98.36% CPU
+Optimizing NNI: done in 0.934403 secs using 100.3% CPU
+Optimizing NNI: done in 0.868082 secs using 97.2% CPU
+Optimizing NNI: done in 0.955307 secs using 96.5% CPU
+Optimizing NNI: done in 0.973759 secs using 96.28% CPU
+Optimizing NNI: done in 1.08619 secs using 97.82% CPU
+Optimizing NNI: done in 0.986999 secs using 98.15% CPU
+Iteration 60 / LogL: -5940.447 / Time: 0h:6m:49s (0h:9m:36s left)
+Optimizing NNI: done in 0.962335 secs using 100.7% CPU
+Optimizing NNI: done in 0.819734 secs using 97.21% CPU
+Optimizing NNI: done in 0.823708 secs using 96.74% CPU
+Optimizing NNI: done in 0.986972 secs using 94.99% CPU
+Optimizing NNI: done in 0.868429 secs using 97.16% CPU
+Optimizing NNI: done in 0.944213 secs using 100.9% CPU
+Optimizing NNI: done in 1.22483 secs using 96.95% CPU
+Optimizing NNI: done in 0.923077 secs using 99.87% CPU
+Optimizing NNI: done in 1.00441 secs using 99.56% CPU
+Optimizing NNI: done in 1.08787 secs using 100.5% CPU
+Iteration 70 / LogL: -5941.135 / Time: 0h:6m:59s (0h:7m:23s left)
+Optimizing NNI: done in 1.06467 secs using 98.33% CPU
+Optimizing NNI: done in 0.843671 secs using 96.31% CPU
+Optimizing NNI: done in 0.978633 secs using 100.6% CPU
+Optimizing NNI: done in 1.02099 secs using 93.35% CPU
+Optimizing NNI: done in 1.16049 secs using 94.25% CPU
+Optimizing NNI: done in 0.868941 secs using 93.5% CPU
+Optimizing NNI: done in 0.883865 secs using 99% CPU
+Optimizing NNI: done in 0.830176 secs using 97.87% CPU
+Optimizing NNI: done in 1.0102 secs using 97.44% CPU
+Optimizing NNI: done in 0.962752 secs using 100.6% CPU
+Iteration 80 / LogL: -5937.359 / Time: 0h:7m:9s (0h:5m:42s left)
+Optimizing NNI: done in 0.995307 secs using 97.33% CPU
+Optimizing NNI: done in 0.846869 secs using 97.79% CPU
+Optimizing NNI: done in 1.20724 secs using 97.07% CPU
+Optimizing NNI: done in 0.861761 secs using 99.72% CPU
+Optimizing NNI: done in 0.870038 secs using 95.18% CPU
+Optimizing NNI: done in 0.893149 secs using 99.72% CPU
+Optimizing NNI: done in 1.15351 secs using 100.2% CPU
+Optimizing NNI: done in 0.902056 secs using 98.73% CPU
+Optimizing NNI: done in 0.741161 secs using 99.08% CPU
+Optimizing NNI: done in 1.16405 secs using 100.7% CPU
+Iteration 90 / LogL: -5935.411 / Time: 0h:7m:19s (0h:4m:21s left)
+Optimizing NNI: done in 1.23258 secs using 100.1% CPU
+Optimizing NNI: done in 0.896243 secs using 97.63% CPU
+Optimizing NNI: done in 0.987632 secs using 96.51% CPU
+Optimizing NNI: done in 0.8884 secs using 98.49% CPU
+Optimizing NNI: done in 1.24158 secs using 98.16% CPU
+Optimizing NNI: done in 0.857862 secs using 98.35% CPU
+Optimizing NNI: done in 1.27278 secs using 96.98% CPU
+Optimizing NNI: done in 0.936298 secs using 95.12% CPU
+Optimizing NNI: done in 0.794377 secs using 98.35% CPU
+Optimizing NNI: done in 0.815935 secs using 99.58% CPU
+Iteration 100 / LogL: -5928.906 / Time: 0h:7m:29s (0h:3m:15s left)
+Optimizing NNI: done in 0.89853 secs using 99.12% CPU
+Optimizing NNI: done in 0.821347 secs using 95.12% CPU
+Optimizing NNI: done in 1.10896 secs using 97.22% CPU
+Optimizing NNI: done in 0.953844 secs using 101.6% CPU
+Optimizing NNI: done in 0.945443 secs using 99.16% CPU
+Optimizing NNI: done in 0.911685 secs using 97.69% CPU
+Optimizing NNI: done in 1.19547 secs using 98.03% CPU
+Optimizing NNI: done in 0.795711 secs using 100.1% CPU
+Optimizing NNI: done in 0.922677 secs using 99.91% CPU
+Optimizing NNI: done in 0.896624 secs using 99.33% CPU
+Iteration 110 / LogL: -5929.463 / Time: 0h:7m:39s (0h:2m:19s left)
+Optimizing NNI: done in 0.901793 secs using 98.76% CPU
+Optimizing NNI: done in 1.17319 secs using 98.56% CPU
+Optimizing NNI: done in 1.33185 secs using 98.55% CPU
+Optimizing NNI: done in 1.06121 secs using 94.23% CPU
+Optimizing NNI: done in 1.4667 secs using 94.81% CPU
+Optimizing NNI: done in 1.19483 secs using 92.85% CPU
+Optimizing NNI: done in 1.38832 secs using 93.41% CPU
+Optimizing NNI: done in 1.12287 secs using 98.8% CPU
+Optimizing NNI: done in 0.653131 secs using 93.3% CPU
+Optimizing NNI: done in 0.879414 secs using 99.5% CPU
+Iteration 120 / LogL: -5929.518 / Time: 0h:7m:50s (0h:1m:30s left)
+Optimizing NNI: done in 0.910114 secs using 97.86% CPU
+Optimizing NNI: done in 0.681257 secs using 96.33% CPU
+Optimizing NNI: done in 0.925428 secs using 96.24% CPU
+Optimizing NNI: done in 0.715821 secs using 100.4% CPU
+Optimizing NNI: done in 0.800344 secs using 99.57% CPU
+Optimizing NNI: done in 0.850711 secs using 97.35% CPU
+Optimizing NNI: done in 0.833232 secs using 95.64% CPU
+Optimizing NNI: done in 1.0222 secs using 93.24% CPU
+Optimizing NNI: done in 0.67812 secs using 99.08% CPU
+Optimizing NNI: done in 1.00856 secs using 97.6% CPU
+Iteration 130 / LogL: -5935.537 / Time: 0h:7m:59s (0h:0m:48s left)
+Optimizing NNI: done in 1.29834 secs using 89.06% CPU
+Optimizing NNI: done in 1.02601 secs using 97.46% CPU
+Optimizing NNI: done in 0.937283 secs using 98.36% CPU
+Optimizing NNI: done in 0.819983 secs using 99.09% CPU
+Optimizing NNI: done in 1.00915 secs using 100.6% CPU
+Optimizing NNI: done in 1.00207 secs using 99.79% CPU
+Optimizing NNI: done in 0.953987 secs using 98.27% CPU
+Optimizing NNI: done in 0.840466 secs using 98.53% CPU
+Optimizing NNI: done in 0.859388 secs using 100% CPU
+Optimizing NNI: done in 1.10661 secs using 100.2% CPU
+Iteration 140 / LogL: -5932.153 / Time: 0h:8m:9s (0h:0m:10s left)
+Optimizing NNI: done in 0.860086 secs using 98.1% CPU
+Optimizing NNI: done in 1.01008 secs using 99% CPU
+Optimizing NNI: done in 0.794049 secs using 100.4% CPU
+Optimizing NNI: done in 0.869367 secs using 100.6% CPU
+TREE SEARCH COMPLETED AFTER 144 ITERATIONS / Time: 0h:8m:13s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -5927.526
+Optimal log-likelihood: -5927.526
+Rate parameters:  A-C: 1.00000  A-G: 2.61442  A-T: 1.00000  C-G: 1.00000  C-T: 2.61442  G-T: 1.00000
+Base frequencies:  A: 0.272  C: 0.173  G: 0.224  T: 0.331
+Gamma shape alpha: 0.762
+Parameters optimization took 1 rounds (0.108 sec)
+BEST SCORE FOUND : -5927.526
+Total tree length: 1.824
+
+Total number of iterations: 144
+CPU time used for tree search: 141.578 sec (0h:2m:21s)
+Wall-clock time used for tree search: 492.087 sec (0h:8m:12s)
+Total CPU time used: 142.703 sec (0h:2m:22s)
+Total wall-clock time used: 493.188 sec (0h:8m:13s)
+
+Analysis results written to: 
+  IQ-TREE report:                L3_NEW_cleaned.fas.iqtree
+  Maximum-likelihood tree:       L3_NEW_cleaned.fas.treefile
+  Likelihood distances:          L3_NEW_cleaned.fas.mldist
+  Screen log file:               L3_NEW_cleaned.fas.log
+
+Date and Time: Sat Jan 07 22:40:27 2023
