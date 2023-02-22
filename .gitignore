@@ -3,5 +3,7 @@ docs/
 *.png
 1_Raw_Data/
 *.docx
-*.pdf
+2_Processed_Data/
+3_Phylo_analysis_Results/
+4_Output_Trees/
 
