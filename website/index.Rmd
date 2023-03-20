@@ -1,5 +1,5 @@
 --- 
-title: "Cystopteridaceae Phylogeny Project"
+title: "Cystopteridaceae Phylogeny Projec"
 author: "Chinedum Anajemba"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
@@ -15,7 +15,7 @@ link-citations: yes
 github-repo: rstudio/bookdown-demo
 ---
 
-## Overview
+# Overview
 
 ```{r image1, eval = TRUE, echo = FALSE, fig.cap="Members of the Cystopteridaceae Family", fig.align='center', out.width='100%'}
 
@@ -28,4 +28,12 @@ Welcome to my Cystopteridaceae Phylogeny Project!
 The major goal of this project is to build a **species-level phylogeny** of the Cystopteridaceae ferns using nuclear gene loci from the most recognized species of the family. Cystopteridaceae is a family of small or medium-sized ferns that live in forests and crevices. The family contains 3 genera and about 50 species. This study provides more insight into the evolutionary relationship in the Cystopteridaceae family. 
 The content of this digital book is organized in the following Chapters:
 
-Chapter 1: Database design and architecture
+Chapter 2: Database design and architecture
+
+
+```{r include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+), 'packages.bib')
+```
