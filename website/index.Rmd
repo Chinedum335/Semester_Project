@@ -1,5 +1,5 @@
 --- 
-title: "Cystopteridaceae Phylogeny Projec"
+title: "Cystopteridaceae Phylogeny Project"
 author: "Chinedum Anajemba"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
