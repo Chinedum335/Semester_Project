@@ -4,7 +4,7 @@ We are going to build a relational database which will translate real-world rela
 
 ```{r image2, eval = TRUE, echo = FALSE, fig.cap="Diagram of the cystpteridaceae database", fig.align='center', out.width='100%'}
 
-knitr::include_graphics("../SQL_database_image.jpg")
+knitr::include_graphics("../docs/SQL_database_image.png")
 
 ```
 
