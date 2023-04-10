@@ -19,7 +19,7 @@ github-repo: rstudio/bookdown-demo
 
 ```{r image1, eval = TRUE, echo = FALSE, fig.cap="Members of the Cystopteridaceae Family", fig.align='center', out.width='100%'}
 
-knitr::include_graphics("../docs/img/Cystopteridaceae.png")
+knitr::include_graphics("img/Cystopteridaceae.png")
 
 ```
 
