@@ -6,8 +6,8 @@
 2_Processed_Data/
 3_Phylo_analysis_Results/
 4_Output_Trees/
-!docs/*.png
-!docs/*.PNG
+!docs/img/*.png
+!docs/img/*.PNG
 *.jpg
 
 .Rproj.user
