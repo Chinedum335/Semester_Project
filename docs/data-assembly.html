@@ -4,13 +4,13 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Cystopteridaceae Phylogeny Project</title>
+  <title>Chapter 1 Data Assembly | Cystopteridaceae Phylogeny Project</title>
   <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
 The HTML output format for this example is bookdown::gitbook,
 set in the _output.yml file.</p>" />
   <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Cystopteridaceae Phylogeny Project" />
+  <meta property="og:title" content="Chapter 1 Data Assembly | Cystopteridaceae Phylogeny Project" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
@@ -19,7 +19,7 @@ set in the _output.yml file.</p>" />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Cystopteridaceae Phylogeny Project" />
+  <meta name="twitter:title" content="Chapter 1 Data Assembly | Cystopteridaceae Phylogeny Project" />
   
   <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
 The HTML output format for this example is bookdown::gitbook,
@@ -36,8 +36,8 @@ set in the _output.yml file.</p>" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="data-assembly.html"/>
+<link rel="prev" href="index.html"/>
+<link rel="next" href="database-design.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -183,27 +183,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Cystopteridaceae Phylogeny Project</h1>
-<p class="author"><em>Chinedum Anajemba</em></p>
-<p class="date"><em>2023-04-28</em></p>
-</div>
-<div id="overview" class="section level1 unnumbered hasAnchor">
-<h1>Overview<a href="index.html#overview" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:image1"></span>
-<img src="img/Cystopteridaceae.png" alt="Members of the Cystopteridaceae Family" width="100%" />
+<div id="data-assembly" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number">Chapter 1</span> Data Assembly<a href="data-assembly.html#data-assembly" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>The sequence data used in this study were assembled using PURC (Pipeline for Untangling Reticulate Complexes). Allopolyploid species are polyploid species with more than two sets of chromosomes that originate from different species. Allopolyploids present a challenge for multilocus phylogenetic inference due to their multiple distinct subgenomes, each of which may have its own evolutionary history. Generating sequence data from allopolyploid lineages is challenging due to the difficulty in isolating the sequences of each of the distinct homoeologous gene copies. In addition, the phasing (assigning) of gene copies into their respective polyploid subgenomes remain another challenge even when the correct biological sequences are inferred. Recent advances in polyploid phylogenetics have made it possible to effectively undertake phylogenetic study of groups that comprise polyploids. PURC is a pipeline for inferring the underlying biological sequences (alleles, paralogs, or homeologs) from amplicon sequencing data (PacBio, Illumina, etc), de-multiplexing them (labeling each sequence with its locus and source sample), and cleaning them (removing PCR errors, sequencing errors, and chimeras). It is geared toward analyzing polyploid species complexes but is also effective for other applications; the final output of a full run includes an alignment for each locus with each homeolog or allele sequence in the amplicon data labeled with the source sample information and amount of coverage.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:image3"></span>
+<img src="img/purc.png" alt="Pipeline for Untangling Reticulate Complexes" width="100%" />
 <p class="caption">
-Figure 0.1: Members of the Cystopteridaceae Family
+Figure 1.1: Pipeline for Untangling Reticulate Complexes
 </p>
 </div>
-<p>Welcome to my Cystopteridaceae Phylogeny Project!</p>
-<p>The major goal of this project is to build a <strong>species-level phylogeny</strong> of the Cystopteridaceae ferns using nuclear gene loci from the most recognized species of the family. Cystopteridaceae is a family of small or medium-sized ferns that live in forests and crevices. The family contains 3 genera and about 50 species. This study provides more insight into the evolutionary relationship in the Cystopteridaceae family.
-The content of this digital book is organized in the following Chapters:</p>
-<p>Chapter <a href="data-assembly.html#data-assembly">1</a>: Data Assembly
-Chapter <a href="database-design.html#database-design">2</a>: Database design and architecture
-Chapter <a href="phasing-design.html#phasing-design">3</a>: Phasing of Gene Copies into Polyploid Subgenomes
-Chapter <a href="phylogeny-design.html#phylogeny-design">4</a>: Species-level Phylogeny of Cystopteridaceae Ferns</p>
-<p>The codes used in this analysis are available at <a href="https://github.com/Chinedum335/Semester_Project">https://github.com/Chinedum335/Semester_Project</a></p>
+<p>In this study, I assembled the underlying sequences of four c. 1-kb-long nuclear loci from a sample of Cystopteridaceae accessions comprising 9 diploid species and 2 polyploid species using PURC.The reads of these sequences were generated using the PacBio platform.
+A detailed instructions on PURC installation, how to prepare input files as well as additional information for troubleshooting can be found in the README file in the <a href="https://bitbucket.org/peter_schafran/purc/">PURC repository</a></p>
 
 </div>
             </section>
@@ -211,8 +201,8 @@ Chapter <a href="phylogeny-design.html#phylogeny-design">4</a>: Species-level Ph
           </div>
         </div>
       </div>
-
-<a href="data-assembly.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="database-design.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -243,7 +233,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/USERNAME/REPO/edit/BRANCH/index.Rmd",
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/01-Assembly.Rmd",
 "text": "Edit"
 },
 "history": {

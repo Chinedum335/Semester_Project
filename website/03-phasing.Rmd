@@ -1,0 +1,158 @@
+# Phasing of Gene Copies into Polyploid Subgenomes {#phasing-design}
+
+One of the main challenges to reconstructing a multi-locus phylogeny of clades with allopolyploid species is the phasing of  gene copies into polyploid subgenomes.  Allopolyploids contain distinct subgenomes each with their own evolutionary
+history. When sequencing loci from such organisms, unique copies of each locus may be recovered from each subgenome and if each copy of each locus is not assigned to the correct subgenome,then multilocus phylogenetic inference can be erroneous and will lead to unsound results. `homologizer` is a Bayesian method that uses a phylogenetic framework to phase gene copies (i.e. assign sequence to the correct subgenome) across loci. In this chapter we will discuss how to use `homologizer` to phase gene copies into polyploid subgenomes. `homologizer` is implemented in the open-source phylogenetic inference software [RevBayes](http://revbayes.com). RevBayes is a rich and complex phylogenetic inference tool that can accommodate a vast array of models. The RevBayes language is similar to the language used in R and it is designed to support interactive analysis. Extensive tutorials for Revbayes including how to download the software are available [here](http://revbayes.com)
+
+In a `homologizer` analysis, phylogenies containing allopolyploid organisms are represented as multilabeled trees (“mul-trees”), where each hybrid accession is present multiple times, once for each subgenome (each distinct evolutionary history). 
+The data used in this study consist of four single-copy nuclear loci (ApPEFP_C, gapCpSh, IBR3, and pgiC) for a sample of 11 diploids and 2 tetraploids generated using PURC pipeline(see Chapter 1). A detailed instruction on how to run `homologizer`  analysis can be found at [homologizer repository](http://github.com/wf8/homologizer). The script used for this analysis, `cystopteridaceae_homologizer` can be found [here](https://github.com/Chinedum335/Semester_Project/tree/main/5_Code). This script can be run within Revbayes by typing `source(cystopteridaceae_homologizer)` from the [5_Code](https://github.com/Chinedum335/Semester_Project/tree/main/5_Code) directory. The code is also pasted below
+
+```{r, eval =  FALSE, echo = T}
+
+# This code Specifies a homologizer model that jointly infer the phase and phylogeny.
+# Run an MCMC analysis by default. Set bayes_factors = TRUE to calculate
+# the marginal likelihood with a stepping stone analysis.
+#
+# Will Freyman
+#
+bayes_factors = FALSE
+output_file = "../4_Output_Trees/homologizer_output"
+
+# input sequence alignments
+alignments = ["../2_Processed_Data/APP.nex",
+              "../2_Processed_Data/GAP.nex",
+              "../2_Processed_Data/IBR.nex",
+              "../2_Processed_Data/PGI.nex"]
+num_loci = alignments.size()
+
+for (i in 1:num_loci) {
+    data[i] = readDiscreteCharacterData(alignments[i])
+}
+
+# add blank second IBR gene copy for C_tasmanica_6379
+data[3].addMissingTaxa("6379_copy2")
+
+# set initial phase
+for (i in 1:num_loci) {
+    data[i].setHomeologPhase("6379_copy1", "C_tasmanica_6379_A")
+    data[i].setHomeologPhase("6379_copy2", "C_tasmanica_6379_B")
+    data[i].setHomeologPhase("7974_copy1", "xCystocarpium_7974_A")
+    data[i].setHomeologPhase("7974_copy2", "xCystocarpium_7974_B")
+    data[i].setHomeologPhase("7974_copy3", "xCystocarpium_7974_C")
+    data[i].setHomeologPhase("7974_copy4", "xCystocarpium_7974_D")
+    # for the 3-tip phasing model uncomment these lines:
+    #data[i].addMissingTaxa("6379_BLANK3")
+    #data[i].setHomeologPhase("6379_BLANK3", "C_tasmanica_6379_C")
+}
+
+# add missing taxa
+for (i in 1:num_loci) {
+    for (j in 1:num_loci) {
+        data[i].addMissingTaxa(data[j].taxa())
+    }
+}
+
+num_tips = data[1].ntaxa()
+n_branches = 2 * num_tips - 3
+
+# set up branches
+mvi = 0
+for (i in 1:n_branches) {
+    branch_lengths[i] ~ dnExponential(100)
+    moves[++mvi] = mvScale(branch_lengths[i], weight=1.0)
+}
+
+# set up tree topology
+topology ~ dnUniformTopology(data[1].taxa())
+moves[++mvi] = mvNNI(topology, weight=40.0)
+moves[++mvi] = mvSPR(topology, weight=40.0)
+
+# combine branches and topology into tree
+tree := treeAssembly(topology, branch_lengths)
+
+# substitution models
+for (i in 1:num_loci) {
+    
+    # gtr for each locus
+    er_prior <- v(1,1,1,1,1,1)
+    er[i] ~ dnDirichlet(er_prior)
+    er[i].setValue(simplex(v(1,1,1,1,1,1)))
+    moves[++mvi] = mvSimplexElementScale(er[i], weight=5)
+
+    pi_prior <- v(1,1,1,1)
+    pi[i] ~ dnDirichlet(pi_prior)
+    pi[i].setValue(simplex(v(1,1,1,1)))
+    moves[++mvi] = mvSimplexElementScale(pi[i], weight=5)
+
+    Q[i] := fnGTR(er[i], pi[i])
+
+    if (i == 1) {
+        rate_multiplier[i] <- 1.0
+    } else {
+        rate_multiplier[i] ~ dnExponential(1)
+        moves[++mvi] = mvScale(rate_multiplier[i], weight=5)
+    }
+
+}
+
+# phylogenetic CTMC distributions for each locus
+for (i in 1:num_loci) {
+    ctmc[i] ~ dnPhyloCTMC(tree=tree, Q=Q[i], branchRates=rate_multiplier[i], type="DNA")
+    ctmc[i].clamp(data[i])  
+}
+
+
+# make phasing proposals
+for (i in 1:4) {
+    moves[++mvi] = mvHomeologPhase(ctmc[i], "C_tasmanica_6379_A", "C_tasmanica_6379_B", weight=2)
+    moves[++mvi] = mvHomeologPhase(ctmc[i], "xCystocarpium_7974_A", "xCystocarpium_7974_B", weight=2)
+    moves[++mvi] = mvHomeologPhase(ctmc[i], "xCystocarpium_7974_A", "xCystocarpium_7974_C", weight=2)
+    moves[++mvi] = mvHomeologPhase(ctmc[i], "xCystocarpium_7974_A", "xCystocarpium_7974_D", weight=2)
+    moves[++mvi] = mvHomeologPhase(ctmc[i], "xCystocarpium_7974_B", "xCystocarpium_7974_C", weight=2)
+    moves[++mvi] = mvHomeologPhase(ctmc[i], "xCystocarpium_7974_B", "xCystocarpium_7974_D", weight=2)
+    moves[++mvi] = mvHomeologPhase(ctmc[i], "xCystocarpium_7974_C", "xCystocarpium_7974_D", weight=2)
+    # for the 3-tip phasing model uncomment these lines:
+    #moves[++mvi] = mvHomeologPhase(ctmc[i], "C_tasmanica_6379_A", "C_tasmanica_6379_B", weight=2)
+    #moves[++mvi] = mvHomeologPhase(ctmc[i], "C_tasmanica_6379_A", "C_tasmanica_6379_C", weight=2)
+    #moves[++mvi] = mvHomeologPhase(ctmc[i], "C_tasmanica_6379_B", "C_tasmanica_6379_C", weight=2)
+}
+
+mymodel = model(Q)
+
+
+# set up monitors
+mni = 0
+monitors[++mni] = mnModel(filename=output_file + ".log", printgen=1)
+monitors[++mni] = mnFile(filename=output_file + ".trees", printgen=1, tree)
+monitors[++mni] = mnScreen(printgen=1)
+for (i in 1:num_loci){
+    monitors[++mni] = mnHomeologPhase(filename=output_file + "_locus_" + i + "_phase.log", printgen=1, ctmc[i])
+}
+
+if (bayes_factors) {
+
+    # running stepping stone analysis
+    pow_p = powerPosterior(mymodel, moves, monitors, output_file + ".out", cats=50, sampleFreq=1) 
+    pow_p.burnin(generations=200, tuningInterval=50)
+    #pow_p.run(generations=2000)  
+    pow_p.run(generations=1000)  
+    ss = steppingStoneSampler(file=output_file + ".out", powerColumnName="power", likelihoodColumnName="likelihood")
+
+    # print the marginal likelihood to screen
+    print(ss.marginal())
+
+} else {
+
+    # run MCMC 
+    mymcmc = mcmc(mymodel, monitors, moves)
+    #mymcmc.run(generations=10000)
+    mymcmc.run(generations=2000)
+
+    # summarize results
+    treetrace = readTreeTrace(output_file + ".trees", treetype="non-clock", burnin=0.25) 
+    map_tree = mapTree(treetrace, output_file + "_map.tree")
+    mcc_tree = mccTree(treetrace, output_file + "_mcc.tree")
+}
+
+```
+
+When the analysis is complete, a `homologizer_output` folder that contains all of the files specified with the monitors will be created in any output folder you specified.

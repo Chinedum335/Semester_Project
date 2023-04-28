@@ -7,7 +7,6 @@
 3_Phylo_analysis_Results/
 4_Output_Trees/
 !docs/img/*.png
-!docs/img/*.PNG
 *.jpg
 
 .Rproj.user

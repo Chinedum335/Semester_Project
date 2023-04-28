@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 4 Species-level Phylogeny of the Cystopteridaceae Ferns | Cystopteridaceae Phylogeny Project</title>
+  <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 4 Species-level Phylogeny of the Cystopteridaceae Ferns | Cystopteridaceae Phylogeny Project" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 4 Species-level Phylogeny of the Cystopteridaceae Ferns | Cystopteridaceae Phylogeny Project" />
+  
+  <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  
+
+<meta name="author" content="Chinedum Anajemba" />
+
+
+<meta name="date" content="2023-04-28" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="phasing-design.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Overview</a></li>
+<li class="chapter" data-level="1" data-path="data-assembly.html"><a href="data-assembly.html"><i class="fa fa-check"></i><b>1</b> Data Assembly</a></li>
+<li class="chapter" data-level="2" data-path="database-design.html"><a href="database-design.html"><i class="fa fa-check"></i><b>2</b> Database design and architecture</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="database-design.html"><a href="database-design.html#building-the-database"><i class="fa fa-check"></i><b>2.1</b> Building the Database</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="database-design.html"><a href="database-design.html#establising-a-database-connection"><i class="fa fa-check"></i><b>2.1.1</b> Establising a database connection</a></li>
+<li class="chapter" data-level="2.1.2" data-path="database-design.html"><a href="database-design.html#creating-the-sample_info-table-in-the-database"><i class="fa fa-check"></i><b>2.1.2</b> Creating the sample_info table in the database</a></li>
+<li class="chapter" data-level="2.1.3" data-path="database-design.html"><a href="database-design.html#creating-the-phasing_stats_table-in-the-database"><i class="fa fa-check"></i><b>2.1.3</b> Creating the Phasing_stats_table in the database</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="phasing-design.html"><a href="phasing-design.html"><i class="fa fa-check"></i><b>3</b> Phasing of Gene Copies into Polyploid Subgenomes</a></li>
+<li class="chapter" data-level="4" data-path="phylogeny-design.html"><a href="phylogeny-design.html"><i class="fa fa-check"></i><b>4</b> Species-level Phylogeny of the Cystopteridaceae Ferns</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="phylogeny-design.html"><a href="phylogeny-design.html#summarizing-the-results-of-homologizer-analysis"><i class="fa fa-check"></i><b>4.1</b> Summarizing the Results of <code>homologizer</code> Analysis</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="phylogeny-design.html"><a href="phylogeny-design.html#convergence-assessment"><i class="fa fa-check"></i><b>4.1.1</b> Convergence Assessment</a></li>
+<li class="chapter" data-level="4.1.2" data-path="phylogeny-design.html"><a href="phylogeny-design.html#summarizing-and-visiualizing-traces-of-specific-parameter"><i class="fa fa-check"></i><b>4.1.2</b> Summarizing and Visiualizing Traces of specific parameter</a></li>
+<li class="chapter" data-level="4.1.3" data-path="phylogeny-design.html"><a href="phylogeny-design.html#summarizing-homologizer-phasing-estimates-and-plotting-it-in-r"><i class="fa fa-check"></i><b>4.1.3</b> Summarizing <code>homologizer</code> Phasing Estimates and Plotting it in R</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Cystopteridaceae Phylogeny Project</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="phylogeny-design" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">Chapter 4</span> Species-level Phylogeny of the Cystopteridaceae Ferns<a href="phylogeny-design.html#phylogeny-design" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="summarizing-the-results-of-homologizer-analysis" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> Summarizing the Results of <code>homologizer</code> Analysis<a href="phylogeny-design.html#summarizing-the-results-of-homologizer-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In any phylogenetic analysis, It is always important to carefully assess the MCMC samples for the various parameters in your analysis. Some of the assessment that can be done include:</p>
+<div id="convergence-assessment" class="section level3 hasAnchor" number="4.1.1">
+<h3><span class="header-section-number">4.1.1</span> Convergence Assessment<a href="phylogeny-design.html#convergence-assessment" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Convergence of an MCMC analysis is crucial to assure that the chain has sampled from the stationary distribution and that we have sufficiently many samples to approximate the posterior distribution. That is, the MCMC has explored the parameter space long enough to reach the true posterior distribution of the parameters and the values we are sampling belong to that distribution. Theory says that a chain that runs through an infinite time, will reach convergence. An example of how to plot trace in R is seen below. The caterpillar-like look is a good sign. The MCMC run appears to converge after approximately 100 iterations.
+Before running the code chunks below, load all the libraries necessary for this analysis</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="phylogeny-design.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Loading required packages</span></span>
+<span id="cb6-2"><a href="phylogeny-design.html#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="phylogeny-design.html#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(RevGadgets)</span>
+<span id="cb6-4"><a href="phylogeny-design.html#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(coda)</span>
+<span id="cb6-5"><a href="phylogeny-design.html#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb6-6"><a href="phylogeny-design.html#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggtree)</span>
+<span id="cb6-7"><a href="phylogeny-design.html#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(grid)</span>
+<span id="cb6-8"><a href="phylogeny-design.html#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gridExtra)</span>
+<span id="cb6-9"><a href="phylogeny-design.html#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb6-10"><a href="phylogeny-design.html#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plyr)</span>
+<span id="cb6-11"><a href="phylogeny-design.html#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(magrittr)</span>
+<span id="cb6-12"><a href="phylogeny-design.html#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyr)</span>
+<span id="cb6-13"><a href="phylogeny-design.html#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb6-14"><a href="phylogeny-design.html#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ape)</span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="phylogeny-design.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># specify the input file</span></span>
+<span id="cb7-2"><a href="phylogeny-design.html#cb7-2" aria-hidden="true" tabindex="-1"></a>files <span class="ot">&lt;-</span> <span class="st">&quot;../4_Output_Trees/homologizer_output/homologizer.log&quot;</span></span>
+<span id="cb7-3"><a href="phylogeny-design.html#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="phylogeny-design.html#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co"># read the trace and discard burnin</span></span>
+<span id="cb7-5"><a href="phylogeny-design.html#cb7-5" aria-hidden="true" tabindex="-1"></a>trace_quant <span class="ot">&lt;-</span> <span class="fu">readTrace</span>(<span class="at">path =</span> files, <span class="at">burnin =</span> <span class="fl">0.1</span>)</span>
+<span id="cb7-6"><a href="phylogeny-design.html#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-7"><a href="phylogeny-design.html#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="co"># assess convergence with coda </span></span>
+<span id="cb7-8"><a href="phylogeny-design.html#cb7-8" aria-hidden="true" tabindex="-1"></a>trace_quant_MCMC <span class="ot">&lt;-</span> <span class="fu">as.mcmc</span>(trace_quant[[<span class="dv">1</span>]])</span>
+<span id="cb7-9"><a href="phylogeny-design.html#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="fu">effectiveSize</span>(trace_quant_MCMC)</span>
+<span id="cb7-10"><a href="phylogeny-design.html#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="fu">traceplot</span>(trace_quant_MCMC, <span class="at">col =</span> <span class="dv">3</span>, <span class="at">smooth =</span> T)</span></code></pre></div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:image4"></span>
+<img src="img/Rplot.png" alt="MCMC trace from the Cystopteridaceae `r homologizer` analysis" width="100%" />
+<p class="caption">
+Figure 4.1: MCMC trace from the Cystopteridaceae <code>r homologizer</code> analysis
+</p>
+</div>
+</div>
+<div id="summarizing-and-visiualizing-traces-of-specific-parameter" class="section level3 hasAnchor" number="4.1.2">
+<h3><span class="header-section-number">4.1.2</span> Summarizing and Visiualizing Traces of specific parameter<a href="phylogeny-design.html#summarizing-and-visiualizing-traces-of-specific-parameter" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>In order to summarize the traces of specific parameters, <code>RevGadgets</code> uses the <code>SummarizeTrace()</code> function to calculate the mean and 95% credible interval for quantitative and qualitative variables. in this study, we estimated a substitution rate multiplier for each of the alignments except the first one and drew the rate multipliers from an exponential distribution. To examine the rate_multiplier parameter values in our trace file, we summarize their distributions using this code below:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="phylogeny-design.html#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summarizeTrace</span>(<span class="at">trace =</span> trace_quant, <span class="at">vars =</span>  <span class="fu">c</span>(<span class="st">&quot;rate_multiplier[2]&quot;</span>,<span class="st">&quot;rate_multiplier[3]&quot;</span>,<span class="st">&quot;rate_multiplier[4]&quot;</span>))</span></code></pre></div>
+<pre><code>## $`rate_multiplier[2]`
+## $`rate_multiplier[2]`$trace_1
+##          mean        median           MAP  quantile_2.5 quantile_97.5 
+##      1.601059      1.596110      1.616983      1.308977      1.972417 
+## 
+## 
+## $`rate_multiplier[3]`
+## $`rate_multiplier[3]`$trace_1
+##          mean        median           MAP  quantile_2.5 quantile_97.5 
+##     0.7831243     0.7744505     0.7579138     0.6115875     0.9833560 
+## 
+## 
+## $`rate_multiplier[4]`
+## $`rate_multiplier[4]`$trace_1
+##          mean        median           MAP  quantile_2.5 quantile_97.5 
+##      1.239250      1.237225      1.232323      1.017644      1.488608</code></pre>
+<p>Then to plot these distributions. <code>plotTrace()</code> produces a list of ggplot2 objects, with multiple plots of multiple runs in the trace object.</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="phylogeny-design.html#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plotTrace</span>(<span class="at">trace =</span> trace_quant, <span class="at">vars =</span> <span class="fu">c</span>(<span class="st">&quot;rate_multiplier[2]&quot;</span>,<span class="st">&quot;rate_multiplier[3]&quot;</span>,<span class="st">&quot;rate_multiplier[4]&quot;</span>))[[<span class="dv">1</span>]]</span></code></pre></div>
+<pre><code>## Using  as id variables</code></pre>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:image6"></span>
+<img src="_main_files/figure-html/image6-1.png" alt="The posterior densities of the nucleotide rate multipliers under a GTR substitution model. Colored areas under the curve correspond to the 95% credible interval." width="100%" />
+<p class="caption">
+Figure 4.2: The posterior densities of the nucleotide rate multipliers under a GTR substitution model. Colored areas under the curve correspond to the 95% credible interval.
+</p>
+</div>
+</div>
+<div id="summarizing-homologizer-phasing-estimates-and-plotting-it-in-r" class="section level3 hasAnchor" number="4.1.3">
+<h3><span class="header-section-number">4.1.3</span> Summarizing <code>homologizer</code> Phasing Estimates and Plotting it in R<a href="phylogeny-design.html#summarizing-homologizer-phasing-estimates-and-plotting-it-in-r" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><code>homologizer</code> analysis ends with the creation of a tree file <code>homologizer_output/homologizer_map.tree</code> that can be plotted and rooted in software like <a href="http://tree.bio.ed.ac.uk/software/figtree/">FigTree</a> or <a href="https://cran.r-project.org/web/packages/ape/index.html">APE</a>. However, these software can’t be used to properly summarize the phasing estimates of <code>homologizer</code> analysis. R can be used to achieve this task. The piece of R code below summarizes and plots the phasing estimates of <code>homologizer</code> analysis. This code can be found <a href="https://github.com/Chinedum335/Semester_Project/tree/main/5_Code">here</a></p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="phylogeny-design.html#cb12-1" aria-hidden="true" tabindex="-1"></a>genecopyFn<span class="ot">=</span><span class="st">&#39;../1_Raw_Data/cystopteridaceae_genomes.csv&#39;</span></span>
+<span id="cb12-2"><a href="phylogeny-design.html#cb12-2" aria-hidden="true" tabindex="-1"></a>tree_file <span class="ot">=</span> <span class="st">&#39;../4_Output_Trees/homologizer_output/homologizer_map_rooted.trees&#39;</span></span>
+<span id="cb12-3"><a href="phylogeny-design.html#cb12-3" aria-hidden="true" tabindex="-1"></a>input_dir <span class="ot">=</span> <span class="st">&#39;../4_Output_Trees/homologizer_output/&#39;</span></span>
+<span id="cb12-4"><a href="phylogeny-design.html#cb12-4" aria-hidden="true" tabindex="-1"></a>output_dir <span class="ot">=</span> <span class="st">&#39;../4_Output_Trees/homologizer_output/&#39;</span></span>
+<span id="cb12-5"><a href="phylogeny-design.html#cb12-5" aria-hidden="true" tabindex="-1"></a>prefix <span class="ot">=</span> <span class="st">&#39;../4_Output_Trees/homologizer_output/homologizer&#39;</span></span>
+<span id="cb12-6"><a href="phylogeny-design.html#cb12-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-7"><a href="phylogeny-design.html#cb12-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-8"><a href="phylogeny-design.html#cb12-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Required packages</span></span>
+<span id="cb12-9"><a href="phylogeny-design.html#cb12-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-10"><a href="phylogeny-design.html#cb12-10" aria-hidden="true" tabindex="-1"></a><span class="co">#library(ggplot2)</span></span>
+<span id="cb12-11"><a href="phylogeny-design.html#cb12-11" aria-hidden="true" tabindex="-1"></a><span class="co">#library(plyr)</span></span>
+<span id="cb12-12"><a href="phylogeny-design.html#cb12-12" aria-hidden="true" tabindex="-1"></a><span class="co">#library(magrittr)</span></span>
+<span id="cb12-13"><a href="phylogeny-design.html#cb12-13" aria-hidden="true" tabindex="-1"></a><span class="co">#library(tidyr)</span></span>
+<span id="cb12-14"><a href="phylogeny-design.html#cb12-14" aria-hidden="true" tabindex="-1"></a><span class="co">#library(dplyr)</span></span>
+<span id="cb12-15"><a href="phylogeny-design.html#cb12-15" aria-hidden="true" tabindex="-1"></a><span class="co">#library(ggtree)</span></span>
+<span id="cb12-16"><a href="phylogeny-design.html#cb12-16" aria-hidden="true" tabindex="-1"></a><span class="co">#library(ape)</span></span>
+<span id="cb12-17"><a href="phylogeny-design.html#cb12-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-18"><a href="phylogeny-design.html#cb12-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-19"><a href="phylogeny-design.html#cb12-19" aria-hidden="true" tabindex="-1"></a>genecopymap <span class="ot">=</span> <span class="fu">read.csv</span>(genecopyFn,<span class="at">header=</span>T,<span class="at">stringsAsFactors=</span><span class="cn">TRUE</span>)</span>
+<span id="cb12-20"><a href="phylogeny-design.html#cb12-20" aria-hidden="true" tabindex="-1"></a>samples <span class="ot">=</span> <span class="fu">split</span>(genecopymap<span class="sc">$</span>Subgenome,genecopymap<span class="sc">$</span>Sample)</span>
+<span id="cb12-21"><a href="phylogeny-design.html#cb12-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-22"><a href="phylogeny-design.html#cb12-22" aria-hidden="true" tabindex="-1"></a><span class="co"># names of the loci in the log file</span></span>
+<span id="cb12-23"><a href="phylogeny-design.html#cb12-23" aria-hidden="true" tabindex="-1"></a>loci <span class="ot">=</span> <span class="fu">names</span>(genecopymap)[<span class="dv">3</span><span class="sc">:</span><span class="fu">length</span>(genecopymap)]</span>
+<span id="cb12-24"><a href="phylogeny-design.html#cb12-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-25"><a href="phylogeny-design.html#cb12-25" aria-hidden="true" tabindex="-1"></a><span class="co"># what percentage of MCMC samples to exclude?</span></span>
+<span id="cb12-26"><a href="phylogeny-design.html#cb12-26" aria-hidden="true" tabindex="-1"></a>burnin <span class="ot">=</span> <span class="fl">0.1</span></span>
+<span id="cb12-27"><a href="phylogeny-design.html#cb12-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-28"><a href="phylogeny-design.html#cb12-28" aria-hidden="true" tabindex="-1"></a><span class="co"># modified from ggtree gheatmap</span></span>
+<span id="cb12-29"><a href="phylogeny-design.html#cb12-29" aria-hidden="true" tabindex="-1"></a>homologized <span class="ot">=</span> <span class="cf">function</span> (p, data, data_labels, <span class="at">offset =</span> <span class="dv">0</span>, <span class="at">width =</span> <span class="dv">1</span>, <span class="at">low =</span> <span class="st">&quot;green&quot;</span>, mid, <span class="at">high =</span> <span class="st">&quot;red&quot;</span>,</span>
+<span id="cb12-30"><a href="phylogeny-design.html#cb12-30" aria-hidden="true" tabindex="-1"></a>                        <span class="at">color =</span> <span class="st">&quot;white&quot;</span>, <span class="at">colnames =</span> <span class="cn">TRUE</span>, <span class="at">colnames_position =</span> <span class="st">&quot;bottom&quot;</span>,</span>
+<span id="cb12-31"><a href="phylogeny-design.html#cb12-31" aria-hidden="true" tabindex="-1"></a>                        <span class="at">colnames_angle =</span> <span class="dv">0</span>, <span class="at">colnames_level =</span> <span class="cn">NULL</span>, <span class="at">colnames_offset_x =</span> <span class="dv">0</span>,</span>
+<span id="cb12-32"><a href="phylogeny-design.html#cb12-32" aria-hidden="true" tabindex="-1"></a>                        <span class="at">colnames_offset_y =</span> <span class="dv">0</span>, <span class="at">font.size =</span> <span class="dv">4</span>, <span class="at">family =</span> <span class="st">&quot;&quot;</span>, <span class="at">hjust =</span> <span class="fl">0.5</span>,</span>
+<span id="cb12-33"><a href="phylogeny-design.html#cb12-33" aria-hidden="true" tabindex="-1"></a>                        <span class="at">legend_title =</span> <span class="st">&quot;value&quot;</span>)</span>
+<span id="cb12-34"><a href="phylogeny-design.html#cb12-34" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb12-35"><a href="phylogeny-design.html#cb12-35" aria-hidden="true" tabindex="-1"></a>  colnames_position <span class="sc">%&lt;&gt;%</span> <span class="fu">match.arg</span>(<span class="fu">c</span>(<span class="st">&quot;bottom&quot;</span>, <span class="st">&quot;top&quot;</span>))</span>
+<span id="cb12-36"><a href="phylogeny-design.html#cb12-36" aria-hidden="true" tabindex="-1"></a>  variable <span class="ot">&lt;-</span> value <span class="ot">&lt;-</span> lab <span class="ot">&lt;-</span> y <span class="ot">&lt;-</span> <span class="cn">NULL</span></span>
+<span id="cb12-37"><a href="phylogeny-design.html#cb12-37" aria-hidden="true" tabindex="-1"></a>  width <span class="ot">&lt;-</span> width <span class="sc">*</span> (p<span class="sc">$</span>data<span class="sc">$</span>x <span class="sc">%&gt;%</span> <span class="fu">range</span>(<span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span> diff)<span class="sc">/</span><span class="fu">ncol</span>(data)</span>
+<span id="cb12-38"><a href="phylogeny-design.html#cb12-38" aria-hidden="true" tabindex="-1"></a>  isTip <span class="ot">&lt;-</span> x <span class="ot">&lt;-</span> y <span class="ot">&lt;-</span> variable <span class="ot">&lt;-</span> value <span class="ot">&lt;-</span> from <span class="ot">&lt;-</span> to <span class="ot">&lt;-</span> <span class="cn">NULL</span></span>
+<span id="cb12-39"><a href="phylogeny-design.html#cb12-39" aria-hidden="true" tabindex="-1"></a>  df <span class="ot">&lt;-</span> p<span class="sc">$</span>data</span>
+<span id="cb12-40"><a href="phylogeny-design.html#cb12-40" aria-hidden="true" tabindex="-1"></a>  nodeCo <span class="ot">&lt;-</span> <span class="fu">intersect</span>(df <span class="sc">%&gt;%</span> <span class="fu">filter</span>(<span class="fu">is.na</span>(x)) <span class="sc">%&gt;%</span> <span class="fu">select</span>(.data<span class="sc">$</span>parent,</span>
+<span id="cb12-41"><a href="phylogeny-design.html#cb12-41" aria-hidden="true" tabindex="-1"></a>                                                         .data<span class="sc">$</span>node) <span class="sc">%&gt;%</span> <span class="fu">unlist</span>(), df <span class="sc">%&gt;%</span> <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(x)) <span class="sc">%&gt;%</span></span>
+<span id="cb12-42"><a href="phylogeny-design.html#cb12-42" aria-hidden="true" tabindex="-1"></a>                        <span class="fu">select</span>(.data<span class="sc">$</span>parent, .data<span class="sc">$</span>node) <span class="sc">%&gt;%</span> <span class="fu">unlist</span>())</span>
+<span id="cb12-43"><a href="phylogeny-design.html#cb12-43" aria-hidden="true" tabindex="-1"></a>  labCo <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> <span class="fu">filter</span>(.data<span class="sc">$</span>node <span class="sc">%in%</span> nodeCo) <span class="sc">%&gt;%</span> <span class="fu">select</span>(.data<span class="sc">$</span>label) <span class="sc">%&gt;%</span></span>
+<span id="cb12-44"><a href="phylogeny-design.html#cb12-44" aria-hidden="true" tabindex="-1"></a>    <span class="fu">unlist</span>()</span>
+<span id="cb12-45"><a href="phylogeny-design.html#cb12-45" aria-hidden="true" tabindex="-1"></a>  selCo <span class="ot">&lt;-</span> <span class="fu">intersect</span>(labCo, <span class="fu">rownames</span>(data))</span>
+<span id="cb12-46"><a href="phylogeny-design.html#cb12-46" aria-hidden="true" tabindex="-1"></a>  isSel <span class="ot">&lt;-</span> df<span class="sc">$</span>label <span class="sc">%in%</span> selCo</span>
+<span id="cb12-47"><a href="phylogeny-design.html#cb12-47" aria-hidden="true" tabindex="-1"></a>  df <span class="ot">&lt;-</span> df[df<span class="sc">$</span>isTip <span class="sc">|</span> isSel, ]</span>
+<span id="cb12-48"><a href="phylogeny-design.html#cb12-48" aria-hidden="true" tabindex="-1"></a>  start <span class="ot">&lt;-</span> <span class="fu">max</span>(df<span class="sc">$</span>x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">+</span> offset</span>
+<span id="cb12-49"><a href="phylogeny-design.html#cb12-49" aria-hidden="true" tabindex="-1"></a>  dd <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(data)</span>
+<span id="cb12-50"><a href="phylogeny-design.html#cb12-50" aria-hidden="true" tabindex="-1"></a>  dd2 <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(data_labels)</span>
+<span id="cb12-51"><a href="phylogeny-design.html#cb12-51" aria-hidden="true" tabindex="-1"></a>  i <span class="ot">&lt;-</span> <span class="fu">order</span>(df<span class="sc">$</span>y)</span>
+<span id="cb12-52"><a href="phylogeny-design.html#cb12-52" aria-hidden="true" tabindex="-1"></a>  i <span class="ot">&lt;-</span> i[<span class="sc">!</span><span class="fu">is.na</span>(df<span class="sc">$</span>y[i])]</span>
+<span id="cb12-53"><a href="phylogeny-design.html#cb12-53" aria-hidden="true" tabindex="-1"></a>  lab <span class="ot">&lt;-</span> df<span class="sc">$</span>label[i]</span>
+<span id="cb12-54"><a href="phylogeny-design.html#cb12-54" aria-hidden="true" tabindex="-1"></a>  dd <span class="ot">&lt;-</span> dd[<span class="fu">match</span>(lab, <span class="fu">rownames</span>(dd)), , drop <span class="ot">=</span> <span class="cn">FALSE</span>]</span>
+<span id="cb12-55"><a href="phylogeny-design.html#cb12-55" aria-hidden="true" tabindex="-1"></a>  dd2 <span class="ot">&lt;-</span> dd2[<span class="fu">match</span>(lab, <span class="fu">rownames</span>(dd2)), , drop <span class="ot">=</span> <span class="cn">FALSE</span>]</span>
+<span id="cb12-56"><a href="phylogeny-design.html#cb12-56" aria-hidden="true" tabindex="-1"></a>  dd<span class="sc">$</span>y <span class="ot">&lt;-</span> <span class="fu">sort</span>(df<span class="sc">$</span>y)</span>
+<span id="cb12-57"><a href="phylogeny-design.html#cb12-57" aria-hidden="true" tabindex="-1"></a>  dd2<span class="sc">$</span>y <span class="ot">&lt;-</span> <span class="fu">sort</span>(df<span class="sc">$</span>y)</span>
+<span id="cb12-58"><a href="phylogeny-design.html#cb12-58" aria-hidden="true" tabindex="-1"></a>  dd<span class="sc">$</span>lab <span class="ot">&lt;-</span> lab</span>
+<span id="cb12-59"><a href="phylogeny-design.html#cb12-59" aria-hidden="true" tabindex="-1"></a>  dd2<span class="sc">$</span>lab <span class="ot">&lt;-</span> lab</span>
+<span id="cb12-60"><a href="phylogeny-design.html#cb12-60" aria-hidden="true" tabindex="-1"></a>  dd <span class="ot">&lt;-</span> <span class="fu">gather</span>(dd, variable, value, <span class="sc">-</span><span class="fu">c</span>(lab, y))</span>
+<span id="cb12-61"><a href="phylogeny-design.html#cb12-61" aria-hidden="true" tabindex="-1"></a>  dd2 <span class="ot">&lt;-</span> <span class="fu">gather</span>(dd2, variable, value, <span class="sc">-</span><span class="fu">c</span>(lab, y))</span>
+<span id="cb12-62"><a href="phylogeny-design.html#cb12-62" aria-hidden="true" tabindex="-1"></a>  i <span class="ot">&lt;-</span> <span class="fu">which</span>(dd<span class="sc">$</span>value <span class="sc">==</span> <span class="st">&quot;&quot;</span>)</span>
+<span id="cb12-63"><a href="phylogeny-design.html#cb12-63" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">length</span>(i) <span class="sc">&gt;</span> <span class="dv">0</span>) {</span>
+<span id="cb12-64"><a href="phylogeny-design.html#cb12-64" aria-hidden="true" tabindex="-1"></a>    dd<span class="sc">$</span>value[i] <span class="ot">&lt;-</span> <span class="cn">NA</span></span>
+<span id="cb12-65"><a href="phylogeny-design.html#cb12-65" aria-hidden="true" tabindex="-1"></a>    dd2<span class="sc">$</span>value[i] <span class="ot">&lt;-</span> <span class="cn">NA</span></span>
+<span id="cb12-66"><a href="phylogeny-design.html#cb12-66" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb12-67"><a href="phylogeny-design.html#cb12-67" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">is.null</span>(colnames_level)) {</span>
+<span id="cb12-68"><a href="phylogeny-design.html#cb12-68" aria-hidden="true" tabindex="-1"></a>    dd<span class="sc">$</span>variable <span class="ot">&lt;-</span> <span class="fu">factor</span>(dd<span class="sc">$</span>variable, <span class="at">levels =</span> <span class="fu">colnames</span>(data))</span>
+<span id="cb12-69"><a href="phylogeny-design.html#cb12-69" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb12-70"><a href="phylogeny-design.html#cb12-70" aria-hidden="true" tabindex="-1"></a>  <span class="cf">else</span> {</span>
+<span id="cb12-71"><a href="phylogeny-design.html#cb12-71" aria-hidden="true" tabindex="-1"></a>    dd<span class="sc">$</span>variable <span class="ot">&lt;-</span> <span class="fu">factor</span>(dd<span class="sc">$</span>variable, <span class="at">levels =</span> colnames_level)</span>
+<span id="cb12-72"><a href="phylogeny-design.html#cb12-72" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb12-73"><a href="phylogeny-design.html#cb12-73" aria-hidden="true" tabindex="-1"></a>  V2 <span class="ot">&lt;-</span> start <span class="sc">+</span> <span class="fu">as.numeric</span>(dd<span class="sc">$</span>variable) <span class="sc">*</span> width</span>
+<span id="cb12-74"><a href="phylogeny-design.html#cb12-74" aria-hidden="true" tabindex="-1"></a>  mapping <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">from =</span> dd<span class="sc">$</span>variable, <span class="at">to =</span> V2)</span>
+<span id="cb12-75"><a href="phylogeny-design.html#cb12-75" aria-hidden="true" tabindex="-1"></a>  mapping <span class="ot">&lt;-</span> <span class="fu">unique</span>(mapping)</span>
+<span id="cb12-76"><a href="phylogeny-design.html#cb12-76" aria-hidden="true" tabindex="-1"></a>  dd<span class="sc">$</span>x <span class="ot">&lt;-</span> V2</span>
+<span id="cb12-77"><a href="phylogeny-design.html#cb12-77" aria-hidden="true" tabindex="-1"></a>  dd2<span class="sc">$</span>x <span class="ot">&lt;-</span> V2</span>
+<span id="cb12-78"><a href="phylogeny-design.html#cb12-78" aria-hidden="true" tabindex="-1"></a>  dd<span class="sc">$</span>width <span class="ot">&lt;-</span> width</span>
+<span id="cb12-79"><a href="phylogeny-design.html#cb12-79" aria-hidden="true" tabindex="-1"></a>  dd2<span class="sc">$</span>width <span class="ot">&lt;-</span> width</span>
+<span id="cb12-80"><a href="phylogeny-design.html#cb12-80" aria-hidden="true" tabindex="-1"></a>  dd[[<span class="st">&quot;.panel&quot;</span>]] <span class="ot">&lt;-</span> <span class="fu">factor</span>(<span class="st">&quot;Tree&quot;</span>)</span>
+<span id="cb12-81"><a href="phylogeny-design.html#cb12-81" aria-hidden="true" tabindex="-1"></a>  dd2[[<span class="st">&quot;.panel&quot;</span>]] <span class="ot">&lt;-</span> <span class="fu">factor</span>(<span class="st">&quot;Tree&quot;</span>)</span>
+<span id="cb12-82"><a href="phylogeny-design.html#cb12-82" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">is.null</span>(color)) {</span>
+<span id="cb12-83"><a href="phylogeny-design.html#cb12-83" aria-hidden="true" tabindex="-1"></a>    p2 <span class="ot">&lt;-</span> p <span class="sc">+</span> <span class="fu">geom_tile</span>(<span class="at">data =</span> dd, <span class="fu">aes</span>(x, y, <span class="at">fill =</span> value),</span>
+<span id="cb12-84"><a href="phylogeny-design.html#cb12-84" aria-hidden="true" tabindex="-1"></a>                        <span class="at">width =</span> width, <span class="at">inherit.aes =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb12-85"><a href="phylogeny-design.html#cb12-85" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb12-86"><a href="phylogeny-design.html#cb12-86" aria-hidden="true" tabindex="-1"></a>  <span class="cf">else</span> {</span>
+<span id="cb12-87"><a href="phylogeny-design.html#cb12-87" aria-hidden="true" tabindex="-1"></a>    p2 <span class="ot">&lt;-</span> p <span class="sc">+</span> <span class="fu">geom_tile</span>(<span class="at">data =</span> dd, <span class="fu">aes</span>(x, y, <span class="at">fill =</span> value),</span>
+<span id="cb12-88"><a href="phylogeny-design.html#cb12-88" aria-hidden="true" tabindex="-1"></a>                        <span class="at">width =</span> width, <span class="at">color =</span> color, <span class="at">inherit.aes =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb12-89"><a href="phylogeny-design.html#cb12-89" aria-hidden="true" tabindex="-1"></a>    p2 <span class="ot">&lt;-</span> p2 <span class="sc">+</span> <span class="fu">geom_text</span>(<span class="at">data =</span> dd2, <span class="fu">aes</span>(x, y, <span class="at">label=</span>value), <span class="at">size=</span><span class="dv">1</span>, <span class="at">inherit.aes =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb12-90"><a href="phylogeny-design.html#cb12-90" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb12-91"><a href="phylogeny-design.html#cb12-91" aria-hidden="true" tabindex="-1"></a>    <span class="co"># </span><span class="al">TODO</span></span>
+<span id="cb12-92"><a href="phylogeny-design.html#cb12-92" aria-hidden="true" tabindex="-1"></a>    <span class="co">#print(dd)</span></span>
+<span id="cb12-93"><a href="phylogeny-design.html#cb12-93" aria-hidden="true" tabindex="-1"></a>    dd3 <span class="ot">=</span> <span class="fu">data.frame</span>()</span>
+<span id="cb12-94"><a href="phylogeny-design.html#cb12-94" aria-hidden="true" tabindex="-1"></a>    start_x <span class="ot">=</span> <span class="fu">max</span>(dd<span class="sc">$</span>x)</span>
+<span id="cb12-95"><a href="phylogeny-design.html#cb12-95" aria-hidden="true" tabindex="-1"></a>    height <span class="ot">=</span> <span class="fu">max</span>(dd<span class="sc">$</span>y)</span>
+<span id="cb12-96"><a href="phylogeny-design.html#cb12-96" aria-hidden="true" tabindex="-1"></a>    margin <span class="ot">=</span> <span class="fl">0.006</span></span>
+<span id="cb12-97"><a href="phylogeny-design.html#cb12-97" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> (y <span class="cf">in</span> <span class="fu">unique</span>(dd<span class="sc">$</span>y)) {</span>
+<span id="cb12-98"><a href="phylogeny-design.html#cb12-98" aria-hidden="true" tabindex="-1"></a>      pp <span class="ot">=</span> <span class="fu">mean</span>(dd[dd<span class="sc">$</span>y <span class="sc">==</span> y, <span class="st">&#39;value&#39;</span>], <span class="at">na.rm=</span><span class="cn">TRUE</span>)</span>
+<span id="cb12-99"><a href="phylogeny-design.html#cb12-99" aria-hidden="true" tabindex="-1"></a>      dd4 <span class="ot">=</span> <span class="fu">data.frame</span>(<span class="at">pp =</span> pp, <span class="at">x =</span> pp<span class="sc">/</span><span class="dv">200</span> <span class="sc">+</span> margin <span class="sc">+</span> start_x, <span class="at">y=</span>y)</span>
+<span id="cb12-100"><a href="phylogeny-design.html#cb12-100" aria-hidden="true" tabindex="-1"></a>      dd3 <span class="ot">=</span> <span class="fu">rbind</span>(dd3, dd4)</span>
+<span id="cb12-101"><a href="phylogeny-design.html#cb12-101" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb12-102"><a href="phylogeny-design.html#cb12-102" aria-hidden="true" tabindex="-1"></a>    <span class="co">#print(dd3)</span></span>
+<span id="cb12-103"><a href="phylogeny-design.html#cb12-103" aria-hidden="true" tabindex="-1"></a>    p2 <span class="ot">&lt;-</span> p2 <span class="sc">+</span> <span class="fu">geom_segment</span>(<span class="fu">aes</span>(<span class="at">x=</span>start_x<span class="sc">+</span>margin, <span class="at">xend=</span><span class="dv">1</span><span class="sc">/</span><span class="dv">200</span> <span class="sc">+</span> start_x <span class="sc">+</span> margin, <span class="at">y=</span><span class="fl">0.2</span>, <span class="at">yend=</span><span class="fl">0.2</span>), <span class="at">size=</span><span class="fl">0.5</span>, <span class="at">inherit.aes =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb12-104"><a href="phylogeny-design.html#cb12-104" aria-hidden="true" tabindex="-1"></a>    p2 <span class="ot">&lt;-</span> p2 <span class="sc">+</span> <span class="fu">geom_segment</span>(<span class="fu">aes</span>(<span class="at">x=</span><span class="dv">1</span><span class="sc">/</span><span class="dv">200</span><span class="sc">+</span>start_x<span class="sc">+</span>margin, <span class="at">xend=</span><span class="dv">1</span><span class="sc">/</span><span class="dv">200</span><span class="sc">+</span>start_x<span class="sc">+</span>margin, <span class="at">y=</span><span class="fl">0.5</span>, <span class="at">yend=</span>height), <span class="at">color=</span><span class="st">&#39;grey85&#39;</span>, <span class="at">linetype=</span><span class="st">&#39;dotted&#39;</span>, <span class="at">size=</span><span class="fl">0.35</span>, <span class="at">inherit.aes =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb12-105"><a href="phylogeny-design.html#cb12-105" aria-hidden="true" tabindex="-1"></a>    p2 <span class="ot">&lt;-</span> p2 <span class="sc">+</span> <span class="fu">geom_segment</span>(<span class="fu">aes</span>(<span class="at">x=</span>start_x<span class="sc">+</span>margin, <span class="at">xend=</span>start_x<span class="sc">+</span>margin, <span class="at">y=</span><span class="fl">0.5</span>, <span class="at">yend=</span>height), <span class="at">color=</span><span class="st">&#39;grey85&#39;</span>, <span class="at">linetype=</span><span class="st">&#39;dotted&#39;</span>, <span class="at">size=</span><span class="fl">0.35</span>, <span class="at">inherit.aes =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb12-106"><a href="phylogeny-design.html#cb12-106" aria-hidden="true" tabindex="-1"></a>    p2 <span class="ot">&lt;-</span> p2 <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">data =</span> dd3, <span class="fu">aes</span>(x, y, <span class="at">color=</span>pp), <span class="at">size=</span><span class="fl">1.25</span>, <span class="at">inherit.aes =</span> <span class="cn">FALSE</span>, <span class="at">show.legend=</span><span class="cn">FALSE</span>)</span>
+<span id="cb12-107"><a href="phylogeny-design.html#cb12-107" aria-hidden="true" tabindex="-1"></a>    p2 <span class="ot">&lt;-</span> p2 <span class="sc">+</span> <span class="fu">geom_text</span>(<span class="at">label=</span><span class="st">&#39;0.0&#39;</span>, <span class="at">x=</span>start_x<span class="sc">+</span>margin, <span class="at">y=</span><span class="sc">-</span><span class="fl">0.2</span>, <span class="at">size=</span><span class="fl">1.25</span>, <span class="at">color=</span><span class="st">&#39;grey50&#39;</span>)</span>
+<span id="cb12-108"><a href="phylogeny-design.html#cb12-108" aria-hidden="true" tabindex="-1"></a>    p2 <span class="ot">&lt;-</span> p2 <span class="sc">+</span> <span class="fu">geom_text</span>(<span class="at">label=</span><span class="st">&#39;1.0&#39;</span>, <span class="at">x=</span>start_x<span class="sc">+</span>margin<span class="sc">+</span><span class="dv">1</span><span class="sc">/</span><span class="dv">200</span>, <span class="at">y=</span><span class="sc">-</span><span class="fl">0.2</span>, <span class="at">size=</span><span class="fl">1.25</span>, <span class="at">color=</span><span class="st">&#39;grey50&#39;</span>)</span>
+<span id="cb12-109"><a href="phylogeny-design.html#cb12-109" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb12-110"><a href="phylogeny-design.html#cb12-110" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (methods<span class="sc">::</span><span class="fu">is</span>(dd<span class="sc">$</span>value, <span class="st">&quot;numeric&quot;</span>)) {</span>
+<span id="cb12-111"><a href="phylogeny-design.html#cb12-111" aria-hidden="true" tabindex="-1"></a>    midpoint <span class="ot">=</span> <span class="fu">max</span>(dd<span class="sc">$</span>value, <span class="at">na.rm=</span><span class="cn">TRUE</span>) <span class="sc">-</span> <span class="fu">min</span>(dd<span class="sc">$</span>value, <span class="at">na.rm=</span><span class="cn">TRUE</span>)</span>
+<span id="cb12-112"><a href="phylogeny-design.html#cb12-112" aria-hidden="true" tabindex="-1"></a>    midpoint <span class="ot">=</span> midpoint<span class="sc">/</span><span class="dv">2</span> <span class="sc">+</span> <span class="fu">min</span>(dd<span class="sc">$</span>value, <span class="at">na.rm=</span><span class="cn">TRUE</span>) </span>
+<span id="cb12-113"><a href="phylogeny-design.html#cb12-113" aria-hidden="true" tabindex="-1"></a>    midpoint <span class="ot">=</span> <span class="fl">0.25</span></span>
+<span id="cb12-114"><a href="phylogeny-design.html#cb12-114" aria-hidden="true" tabindex="-1"></a>    p2 <span class="ot">&lt;-</span> p2 <span class="sc">+</span> <span class="fu">scale_fill_gradient2</span>(<span class="at">low =</span> low, <span class="at">mid=</span>mid, <span class="at">high =</span> high, <span class="at">midpoint=</span>midpoint,</span>
+<span id="cb12-115"><a href="phylogeny-design.html#cb12-115" aria-hidden="true" tabindex="-1"></a>                                    <span class="at">na.value =</span> <span class="st">&quot;white&quot;</span>, <span class="at">name =</span> legend_title, <span class="at">limits=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">1</span>))</span>
+<span id="cb12-116"><a href="phylogeny-design.html#cb12-116" aria-hidden="true" tabindex="-1"></a>    p2 <span class="ot">&lt;-</span> p2 <span class="sc">+</span> <span class="fu">scale_color_gradient2</span>(<span class="at">low =</span> low, <span class="at">mid=</span>mid, <span class="at">high =</span> high, <span class="at">midpoint=</span>midpoint,</span>
+<span id="cb12-117"><a href="phylogeny-design.html#cb12-117" aria-hidden="true" tabindex="-1"></a>                                     <span class="at">na.value =</span> <span class="st">&quot;white&quot;</span>, <span class="at">name =</span> legend_title, <span class="at">limits=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">1</span>))</span>
+<span id="cb12-118"><a href="phylogeny-design.html#cb12-118" aria-hidden="true" tabindex="-1"></a>    <span class="co">#na.value = NA, name = legend_title)</span></span>
+<span id="cb12-119"><a href="phylogeny-design.html#cb12-119" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb12-120"><a href="phylogeny-design.html#cb12-120" aria-hidden="true" tabindex="-1"></a>  <span class="cf">else</span> {</span>
+<span id="cb12-121"><a href="phylogeny-design.html#cb12-121" aria-hidden="true" tabindex="-1"></a>    p2 <span class="ot">&lt;-</span> p2 <span class="sc">+</span> <span class="fu">scale_fill_discrete</span>(<span class="at">na.value =</span> <span class="cn">NA</span>, <span class="at">name =</span> legend_title)</span>
+<span id="cb12-122"><a href="phylogeny-design.html#cb12-122" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb12-123"><a href="phylogeny-design.html#cb12-123" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (colnames) {</span>
+<span id="cb12-124"><a href="phylogeny-design.html#cb12-124" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (colnames_position <span class="sc">==</span> <span class="st">&quot;bottom&quot;</span>) {</span>
+<span id="cb12-125"><a href="phylogeny-design.html#cb12-125" aria-hidden="true" tabindex="-1"></a>      y <span class="ot">&lt;-</span> <span class="dv">0</span></span>
+<span id="cb12-126"><a href="phylogeny-design.html#cb12-126" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb12-127"><a href="phylogeny-design.html#cb12-127" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span> {</span>
+<span id="cb12-128"><a href="phylogeny-design.html#cb12-128" aria-hidden="true" tabindex="-1"></a>      y <span class="ot">&lt;-</span> <span class="fu">max</span>(p<span class="sc">$</span>data<span class="sc">$</span>y) <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb12-129"><a href="phylogeny-design.html#cb12-129" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb12-130"><a href="phylogeny-design.html#cb12-130" aria-hidden="true" tabindex="-1"></a>    mapping<span class="sc">$</span>y <span class="ot">&lt;-</span> y</span>
+<span id="cb12-131"><a href="phylogeny-design.html#cb12-131" aria-hidden="true" tabindex="-1"></a>    mapping[[<span class="st">&quot;.panel&quot;</span>]] <span class="ot">&lt;-</span> <span class="fu">factor</span>(<span class="st">&quot;Tree&quot;</span>)</span>
+<span id="cb12-132"><a href="phylogeny-design.html#cb12-132" aria-hidden="true" tabindex="-1"></a>    p2 <span class="ot">&lt;-</span> p2 <span class="sc">+</span> <span class="fu">geom_text</span>(<span class="at">data =</span> mapping, <span class="fu">aes</span>(<span class="at">x =</span> to, <span class="at">y =</span> y,</span>
+<span id="cb12-133"><a href="phylogeny-design.html#cb12-133" aria-hidden="true" tabindex="-1"></a>                                             <span class="at">label =</span> from), <span class="at">size =</span> font.size, <span class="at">family =</span> family,</span>
+<span id="cb12-134"><a href="phylogeny-design.html#cb12-134" aria-hidden="true" tabindex="-1"></a>                         <span class="at">inherit.aes =</span> <span class="cn">FALSE</span>, <span class="at">angle =</span> colnames_angle, <span class="at">nudge_x =</span> colnames_offset_x,</span>
+<span id="cb12-135"><a href="phylogeny-design.html#cb12-135" aria-hidden="true" tabindex="-1"></a>                         <span class="at">nudge_y =</span> colnames_offset_y, <span class="at">hjust =</span> hjust)</span>
+<span id="cb12-136"><a href="phylogeny-design.html#cb12-136" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb12-137"><a href="phylogeny-design.html#cb12-137" aria-hidden="true" tabindex="-1"></a>  p2 <span class="ot">&lt;-</span> p2 <span class="sc">+</span> <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">&quot;right&quot;</span>)</span>
+<span id="cb12-138"><a href="phylogeny-design.html#cb12-138" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span>colnames) {</span>
+<span id="cb12-139"><a href="phylogeny-design.html#cb12-139" aria-hidden="true" tabindex="-1"></a>    p2 <span class="ot">&lt;-</span> p2 <span class="sc">+</span> <span class="fu">scale_y_continuous</span>(<span class="at">expand =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">0</span>))</span>
+<span id="cb12-140"><a href="phylogeny-design.html#cb12-140" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb12-141"><a href="phylogeny-design.html#cb12-141" aria-hidden="true" tabindex="-1"></a>  <span class="fu">attr</span>(p2, <span class="st">&quot;mapping&quot;</span>) <span class="ot">&lt;-</span> mapping</span>
+<span id="cb12-142"><a href="phylogeny-design.html#cb12-142" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(p2)</span>
+<span id="cb12-143"><a href="phylogeny-design.html#cb12-143" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb12-144"><a href="phylogeny-design.html#cb12-144" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-145"><a href="phylogeny-design.html#cb12-145" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-146"><a href="phylogeny-design.html#cb12-146" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-147"><a href="phylogeny-design.html#cb12-147" aria-hidden="true" tabindex="-1"></a><span class="co"># polyploid samples and their tips</span></span>
+<span id="cb12-148"><a href="phylogeny-design.html#cb12-148" aria-hidden="true" tabindex="-1"></a><span class="co"># samples = list(&#39;A_taiwaniana_6137&#39; = c(&quot;A_taiwaniana_6137_A&quot;, &quot;A_taiwaniana_6137_B&quot;),</span></span>
+<span id="cb12-149"><a href="phylogeny-design.html#cb12-149" aria-hidden="true" tabindex="-1"></a><span class="co">#                &#39;A_tenuisecta_sp2_8704&#39; = c(&quot;A_tenuisecta_sp2_8704_A&quot;, &quot;A_tenuisecta_sp2_8704_B&quot;),</span></span>
+<span id="cb12-150"><a href="phylogeny-design.html#cb12-150" aria-hidden="true" tabindex="-1"></a><span class="co">#                &#39;A_tenuisecta_sp3_8745&#39; = c(&quot;A_tenuisecta_sp3_8745_A&quot;, &quot;A_tenuisecta_sp3_8745_B&quot;),</span></span>
+<span id="cb12-151"><a href="phylogeny-design.html#cb12-151" aria-hidden="true" tabindex="-1"></a><span class="co">#                &#39;C_diaphana_6380&#39; = c(&quot;C_diaphana_6380_A&quot;, &quot;C_diaphana_6380_B&quot;),</span></span>
+<span id="cb12-152"><a href="phylogeny-design.html#cb12-152" aria-hidden="true" tabindex="-1"></a><span class="co">#                &#39;C_fragilis_sp1_7009&#39; = c(&quot;C_fragilis_sp1_7009_A&quot;, &quot;C_fragilis_sp1_7009_B&quot;),</span></span>
+<span id="cb12-153"><a href="phylogeny-design.html#cb12-153" aria-hidden="true" tabindex="-1"></a><span class="co">#                &#39;C_fragilis_sp2_7248&#39; = c(&quot;C_fragilis_sp2_7248_A&quot;, &quot;C_fragilis_sp2_7248_B&quot;),</span></span>
+<span id="cb12-154"><a href="phylogeny-design.html#cb12-154" aria-hidden="true" tabindex="-1"></a><span class="co">#                &#39;C_montana_7943&#39; = c(&quot;C_montana_7943_A&quot;, &quot;C_montana_7943_B&quot;),</span></span>
+<span id="cb12-155"><a href="phylogeny-design.html#cb12-155" aria-hidden="true" tabindex="-1"></a><span class="co">#                &#39;C_pellucida_6055&#39;  = c(&quot;C_pellucida_6055_A&quot;, &quot;C_pellucida_6055_B&quot;),</span></span>
+<span id="cb12-156"><a href="phylogeny-design.html#cb12-156" aria-hidden="true" tabindex="-1"></a><span class="co">#                &#39;C_sudetica_8674&#39; = c(&quot;C_sudetica_8674_A&quot;, &quot;C_sudetica_8674_B&quot;),</span></span>
+<span id="cb12-157"><a href="phylogeny-design.html#cb12-157" aria-hidden="true" tabindex="-1"></a><span class="co">#                &#39;C_tasmanica_6379&#39; = c(&quot;C_tasmanica_6379_A&quot;, &quot;C_tasmanica_6379_B&quot;),</span></span>
+<span id="cb12-158"><a href="phylogeny-design.html#cb12-158" aria-hidden="true" tabindex="-1"></a><span class="co">#                &#39;C_tenuis_6387&#39; = c(&quot;C_tenuis_6387_A&quot;, &quot;C_tenuis_6387_B&quot;),</span></span>
+<span id="cb12-159"><a href="phylogeny-design.html#cb12-159" aria-hidden="true" tabindex="-1"></a><span class="co">#                &#39;C_utahensis_6848&#39; = c(&quot;C_utahensis_6848_A&quot;, &quot;C_utahensis_6848_B&quot;),</span></span>
+<span id="cb12-160"><a href="phylogeny-design.html#cb12-160" aria-hidden="true" tabindex="-1"></a><span class="co">#                &#39;G_continentale_6979&#39; = c(&quot;G_continentale_6979_A&quot;, &quot;G_continentale_6979_B&quot;),</span></span>
+<span id="cb12-161"><a href="phylogeny-design.html#cb12-161" aria-hidden="true" tabindex="-1"></a><span class="co">#                &#39;G_disjunctum_7751&#39; = c(&quot;G_disjunctum_7751_A&quot;, &quot;G_disjunctum_7751_B&quot;),</span></span>
+<span id="cb12-162"><a href="phylogeny-design.html#cb12-162" aria-hidden="true" tabindex="-1"></a><span class="co">#                &#39;G_oyamense_sp2_8739&#39; = c(&quot;G_oyamense_sp2_8739_A&quot;, &quot;G_oyamense_sp2_8739_B&quot;),</span></span>
+<span id="cb12-163"><a href="phylogeny-design.html#cb12-163" aria-hidden="true" tabindex="-1"></a><span class="co">#                &#39;G_remotepinnatum_4862&#39; = c(&quot;G_remotepinnatum_4862_A&quot;, &quot;G_remotepinnatum_4862_B&quot;),</span></span>
+<span id="cb12-164"><a href="phylogeny-design.html#cb12-164" aria-hidden="true" tabindex="-1"></a><span class="co">#                &#39;G_robertianum_7945&#39; = c(&quot;G_robertianum_7945_A&quot;, &quot;G_robertianum_7945_B&quot;),</span></span>
+<span id="cb12-165"><a href="phylogeny-design.html#cb12-165" aria-hidden="true" tabindex="-1"></a><span class="co">#                &#39;G_dryopteris_7981&#39; = c(&quot;G_dryopteris_7981_A&quot;, &quot;G_dryopteris_7981_B&quot;, &quot;G_dryopteris_7981_C&quot;, &quot;G_dryopteris_7981_D&quot;),</span></span>
+<span id="cb12-166"><a href="phylogeny-design.html#cb12-166" aria-hidden="true" tabindex="-1"></a><span class="co">#                &#39;xCystocarpium_7974&#39; = c(&quot;xCystocarpium_7974_A&quot;, &quot;xCystocarpium_7974_B&quot;, &quot;xCystocarpium_7974_C&quot;,&quot;xCystocarpium_7974_D&quot;))</span></span>
+<span id="cb12-167"><a href="phylogeny-design.html#cb12-167" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-168"><a href="phylogeny-design.html#cb12-168" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-169"><a href="phylogeny-design.html#cb12-169" aria-hidden="true" tabindex="-1"></a><span class="co"># populate empty dataframes to hold results</span></span>
+<span id="cb12-170"><a href="phylogeny-design.html#cb12-170" aria-hidden="true" tabindex="-1"></a>map_prob_results <span class="ot">=</span> <span class="fu">data.frame</span>()</span>
+<span id="cb12-171"><a href="phylogeny-design.html#cb12-171" aria-hidden="true" tabindex="-1"></a>joint_map_phase_results <span class="ot">=</span> <span class="fu">data.frame</span>()</span>
+<span id="cb12-172"><a href="phylogeny-design.html#cb12-172" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (sample <span class="cf">in</span> <span class="fu">names</span>(samples)) {</span>
+<span id="cb12-173"><a href="phylogeny-design.html#cb12-173" aria-hidden="true" tabindex="-1"></a>  sample_joint_map_prob <span class="ot">=</span> <span class="fu">data.frame</span>()</span>
+<span id="cb12-174"><a href="phylogeny-design.html#cb12-174" aria-hidden="true" tabindex="-1"></a>  sample_joint_map_phase <span class="ot">=</span> <span class="fu">data.frame</span>()</span>
+<span id="cb12-175"><a href="phylogeny-design.html#cb12-175" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(loci)) {</span>
+<span id="cb12-176"><a href="phylogeny-design.html#cb12-176" aria-hidden="true" tabindex="-1"></a>    sample_joint_map_prob[<span class="dv">1</span>, loci[i]] <span class="ot">=</span> <span class="fl">0.0</span></span>
+<span id="cb12-177"><a href="phylogeny-design.html#cb12-177" aria-hidden="true" tabindex="-1"></a>    sample_joint_map_phase[<span class="dv">1</span>, loci[i]] <span class="ot">=</span> <span class="st">&#39;&#39;</span></span>
+<span id="cb12-178"><a href="phylogeny-design.html#cb12-178" aria-hidden="true" tabindex="-1"></a>    <span class="fu">row.names</span>(sample_joint_map_prob) <span class="ot">=</span> <span class="fu">c</span>(sample)</span>
+<span id="cb12-179"><a href="phylogeny-design.html#cb12-179" aria-hidden="true" tabindex="-1"></a>    <span class="fu">row.names</span>(sample_joint_map_phase) <span class="ot">=</span> <span class="fu">c</span>(sample)</span>
+<span id="cb12-180"><a href="phylogeny-design.html#cb12-180" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb12-181"><a href="phylogeny-design.html#cb12-181" aria-hidden="true" tabindex="-1"></a>  map_prob_results <span class="ot">=</span> <span class="fu">rbind</span>(map_prob_results, sample_joint_map_prob)</span>
+<span id="cb12-182"><a href="phylogeny-design.html#cb12-182" aria-hidden="true" tabindex="-1"></a>  joint_map_phase_results <span class="ot">=</span> <span class="fu">rbind</span>(joint_map_phase_results, sample_joint_map_phase)</span>
+<span id="cb12-183"><a href="phylogeny-design.html#cb12-183" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb12-184"><a href="phylogeny-design.html#cb12-184" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-185"><a href="phylogeny-design.html#cb12-185" aria-hidden="true" tabindex="-1"></a><span class="co"># for each sample loop over each locus</span></span>
+<span id="cb12-186"><a href="phylogeny-design.html#cb12-186" aria-hidden="true" tabindex="-1"></a>marginal_results <span class="ot">=</span> <span class="fu">data.frame</span>()</span>
+<span id="cb12-187"><a href="phylogeny-design.html#cb12-187" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (sample <span class="cf">in</span> <span class="fu">names</span>(samples)) {</span>
+<span id="cb12-188"><a href="phylogeny-design.html#cb12-188" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-189"><a href="phylogeny-design.html#cb12-189" aria-hidden="true" tabindex="-1"></a>  joint_results <span class="ot">=</span> <span class="fu">data.frame</span>()</span>
+<span id="cb12-190"><a href="phylogeny-design.html#cb12-190" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(loci)) {</span>
+<span id="cb12-191"><a href="phylogeny-design.html#cb12-191" aria-hidden="true" tabindex="-1"></a>    <span class="co"># read in file and exclude burnin</span></span>
+<span id="cb12-192"><a href="phylogeny-design.html#cb12-192" aria-hidden="true" tabindex="-1"></a>    f_in <span class="ot">=</span> <span class="fu">paste0</span>(prefix, <span class="st">&#39;_locus_&#39;</span>,i, <span class="st">&#39;_phase.log&#39;</span>)</span>
+<span id="cb12-193"><a href="phylogeny-design.html#cb12-193" aria-hidden="true" tabindex="-1"></a>    d <span class="ot">=</span> <span class="fu">read.csv</span>(f_in, <span class="at">sep=</span><span class="st">&#39;</span><span class="sc">\t</span><span class="st">&#39;</span>,<span class="at">stringsAsFactors =</span> <span class="cn">TRUE</span>,<span class="at">row.names=</span><span class="dv">1</span>)</span>
+<span id="cb12-194"><a href="phylogeny-design.html#cb12-194" aria-hidden="true" tabindex="-1"></a>    d <span class="ot">=</span> d[<span class="fu">floor</span>(<span class="fu">nrow</span>(d)<span class="sc">*</span>burnin)<span class="sc">:</span><span class="fu">nrow</span>(d),]</span>
+<span id="cb12-195"><a href="phylogeny-design.html#cb12-195" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb12-196"><a href="phylogeny-design.html#cb12-196" aria-hidden="true" tabindex="-1"></a>    <span class="co"># get joint phase assignments for this locus</span></span>
+<span id="cb12-197"><a href="phylogeny-design.html#cb12-197" aria-hidden="true" tabindex="-1"></a>    d1 <span class="ot">=</span> d[, samples[[sample]]]</span>
+<span id="cb12-198"><a href="phylogeny-design.html#cb12-198" aria-hidden="true" tabindex="-1"></a>    joint_results_locus <span class="ot">=</span> <span class="fu">as.data.frame</span>(<span class="fu">table</span>(d1))</span>
+<span id="cb12-199"><a href="phylogeny-design.html#cb12-199" aria-hidden="true" tabindex="-1"></a>    joint_results_locus<span class="sc">$</span>joint_prob <span class="ot">=</span> joint_results_locus<span class="sc">$</span>Freq <span class="sc">/</span> <span class="fu">sum</span>(joint_results_locus<span class="sc">$</span>Freq)</span>
+<span id="cb12-200"><a href="phylogeny-design.html#cb12-200" aria-hidden="true" tabindex="-1"></a>    joint_results_locus<span class="sc">$</span>locus <span class="ot">=</span> loci[i]</span>
+<span id="cb12-201"><a href="phylogeny-design.html#cb12-201" aria-hidden="true" tabindex="-1"></a>    joint_results <span class="ot">=</span> <span class="fu">rbind</span>(joint_results, joint_results_locus) </span>
+<span id="cb12-202"><a href="phylogeny-design.html#cb12-202" aria-hidden="true" tabindex="-1"></a>   </span>
+<span id="cb12-203"><a href="phylogeny-design.html#cb12-203" aria-hidden="true" tabindex="-1"></a>    <span class="co"># get the MAP joint phase for the plot</span></span>
+<span id="cb12-204"><a href="phylogeny-design.html#cb12-204" aria-hidden="true" tabindex="-1"></a>    map <span class="ot">=</span> <span class="fu">which</span>(joint_results_locus[<span class="st">&#39;joint_prob&#39;</span>] <span class="sc">==</span> <span class="fu">max</span>(joint_results_locus[<span class="st">&#39;joint_prob&#39;</span>]))[<span class="dv">1</span>]</span>
+<span id="cb12-205"><a href="phylogeny-design.html#cb12-205" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> (tip <span class="cf">in</span> samples[[sample]]) {</span>
+<span id="cb12-206"><a href="phylogeny-design.html#cb12-206" aria-hidden="true" tabindex="-1"></a>      <span class="co">#map_prob_results[tip,loci[i]] = joint_results_locus[map, &#39;joint_prob&#39;]</span></span>
+<span id="cb12-207"><a href="phylogeny-design.html#cb12-207" aria-hidden="true" tabindex="-1"></a>      joint_map_phase_results[tip,loci[i]] <span class="ot">=</span> <span class="fu">as.character</span>(joint_results_locus[map, tip])</span>
+<span id="cb12-208"><a href="phylogeny-design.html#cb12-208" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb12-209"><a href="phylogeny-design.html#cb12-209" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb12-210"><a href="phylogeny-design.html#cb12-210" aria-hidden="true" tabindex="-1"></a>    <span class="co"># get marginal posterior probs</span></span>
+<span id="cb12-211"><a href="phylogeny-design.html#cb12-211" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> (tip <span class="cf">in</span> samples[[sample]]) {</span>
+<span id="cb12-212"><a href="phylogeny-design.html#cb12-212" aria-hidden="true" tabindex="-1"></a>      m <span class="ot">=</span> <span class="fu">as.data.frame</span>(<span class="fu">table</span>(d[tip]))</span>
+<span id="cb12-213"><a href="phylogeny-design.html#cb12-213" aria-hidden="true" tabindex="-1"></a>      m<span class="sc">$</span>marginal_prob <span class="ot">=</span> m<span class="sc">$</span>Freq <span class="sc">/</span> <span class="fu">sum</span>(m<span class="sc">$</span>Freq)</span>
+<span id="cb12-214"><a href="phylogeny-design.html#cb12-214" aria-hidden="true" tabindex="-1"></a>      <span class="co"># m$phase = m$Var1</span></span>
+<span id="cb12-215"><a href="phylogeny-design.html#cb12-215" aria-hidden="true" tabindex="-1"></a>      m<span class="sc">$</span>phase <span class="ot">=</span> m[,<span class="dv">1</span>] <span class="co"># is Var1 supposed to be the first column? trying this</span></span>
+<span id="cb12-216"><a href="phylogeny-design.html#cb12-216" aria-hidden="true" tabindex="-1"></a>      m <span class="ot">=</span> <span class="fu">within</span>(m, <span class="fu">rm</span>(Freq))</span>
+<span id="cb12-217"><a href="phylogeny-design.html#cb12-217" aria-hidden="true" tabindex="-1"></a>      <span class="co"># m = within(m, rm(Var1))</span></span>
+<span id="cb12-218"><a href="phylogeny-design.html#cb12-218" aria-hidden="true" tabindex="-1"></a>      m[,<span class="dv">1</span>] <span class="ot">=</span> <span class="cn">NULL</span> <span class="co"># is Var1 supposed to be the first column? trying this</span></span>
+<span id="cb12-219"><a href="phylogeny-design.html#cb12-219" aria-hidden="true" tabindex="-1"></a>      m<span class="sc">$</span>locus <span class="ot">=</span> loci[i]</span>
+<span id="cb12-220"><a href="phylogeny-design.html#cb12-220" aria-hidden="true" tabindex="-1"></a>      m<span class="sc">$</span>tip_name <span class="ot">=</span> tip</span>
+<span id="cb12-221"><a href="phylogeny-design.html#cb12-221" aria-hidden="true" tabindex="-1"></a>      marginal_results <span class="ot">=</span> <span class="fu">rbind</span>(marginal_results, m)</span>
+<span id="cb12-222"><a href="phylogeny-design.html#cb12-222" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb12-223"><a href="phylogeny-design.html#cb12-223" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb12-224"><a href="phylogeny-design.html#cb12-224" aria-hidden="true" tabindex="-1"></a>  joint_results <span class="ot">=</span> <span class="fu">within</span>(joint_results, <span class="fu">rm</span>(Freq))</span>
+<span id="cb12-225"><a href="phylogeny-design.html#cb12-225" aria-hidden="true" tabindex="-1"></a>  <span class="co">#out_file = paste0(prefix, &#39;_joint_phase_probs_&#39;, sample, &#39;.csv&#39;)</span></span>
+<span id="cb12-226"><a href="phylogeny-design.html#cb12-226" aria-hidden="true" tabindex="-1"></a>  <span class="co">#write.csv(joint_results, out_file, row.names=FALSE)</span></span>
+<span id="cb12-227"><a href="phylogeny-design.html#cb12-227" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb12-228"><a href="phylogeny-design.html#cb12-228" aria-hidden="true" tabindex="-1"></a><span class="co">#out_file = paste0(prefix, &#39;_marginal_phase_probs.csv&#39;)</span></span>
+<span id="cb12-229"><a href="phylogeny-design.html#cb12-229" aria-hidden="true" tabindex="-1"></a><span class="co">#write.csv(marginal_results, out_file, row.names=FALSE)</span></span>
+<span id="cb12-230"><a href="phylogeny-design.html#cb12-230" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-231"><a href="phylogeny-design.html#cb12-231" aria-hidden="true" tabindex="-1"></a><span class="co"># get marginal probs for the joint MAP phase</span></span>
+<span id="cb12-232"><a href="phylogeny-design.html#cb12-232" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (sample <span class="cf">in</span> <span class="fu">names</span>(samples)) {</span>
+<span id="cb12-233"><a href="phylogeny-design.html#cb12-233" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (tip <span class="cf">in</span> samples[[sample]]) {</span>
+<span id="cb12-234"><a href="phylogeny-design.html#cb12-234" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(loci)) {</span>
+<span id="cb12-235"><a href="phylogeny-design.html#cb12-235" aria-hidden="true" tabindex="-1"></a>      m <span class="ot">=</span> marginal_results[marginal_results<span class="sc">$</span>phase <span class="sc">==</span> joint_map_phase_results[tip,loci[i]] <span class="sc">&amp;</span></span>
+<span id="cb12-236"><a href="phylogeny-design.html#cb12-236" aria-hidden="true" tabindex="-1"></a>                             marginal_results<span class="sc">$</span>locus <span class="sc">==</span> loci[i] <span class="sc">&amp;</span></span>
+<span id="cb12-237"><a href="phylogeny-design.html#cb12-237" aria-hidden="true" tabindex="-1"></a>                             marginal_results<span class="sc">$</span>tip <span class="sc">==</span> tip, <span class="st">&#39;marginal_prob&#39;</span>]</span>
+<span id="cb12-238"><a href="phylogeny-design.html#cb12-238" aria-hidden="true" tabindex="-1"></a>      map_prob_results[tip,loci[i]] <span class="ot">=</span> m</span>
+<span id="cb12-239"><a href="phylogeny-design.html#cb12-239" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb12-240"><a href="phylogeny-design.html#cb12-240" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb12-241"><a href="phylogeny-design.html#cb12-241" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb12-242"><a href="phylogeny-design.html#cb12-242" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-243"><a href="phylogeny-design.html#cb12-243" aria-hidden="true" tabindex="-1"></a>tree <span class="ot">=</span> treeio<span class="sc">::</span><span class="fu">read.beast</span>(tree_file)</span>
+<span id="cb12-244"><a href="phylogeny-design.html#cb12-244" aria-hidden="true" tabindex="-1"></a><span class="co">#tree@phylo = drop.tip(tree@phylo, &#39;6379_BLANK2&#39;)</span></span>
+<span id="cb12-245"><a href="phylogeny-design.html#cb12-245" aria-hidden="true" tabindex="-1"></a>p <span class="ot">=</span> <span class="fu">ggtree</span>(tree) </span>
+<span id="cb12-246"><a href="phylogeny-design.html#cb12-246" aria-hidden="true" tabindex="-1"></a>p <span class="ot">=</span> p <span class="sc">+</span> <span class="fu">geom_tiplab</span>(<span class="at">size=</span><span class="dv">2</span>, <span class="at">align=</span>T, <span class="at">linesize=</span><span class="fl">0.25</span>, <span class="at">offset=</span><span class="fl">0.0005</span>)  </span>
+<span id="cb12-247"><a href="phylogeny-design.html#cb12-247" aria-hidden="true" tabindex="-1"></a>p <span class="ot">=</span> <span class="fu">homologized</span>(p, map_prob_results, joint_map_phase_results, </span>
+<span id="cb12-248"><a href="phylogeny-design.html#cb12-248" aria-hidden="true" tabindex="-1"></a>                <span class="at">offset=</span><span class="fl">0.018</span>, <span class="at">low=</span><span class="st">&quot;#EE0000&quot;</span>, <span class="at">mid=</span><span class="st">&quot;#FF0099&quot;</span>, <span class="at">high=</span><span class="st">&quot;#DDDDFF&quot;</span>, </span>
+<span id="cb12-249"><a href="phylogeny-design.html#cb12-249" aria-hidden="true" tabindex="-1"></a>                <span class="at">colnames_position=</span><span class="st">&quot;top&quot;</span>, <span class="at">font.size=</span><span class="dv">2</span>, <span class="at">width=</span><span class="fl">0.5</span>,</span>
+<span id="cb12-250"><a href="phylogeny-design.html#cb12-250" aria-hidden="true" tabindex="-1"></a>                <span class="at">legend_title=</span><span class="st">&quot;Posterior</span><span class="sc">\n</span><span class="st">Probability&quot;</span>) </span>
+<span id="cb12-251"><a href="phylogeny-design.html#cb12-251" aria-hidden="true" tabindex="-1"></a>p <span class="ot">=</span> p <span class="sc">+</span> <span class="fu">theme</span>(<span class="at">legend.text=</span><span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">6</span>),</span>
+<span id="cb12-252"><a href="phylogeny-design.html#cb12-252" aria-hidden="true" tabindex="-1"></a>              <span class="at">legend.title=</span><span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">8</span>))</span>
+<span id="cb12-253"><a href="phylogeny-design.html#cb12-253" aria-hidden="true" tabindex="-1"></a>p</span></code></pre></div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:image7"></span>
+<img src="_main_files/figure-html/image7-1.png" alt="Inferred phasing of gene copies into subgenomes summarized on the MAP phylogeny for the Cystopteridaceae dataset" width="100%" />
+<p class="caption">
+Figure 4.3: Inferred phasing of gene copies into subgenomes summarized on the MAP phylogeny for the Cystopteridaceae dataset
+</p>
+</div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="phylogeny-design.html#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="st">&#39;../Figures//homologized_joint_MAP.pdf&#39;</span>, <span class="at">height=</span><span class="dv">3</span>, <span class="at">width=</span><span class="dv">7</span>)</span></code></pre></div>
+<p>The phase is estimated for the two polyploid accessions xCystocarpium_7974 and C_tasmanica_6379. To the right of the tree, each column represents a locus, and the joint MAP phase assignment is shown as text within each box. Each box is colored by the marginal posterior probability of the phase assignment. These marginal posterior probabilities are useful to quantify the uncertainty within the joint MAP phasing assignment. For example, it may be that the joint MAP phase of a given polyploid has a low marginal posterior probability in some subgenomes but a high marginal posterior probability in other subgenomes. Adjacent to the heatmap is a column that shows the mean marginal probability across loci of the phasing assignment per tip, which summarizes the model’s overall confidence in the phasing of that tip.</p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="phasing-design.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/04-phylogeny.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
