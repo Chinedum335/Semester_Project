@@ -29,7 +29,7 @@ set in the _output.yml file.</p>" />
 <meta name="author" content="Chinedum Anajemba" />
 
 
-<meta name="date" content="2023-04-28" />
+<meta name="date" content="2023-04-30" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -154,14 +154,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="phasing-design.html"><a href="phasing-design.html"><i class="fa fa-check"></i><b>3</b> Phasing of Gene Copies into Polyploid Subgenomes</a></li>
-<li class="chapter" data-level="4" data-path="phylogeny-design.html"><a href="phylogeny-design.html"><i class="fa fa-check"></i><b>4</b> Species-level Phylogeny of the Cystopteridaceae Ferns</a>
+<li class="chapter" data-level="4" data-path="phylogeny-design.html"><a href="phylogeny-design.html"><i class="fa fa-check"></i><b>4</b> Visualizing the Phylogeny of Cystopteridaceae</a>
 <ul>
 <li class="chapter" data-level="4.1" data-path="phylogeny-design.html"><a href="phylogeny-design.html#summarizing-the-results-of-homologizer-analysis"><i class="fa fa-check"></i><b>4.1</b> Summarizing the Results of <code>homologizer</code> Analysis</a>
 <ul>
 <li class="chapter" data-level="4.1.1" data-path="phylogeny-design.html"><a href="phylogeny-design.html#convergence-assessment"><i class="fa fa-check"></i><b>4.1.1</b> Convergence Assessment</a></li>
-<li class="chapter" data-level="4.1.2" data-path="phylogeny-design.html"><a href="phylogeny-design.html#summarizing-and-visiualizing-traces-of-specific-parameter"><i class="fa fa-check"></i><b>4.1.2</b> Summarizing and Visiualizing Traces of specific parameter</a></li>
-<li class="chapter" data-level="4.1.3" data-path="phylogeny-design.html"><a href="phylogeny-design.html#summarizing-homologizer-phasing-estimates-and-plotting-it-in-r"><i class="fa fa-check"></i><b>4.1.3</b> Summarizing <code>homologizer</code> Phasing Estimates and Plotting it in R</a></li>
+<li class="chapter" data-level="4.1.2" data-path="phylogeny-design.html"><a href="phylogeny-design.html#summarizing-and-visiualizing-traces-of-specific-parameter"><i class="fa fa-check"></i><b>4.1.2</b> Summarizing and Visiualizing Traces of Specific Parameter</a></li>
 </ul></li>
+<li class="chapter" data-level="4.2" data-path="phylogeny-design.html"><a href="phylogeny-design.html#summarizing-homologizer-phasing-estimates-and-plotting-it-in-r"><i class="fa fa-check"></i><b>4.2</b> Summarizing <code>homologizer</code> Phasing Estimates and Plotting it in <code>R</code></a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -186,9 +186,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="phasing-design" class="section level1 hasAnchor" number="3">
 <h1><span class="header-section-number">Chapter 3</span> Phasing of Gene Copies into Polyploid Subgenomes<a href="phasing-design.html#phasing-design" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>One of the main challenges to reconstructing a multi-locus phylogeny of clades with allopolyploid species is the phasing of gene copies into polyploid subgenomes. Allopolyploids contain distinct subgenomes each with their own evolutionary
-history. When sequencing loci from such organisms, unique copies of each locus may be recovered from each subgenome and if each copy of each locus is not assigned to the correct subgenome,then multilocus phylogenetic inference can be erroneous and will lead to unsound results. <code>homologizer</code> is a Bayesian method that uses a phylogenetic framework to phase gene copies (i.e. assign sequence to the correct subgenome) across loci. In this chapter we will discuss how to use <code>homologizer</code> to phase gene copies into polyploid subgenomes. <code>homologizer</code> is implemented in the open-source phylogenetic inference software <a href="http://revbayes.com">RevBayes</a>. RevBayes is a rich and complex phylogenetic inference tool that can accommodate a vast array of models. The RevBayes language is similar to the language used in R and it is designed to support interactive analysis. Extensive tutorials for Revbayes including how to download the software are available <a href="http://revbayes.com">here</a></p>
-<p>In a <code>homologizer</code> analysis, phylogenies containing allopolyploid organisms are represented as multilabeled trees (“mul-trees”), where each hybrid accession is present multiple times, once for each subgenome (each distinct evolutionary history).
-The data used in this study consist of four single-copy nuclear loci (ApPEFP_C, gapCpSh, IBR3, and pgiC) for a sample of 11 diploids and 2 tetraploids generated using PURC pipeline(see Chapter 1). A detailed instruction on how to run <code>homologizer</code> analysis can be found at <a href="http://github.com/wf8/homologizer">homologizer repository</a>. The script used for this analysis, <code>cystopteridaceae_homologizer</code> can be found <a href="https://github.com/Chinedum335/Semester_Project/tree/main/5_Code">here</a>. This script can be run within Revbayes by typing <code>source(cystopteridaceae_homologizer)</code> from the <a href="https://github.com/Chinedum335/Semester_Project/tree/main/5_Code">5_Code</a> directory. The code is also pasted below</p>
+history. When sequencing loci from such organisms, unique copies of each locus may be recovered from each subgenome and if each copy of each locus is not assigned to the correct subgenome,then multilocus phylogenetic inference can be erroneous and will lead to unsound results. <code>homologizer</code> is a Bayesian method that uses a phylogenetic framework to phase gene copies (i.e. assign sequence to the correct subgenome) across loci. In this chapter, we will discuss how to use <code>homologizer</code> to phase gene copies into polyploid subgenomes. <code>homologizer</code> is implemented in the open-source phylogenetic inference software <a href="http://revbayes.com">RevBayes</a>. RevBayes is a rich and complex phylogenetic inference tool that can accommodate a vast array of models. The RevBayes language is similar to the language used in R and it is designed to support interactive analysis. Extensive tutorials for Revbayes including how to download the software are available <a href="http://revbayes.com">here</a></p>
+<p>In a <code>homologizer</code> analysis, phylogenies containing allopolyploid organisms are represented as multilabeled trees (“mul-trees”), where each hybrid accession is present multiple times, once for each subgenome (each distinct evolutionary history). The data used in this study consist of four single-copy nuclear loci (APP, GAP, IBR, and PGI) for a sample of 9 diploids and 2 tetraploids generated using PURC pipeline(see Chapter 1). A detailed instruction on how to prepare input file and run <code>homologizer</code> analysis can be found at <a href="http://github.com/wf8/homologizer">homologizer repository</a>. The script used for this analysis, <code>cystopteridaceae_homologizer</code> can be found <a href="https://github.com/Chinedum335/Semester_Project/tree/main/5_Code">here</a>. This script can be run within Revbayes by typing <code>source(cystopteridaceae_homologizer)</code> from the <a href="https://github.com/Chinedum335/Semester_Project/tree/main/5_Code">5_Code</a> directory. The code in <code>cystopteridaceae_homologizer</code> is shown below:</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="phasing-design.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This code Specifies a homologizer model that jointly infer the phase and phylogeny.</span></span>
 <span id="cb5-2"><a href="phasing-design.html#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Run an MCMC analysis by default. Set bayes_factors = TRUE to calculate</span></span>
 <span id="cb5-3"><a href="phasing-design.html#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co"># the marginal likelihood with a stepping stone analysis.</span></span>
@@ -333,7 +332,7 @@ The data used in this study consist of four single-copy nuclear loci (ApPEFP_C, 
 <span id="cb5-142"><a href="phasing-design.html#cb5-142" aria-hidden="true" tabindex="-1"></a>    map_tree <span class="ot">=</span> <span class="fu">mapTree</span>(treetrace, output_file <span class="sc">+</span> <span class="st">&quot;_map.tree&quot;</span>)</span>
 <span id="cb5-143"><a href="phasing-design.html#cb5-143" aria-hidden="true" tabindex="-1"></a>    mcc_tree <span class="ot">=</span> <span class="fu">mccTree</span>(treetrace, output_file <span class="sc">+</span> <span class="st">&quot;_mcc.tree&quot;</span>)</span>
 <span id="cb5-144"><a href="phasing-design.html#cb5-144" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<p>When the analysis is complete, a <code>homologizer_output</code> folder that contains all of the files specified with the monitors will be created in any output folder you specified.</p>
+<p>When the analysis is complete, a <code>homologizer_output</code> folder that contains all of the files specified with the monitors will be created in the specified output folder</p>
 
 </div>
             </section>

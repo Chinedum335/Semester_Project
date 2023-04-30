@@ -29,7 +29,7 @@ set in the _output.yml file.</p>" />
 <meta name="author" content="Chinedum Anajemba" />
 
 
-<meta name="date" content="2023-04-28" />
+<meta name="date" content="2023-04-30" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -154,14 +154,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="phasing-design.html"><a href="phasing-design.html"><i class="fa fa-check"></i><b>3</b> Phasing of Gene Copies into Polyploid Subgenomes</a></li>
-<li class="chapter" data-level="4" data-path="phylogeny-design.html"><a href="phylogeny-design.html"><i class="fa fa-check"></i><b>4</b> Species-level Phylogeny of the Cystopteridaceae Ferns</a>
+<li class="chapter" data-level="4" data-path="phylogeny-design.html"><a href="phylogeny-design.html"><i class="fa fa-check"></i><b>4</b> Visualizing the Phylogeny of Cystopteridaceae</a>
 <ul>
 <li class="chapter" data-level="4.1" data-path="phylogeny-design.html"><a href="phylogeny-design.html#summarizing-the-results-of-homologizer-analysis"><i class="fa fa-check"></i><b>4.1</b> Summarizing the Results of <code>homologizer</code> Analysis</a>
 <ul>
 <li class="chapter" data-level="4.1.1" data-path="phylogeny-design.html"><a href="phylogeny-design.html#convergence-assessment"><i class="fa fa-check"></i><b>4.1.1</b> Convergence Assessment</a></li>
-<li class="chapter" data-level="4.1.2" data-path="phylogeny-design.html"><a href="phylogeny-design.html#summarizing-and-visiualizing-traces-of-specific-parameter"><i class="fa fa-check"></i><b>4.1.2</b> Summarizing and Visiualizing Traces of specific parameter</a></li>
-<li class="chapter" data-level="4.1.3" data-path="phylogeny-design.html"><a href="phylogeny-design.html#summarizing-homologizer-phasing-estimates-and-plotting-it-in-r"><i class="fa fa-check"></i><b>4.1.3</b> Summarizing <code>homologizer</code> Phasing Estimates and Plotting it in R</a></li>
+<li class="chapter" data-level="4.1.2" data-path="phylogeny-design.html"><a href="phylogeny-design.html#summarizing-and-visiualizing-traces-of-specific-parameter"><i class="fa fa-check"></i><b>4.1.2</b> Summarizing and Visiualizing Traces of Specific Parameter</a></li>
 </ul></li>
+<li class="chapter" data-level="4.2" data-path="phylogeny-design.html"><a href="phylogeny-design.html#summarizing-homologizer-phasing-estimates-and-plotting-it-in-r"><i class="fa fa-check"></i><b>4.2</b> Summarizing <code>homologizer</code> Phasing Estimates and Plotting it in <code>R</code></a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -195,8 +195,9 @@ Figure 2.1: Diagram of the cystpteridaceae database
 <p>The database is composed of 2 tables- the sample_Info and the phasing_stat table. The sample_info table includes individual information on the taxonomy, ploidy level and source of each species that are used in this project. The phasing statistics table provides the statistics for each sample (i.e. species) used in this project. Primary keys are in italics and foreign keys are in bold. The goFlagID is a unique number assigned to each species/sample and it is the foreign key that connects both tables</p>
 <div id="building-the-database" class="section level2 hasAnchor" number="2.1">
 <h2><span class="header-section-number">2.1</span> Building the Database<a href="database-design.html#building-the-database" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>We will build the database using RSQLite, which is an R package that provides an interface with SQLite such that you can interact with the database from within R.</p>
-<p>RSQLite relies on another R package called DBI (which stands for database interface). DBI is a package that provides generic functions for interfacing databases with R, and RSQLite makes adjustments that are specific to SQLite. So, first things first, we are going to load the DBI package:</p>
+<p>This database will be built with RSQLite, which is an R package that provides an interface with SQLite such that you can interact with the database from within R.</p>
+<p>RSQLite relies on another R package called DBI (which stands for database interface). DBI is a package that provides generic functions for interfacing databases with R, and RSQLite makes adjustments that are specific to SQLite.
+The first thing, we are going to do is to load the DBI package:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="database-design.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(DBI)</span></code></pre></div>
 <div id="establising-a-database-connection" class="section level3 hasAnchor" number="2.1.1">
 <h3><span class="header-section-number">2.1.1</span> Establising a database connection<a href="database-design.html#establising-a-database-connection" class="anchor-section" aria-label="Anchor link to header"></a></h3>

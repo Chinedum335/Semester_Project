@@ -4,13 +4,13 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 4 Species-level Phylogeny of the Cystopteridaceae Ferns | Cystopteridaceae Phylogeny Project</title>
+  <title>Chapter 4 Visualizing the Phylogeny of Cystopteridaceae | Cystopteridaceae Phylogeny Project</title>
   <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
 The HTML output format for this example is bookdown::gitbook,
 set in the _output.yml file.</p>" />
   <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 4 Species-level Phylogeny of the Cystopteridaceae Ferns | Cystopteridaceae Phylogeny Project" />
+  <meta property="og:title" content="Chapter 4 Visualizing the Phylogeny of Cystopteridaceae | Cystopteridaceae Phylogeny Project" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
@@ -19,7 +19,7 @@ set in the _output.yml file.</p>" />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 4 Species-level Phylogeny of the Cystopteridaceae Ferns | Cystopteridaceae Phylogeny Project" />
+  <meta name="twitter:title" content="Chapter 4 Visualizing the Phylogeny of Cystopteridaceae | Cystopteridaceae Phylogeny Project" />
   
   <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
 The HTML output format for this example is bookdown::gitbook,
@@ -29,7 +29,7 @@ set in the _output.yml file.</p>" />
 <meta name="author" content="Chinedum Anajemba" />
 
 
-<meta name="date" content="2023-04-28" />
+<meta name="date" content="2023-04-30" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -154,14 +154,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="phasing-design.html"><a href="phasing-design.html"><i class="fa fa-check"></i><b>3</b> Phasing of Gene Copies into Polyploid Subgenomes</a></li>
-<li class="chapter" data-level="4" data-path="phylogeny-design.html"><a href="phylogeny-design.html"><i class="fa fa-check"></i><b>4</b> Species-level Phylogeny of the Cystopteridaceae Ferns</a>
+<li class="chapter" data-level="4" data-path="phylogeny-design.html"><a href="phylogeny-design.html"><i class="fa fa-check"></i><b>4</b> Visualizing the Phylogeny of Cystopteridaceae</a>
 <ul>
 <li class="chapter" data-level="4.1" data-path="phylogeny-design.html"><a href="phylogeny-design.html#summarizing-the-results-of-homologizer-analysis"><i class="fa fa-check"></i><b>4.1</b> Summarizing the Results of <code>homologizer</code> Analysis</a>
 <ul>
 <li class="chapter" data-level="4.1.1" data-path="phylogeny-design.html"><a href="phylogeny-design.html#convergence-assessment"><i class="fa fa-check"></i><b>4.1.1</b> Convergence Assessment</a></li>
-<li class="chapter" data-level="4.1.2" data-path="phylogeny-design.html"><a href="phylogeny-design.html#summarizing-and-visiualizing-traces-of-specific-parameter"><i class="fa fa-check"></i><b>4.1.2</b> Summarizing and Visiualizing Traces of specific parameter</a></li>
-<li class="chapter" data-level="4.1.3" data-path="phylogeny-design.html"><a href="phylogeny-design.html#summarizing-homologizer-phasing-estimates-and-plotting-it-in-r"><i class="fa fa-check"></i><b>4.1.3</b> Summarizing <code>homologizer</code> Phasing Estimates and Plotting it in R</a></li>
+<li class="chapter" data-level="4.1.2" data-path="phylogeny-design.html"><a href="phylogeny-design.html#summarizing-and-visiualizing-traces-of-specific-parameter"><i class="fa fa-check"></i><b>4.1.2</b> Summarizing and Visiualizing Traces of Specific Parameter</a></li>
 </ul></li>
+<li class="chapter" data-level="4.2" data-path="phylogeny-design.html"><a href="phylogeny-design.html#summarizing-homologizer-phasing-estimates-and-plotting-it-in-r"><i class="fa fa-check"></i><b>4.2</b> Summarizing <code>homologizer</code> Phasing Estimates and Plotting it in <code>R</code></a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -184,14 +184,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
             <section class="normal" id="section-">
 <div id="phylogeny-design" class="section level1 hasAnchor" number="4">
-<h1><span class="header-section-number">Chapter 4</span> Species-level Phylogeny of the Cystopteridaceae Ferns<a href="phylogeny-design.html#phylogeny-design" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<h1><span class="header-section-number">Chapter 4</span> Visualizing the Phylogeny of Cystopteridaceae<a href="phylogeny-design.html#phylogeny-design" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>This chapter provides a detailed assessment of the results obtained following <code>homologizer</code>analysis.</p>
 <div id="summarizing-the-results-of-homologizer-analysis" class="section level2 hasAnchor" number="4.1">
 <h2><span class="header-section-number">4.1</span> Summarizing the Results of <code>homologizer</code> Analysis<a href="phylogeny-design.html#summarizing-the-results-of-homologizer-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>In any phylogenetic analysis, It is always important to carefully assess the MCMC samples for the various parameters in your analysis. Some of the assessment that can be done include:</p>
+<p>In any Bayesian phylogenetic analysis, It is always important to carefully assess the MCMC samples for the various parameters in your analysis. Some of the assessment that can be done include:</p>
 <div id="convergence-assessment" class="section level3 hasAnchor" number="4.1.1">
 <h3><span class="header-section-number">4.1.1</span> Convergence Assessment<a href="phylogeny-design.html#convergence-assessment" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Convergence of an MCMC analysis is crucial to assure that the chain has sampled from the stationary distribution and that we have sufficiently many samples to approximate the posterior distribution. That is, the MCMC has explored the parameter space long enough to reach the true posterior distribution of the parameters and the values we are sampling belong to that distribution. Theory says that a chain that runs through an infinite time, will reach convergence. An example of how to plot trace in R is seen below. The caterpillar-like look is a good sign. The MCMC run appears to converge after approximately 100 iterations.
-Before running the code chunks below, load all the libraries necessary for this analysis</p>
+<p>Convergence of an MCMC analysis is crucial to assure that the chain has sampled from the stationary distribution and that we have sufficiently many samples to approximate the posterior distribution. That is, the MCMC has explored the parameter space long enough to reach the true posterior distribution of the parameters and the values we are sampling belong to that distribution. Theory says that a chain that runs through an infinite time, will reach convergence. An example of how to plot trace in <code>R</code>is seen below. The caterpillar-like look is a good sign, it shows that our run reached convergence. The MCMC run appears to converge after approximately 100 iterations.
+The code chunk for plotting trace can be found below. Let’s load in all the packages that are required for all our assessments before running the code.</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="phylogeny-design.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Loading required packages</span></span>
 <span id="cb6-2"><a href="phylogeny-design.html#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-3"><a href="phylogeny-design.html#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(RevGadgets)</span>
@@ -224,26 +225,26 @@ Figure 4.1: MCMC trace from the Cystopteridaceae <code>r homologizer</code> anal
 </div>
 </div>
 <div id="summarizing-and-visiualizing-traces-of-specific-parameter" class="section level3 hasAnchor" number="4.1.2">
-<h3><span class="header-section-number">4.1.2</span> Summarizing and Visiualizing Traces of specific parameter<a href="phylogeny-design.html#summarizing-and-visiualizing-traces-of-specific-parameter" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>In order to summarize the traces of specific parameters, <code>RevGadgets</code> uses the <code>SummarizeTrace()</code> function to calculate the mean and 95% credible interval for quantitative and qualitative variables. in this study, we estimated a substitution rate multiplier for each of the alignments except the first one and drew the rate multipliers from an exponential distribution. To examine the rate_multiplier parameter values in our trace file, we summarize their distributions using this code below:</p>
+<h3><span class="header-section-number">4.1.2</span> Summarizing and Visiualizing Traces of Specific Parameter<a href="phylogeny-design.html#summarizing-and-visiualizing-traces-of-specific-parameter" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The next assessment is to summarize the traces of specific parameters. In order to accomplish this, we will use the <code>SummarizeTrace()</code> function implemented in <code>RevGadgets</code> to calculate the mean and 95% credible interval for the quantitative variables. In this study, we estimated a substitution rate multiplier for each of the alignments except the first one and drew the rate multipliers from an exponential distribution. To examine the rate_multiplier parameter values in our trace file, we summarize their distributions using this code below:</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="phylogeny-design.html#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summarizeTrace</span>(<span class="at">trace =</span> trace_quant, <span class="at">vars =</span>  <span class="fu">c</span>(<span class="st">&quot;rate_multiplier[2]&quot;</span>,<span class="st">&quot;rate_multiplier[3]&quot;</span>,<span class="st">&quot;rate_multiplier[4]&quot;</span>))</span></code></pre></div>
 <pre><code>## $`rate_multiplier[2]`
 ## $`rate_multiplier[2]`$trace_1
 ##          mean        median           MAP  quantile_2.5 quantile_97.5 
-##      1.601059      1.596110      1.616983      1.308977      1.972417 
+##      1.601059      1.596110      1.617056      1.308977      1.972417 
 ## 
 ## 
 ## $`rate_multiplier[3]`
 ## $`rate_multiplier[3]`$trace_1
 ##          mean        median           MAP  quantile_2.5 quantile_97.5 
-##     0.7831243     0.7744505     0.7579138     0.6115875     0.9833560 
+##     0.7831243     0.7744505     0.7579271     0.6115875     0.9833560 
 ## 
 ## 
 ## $`rate_multiplier[4]`
 ## $`rate_multiplier[4]`$trace_1
 ##          mean        median           MAP  quantile_2.5 quantile_97.5 
-##      1.239250      1.237225      1.232323      1.017644      1.488608</code></pre>
-<p>Then to plot these distributions. <code>plotTrace()</code> produces a list of ggplot2 objects, with multiple plots of multiple runs in the trace object.</p>
+##      1.239250      1.237225      1.232322      1.017644      1.488608</code></pre>
+<p>Then to plot these distributions, we will use the <code>plotTrace()</code> function to produces a list of ggplot2 objects, with multiple plots of multiple runs in the trace object.</p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="phylogeny-design.html#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plotTrace</span>(<span class="at">trace =</span> trace_quant, <span class="at">vars =</span> <span class="fu">c</span>(<span class="st">&quot;rate_multiplier[2]&quot;</span>,<span class="st">&quot;rate_multiplier[3]&quot;</span>,<span class="st">&quot;rate_multiplier[4]&quot;</span>))[[<span class="dv">1</span>]]</span></code></pre></div>
 <pre><code>## Using  as id variables</code></pre>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:image6"></span>
@@ -253,9 +254,10 @@ Figure 4.2: The posterior densities of the nucleotide rate multipliers under a G
 </p>
 </div>
 </div>
-<div id="summarizing-homologizer-phasing-estimates-and-plotting-it-in-r" class="section level3 hasAnchor" number="4.1.3">
-<h3><span class="header-section-number">4.1.3</span> Summarizing <code>homologizer</code> Phasing Estimates and Plotting it in R<a href="phylogeny-design.html#summarizing-homologizer-phasing-estimates-and-plotting-it-in-r" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p><code>homologizer</code> analysis ends with the creation of a tree file <code>homologizer_output/homologizer_map.tree</code> that can be plotted and rooted in software like <a href="http://tree.bio.ed.ac.uk/software/figtree/">FigTree</a> or <a href="https://cran.r-project.org/web/packages/ape/index.html">APE</a>. However, these software can’t be used to properly summarize the phasing estimates of <code>homologizer</code> analysis. R can be used to achieve this task. The piece of R code below summarizes and plots the phasing estimates of <code>homologizer</code> analysis. This code can be found <a href="https://github.com/Chinedum335/Semester_Project/tree/main/5_Code">here</a></p>
+</div>
+<div id="summarizing-homologizer-phasing-estimates-and-plotting-it-in-r" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> Summarizing <code>homologizer</code> Phasing Estimates and Plotting it in <code>R</code><a href="phylogeny-design.html#summarizing-homologizer-phasing-estimates-and-plotting-it-in-r" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><code>homologizer</code> run ends with the creation of a tree file <code>homologizer_output/homologizer_map.tree</code> that can be plotted and rooted in software like <a href="http://tree.bio.ed.ac.uk/software/figtree/">FigTree</a> or <a href="https://cran.r-project.org/web/packages/ape/index.html">APE</a>. However, these software (Figtree or Ape) can’t be used to properly summarize the phasing estimates of <code>homologizer</code> run in the most visualistic way. <code>R</code> can be used to achieve this task. The chunk of <code>R</code> code below summarizes and plots the phasing estimates following <code>homologizer</code> analysis. This code can be found <a href="https://github.com/Chinedum335/Semester_Project/tree/main/5_Code">here</a></p>
 <div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="phylogeny-design.html#cb12-1" aria-hidden="true" tabindex="-1"></a>genecopyFn<span class="ot">=</span><span class="st">&#39;../1_Raw_Data/cystopteridaceae_genomes.csv&#39;</span></span>
 <span id="cb12-2"><a href="phylogeny-design.html#cb12-2" aria-hidden="true" tabindex="-1"></a>tree_file <span class="ot">=</span> <span class="st">&#39;../4_Output_Trees/homologizer_output/homologizer_map_rooted.trees&#39;</span></span>
 <span id="cb12-3"><a href="phylogeny-design.html#cb12-3" aria-hidden="true" tabindex="-1"></a>input_dir <span class="ot">=</span> <span class="st">&#39;../4_Output_Trees/homologizer_output/&#39;</span></span>
@@ -518,7 +520,6 @@ Figure 4.3: Inferred phasing of gene copies into subgenomes summarized on the MA
 <div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="phylogeny-design.html#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="st">&#39;../Figures//homologized_joint_MAP.pdf&#39;</span>, <span class="at">height=</span><span class="dv">3</span>, <span class="at">width=</span><span class="dv">7</span>)</span></code></pre></div>
 <p>The phase is estimated for the two polyploid accessions xCystocarpium_7974 and C_tasmanica_6379. To the right of the tree, each column represents a locus, and the joint MAP phase assignment is shown as text within each box. Each box is colored by the marginal posterior probability of the phase assignment. These marginal posterior probabilities are useful to quantify the uncertainty within the joint MAP phasing assignment. For example, it may be that the joint MAP phase of a given polyploid has a low marginal posterior probability in some subgenomes but a high marginal posterior probability in other subgenomes. Adjacent to the heatmap is a column that shows the mean marginal probability across loci of the phasing assignment per tip, which summarizes the model’s overall confidence in the phasing of that tip.</p>
 
-</div>
 </div>
 </div>
             </section>

@@ -13,9 +13,10 @@ The database is composed of 2 tables- the sample_Info and the phasing_stat table
 
 ## Building the Database
 
-We will build the database using RSQLite, which is an R package that provides an interface with SQLite such that you can interact with the database from within R.
+This database will be built with RSQLite, which is an R package that provides an interface with SQLite such that you can interact with the database from within R.
 
-RSQLite relies on another R package called DBI (which stands for database interface). DBI is a package that provides generic functions for interfacing databases with R, and RSQLite makes adjustments that are specific to SQLite. So, first things first, we are going to load the DBI package:
+RSQLite relies on another R package called DBI (which stands for database interface). DBI is a package that provides generic functions for interfacing databases with R, and RSQLite makes adjustments that are specific to SQLite.
+The first thing, we are going to do is to load the DBI package:
 
 ```{r, eval = FALSE, echo = TRUE}
 

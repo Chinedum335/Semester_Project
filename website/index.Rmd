@@ -31,7 +31,7 @@ The content of this digital book is organized in the following Chapters:
 Chapter \@ref(data-assembly): Data Assembly
 Chapter \@ref(database-design): Database design and architecture
 Chapter \@ref(phasing-design): Phasing of Gene Copies into Polyploid Subgenomes
-Chapter \@ref(phylogeny-design): Species-level Phylogeny of Cystopteridaceae Ferns
+Chapter \@ref(phylogeny-design): Visualizing the Phylogeny of Cystopteridaceae
 
 The codes used in this analysis are available at [https://github.com/Chinedum335/Semester_Project](https://github.com/Chinedum335/Semester_Project)
 
