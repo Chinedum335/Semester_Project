@@ -23,14 +23,19 @@ knitr::include_graphics("img/Cystopteridaceae.png")
 
 ```
 
+
 Welcome to my Cystopteridaceae Phylogeny Project!
 
-The major goal of this project is to build a **species-level phylogeny** of the Cystopteridaceae ferns using nuclear gene loci from the most recognized species of the family. Cystopteridaceae is a family of small or medium-sized ferns that live in forests and crevices. The family contains 3 genera and about 50 species. This study provides more insight into the evolutionary relationship in the Cystopteridaceae family. 
+The major goal of this project is to build a **species-level phylogeny** of the Cystopteridaceae ferns using nuclear gene loci from the most recognized species of the family. Cystopteridaceae is a family of small or medium-sized ferns that live in forests and crevices. The family contains 3 genera and about 50 species. This study aims to provide more insight into the evolutionary relationship in the Cystopteridaceae family. 
+
 The content of this digital book is organized in the following Chapters:
 
 Chapter \@ref(data-assembly): Data Assembly
+
 Chapter \@ref(database-design): Database design and architecture
+
 Chapter \@ref(phasing-design): Phasing of Gene Copies into Polyploid Subgenomes
+
 Chapter \@ref(phylogeny-design): Visualizing the Phylogeny of Cystopteridaceae
 
 The codes used in this analysis are available at [https://github.com/Chinedum335/Semester_Project](https://github.com/Chinedum335/Semester_Project)

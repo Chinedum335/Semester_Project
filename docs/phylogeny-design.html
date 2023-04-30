@@ -185,14 +185,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="phylogeny-design" class="section level1 hasAnchor" number="4">
 <h1><span class="header-section-number">Chapter 4</span> Visualizing the Phylogeny of Cystopteridaceae<a href="phylogeny-design.html#phylogeny-design" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>This chapter provides a detailed assessment of the results obtained following <code>homologizer</code>analysis.</p>
+<p>This chapter provides a detailed assessment of the results obtained following <code>homologizer</code>run.</p>
 <div id="summarizing-the-results-of-homologizer-analysis" class="section level2 hasAnchor" number="4.1">
 <h2><span class="header-section-number">4.1</span> Summarizing the Results of <code>homologizer</code> Analysis<a href="phylogeny-design.html#summarizing-the-results-of-homologizer-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>In any Bayesian phylogenetic analysis, It is always important to carefully assess the MCMC samples for the various parameters in your analysis. Some of the assessment that can be done include:</p>
 <div id="convergence-assessment" class="section level3 hasAnchor" number="4.1.1">
 <h3><span class="header-section-number">4.1.1</span> Convergence Assessment<a href="phylogeny-design.html#convergence-assessment" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Convergence of an MCMC analysis is crucial to assure that the chain has sampled from the stationary distribution and that we have sufficiently many samples to approximate the posterior distribution. That is, the MCMC has explored the parameter space long enough to reach the true posterior distribution of the parameters and the values we are sampling belong to that distribution. Theory says that a chain that runs through an infinite time, will reach convergence. An example of how to plot trace in <code>R</code>is seen below. The caterpillar-like look is a good sign, it shows that our run reached convergence. The MCMC run appears to converge after approximately 100 iterations.
-The code chunk for plotting trace can be found below. Let’s load in all the packages that are required for all our assessments before running the code.</p>
+<p>Convergence of an MCMC analysis is crucial to assure that the chain has sampled from the stationary distribution and that we have sufficiently many samples to approximate the posterior distribution. That is, the MCMC has explored the parameter space long enough to reach the true posterior distribution of the parameters and the values we are sampling belong to that distribution. Theory says that a chain that runs through an infinite time, will reach convergence. An example of how to plot trace in <code>R</code> is seen below. The caterpillar-like look is a good sign, it shows that our run reached convergence and the MCMC run appears to converge after approximately 100 iterations.
+The code chunk for plotting trace can be found below.
+Let’s load in all the packages that are required for all our assessments before running the code.</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="phylogeny-design.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Loading required packages</span></span>
 <span id="cb6-2"><a href="phylogeny-design.html#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-3"><a href="phylogeny-design.html#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(RevGadgets)</span>
@@ -218,9 +219,9 @@ The code chunk for plotting trace can be found below. Let’s load in all the pa
 <span id="cb7-9"><a href="phylogeny-design.html#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="fu">effectiveSize</span>(trace_quant_MCMC)</span>
 <span id="cb7-10"><a href="phylogeny-design.html#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="fu">traceplot</span>(trace_quant_MCMC, <span class="at">col =</span> <span class="dv">3</span>, <span class="at">smooth =</span> T)</span></code></pre></div>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:image4"></span>
-<img src="img/Rplot.png" alt="MCMC trace from the Cystopteridaceae `r homologizer` analysis" width="100%" />
+<img src="img/Rplot.png" alt="MCMC trace from the Cystopteridaceae `homologizer` analysis" width="100%" />
 <p class="caption">
-Figure 4.1: MCMC trace from the Cystopteridaceae <code>r homologizer</code> analysis
+Figure 4.1: MCMC trace from the Cystopteridaceae <code>homologizer</code> analysis
 </p>
 </div>
 </div>
@@ -257,7 +258,7 @@ Figure 4.2: The posterior densities of the nucleotide rate multipliers under a G
 </div>
 <div id="summarizing-homologizer-phasing-estimates-and-plotting-it-in-r" class="section level2 hasAnchor" number="4.2">
 <h2><span class="header-section-number">4.2</span> Summarizing <code>homologizer</code> Phasing Estimates and Plotting it in <code>R</code><a href="phylogeny-design.html#summarizing-homologizer-phasing-estimates-and-plotting-it-in-r" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><code>homologizer</code> run ends with the creation of a tree file <code>homologizer_output/homologizer_map.tree</code> that can be plotted and rooted in software like <a href="http://tree.bio.ed.ac.uk/software/figtree/">FigTree</a> or <a href="https://cran.r-project.org/web/packages/ape/index.html">APE</a>. However, these software (Figtree or Ape) can’t be used to properly summarize the phasing estimates of <code>homologizer</code> run in the most visualistic way. <code>R</code> can be used to achieve this task. The chunk of <code>R</code> code below summarizes and plots the phasing estimates following <code>homologizer</code> analysis. This code can be found <a href="https://github.com/Chinedum335/Semester_Project/tree/main/5_Code">here</a></p>
+<p><code>homologizer</code> run ends with the creation of a tree file <code>homologizer_output/homologizer_map.tree</code> that can be plotted and rooted in software like <a href="http://tree.bio.ed.ac.uk/software/figtree/">FigTree</a> or <a href="https://cran.r-project.org/web/packages/ape/index.html">APE</a>. However, these software (Figtree or Ape) can’t be used to clearly summarize the phasing estimates of <code>homologizer</code> run. <code>R</code> has features that could be used to achieve this task. The chunk of <code>R</code> code below summarizes and plots the phasing estimates following <code>homologizer</code> run. This code can be found <a href="https://github.com/Chinedum335/Semester_Project/tree/main/5_Code">here</a></p>
 <div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="phylogeny-design.html#cb12-1" aria-hidden="true" tabindex="-1"></a>genecopyFn<span class="ot">=</span><span class="st">&#39;../1_Raw_Data/cystopteridaceae_genomes.csv&#39;</span></span>
 <span id="cb12-2"><a href="phylogeny-design.html#cb12-2" aria-hidden="true" tabindex="-1"></a>tree_file <span class="ot">=</span> <span class="st">&#39;../4_Output_Trees/homologizer_output/homologizer_map_rooted.trees&#39;</span></span>
 <span id="cb12-3"><a href="phylogeny-design.html#cb12-3" aria-hidden="true" tabindex="-1"></a>input_dir <span class="ot">=</span> <span class="st">&#39;../4_Output_Trees/homologizer_output/&#39;</span></span>
@@ -517,7 +518,8 @@ Figure 4.2: The posterior densities of the nucleotide rate multipliers under a G
 Figure 4.3: Inferred phasing of gene copies into subgenomes summarized on the MAP phylogeny for the Cystopteridaceae dataset
 </p>
 </div>
-<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="phylogeny-design.html#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="st">&#39;../Figures//homologized_joint_MAP.pdf&#39;</span>, <span class="at">height=</span><span class="dv">3</span>, <span class="at">width=</span><span class="dv">7</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="phylogeny-design.html#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Saving the output file</span></span>
+<span id="cb13-2"><a href="phylogeny-design.html#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="st">&#39;../Figures/homologized_joint_MAP.pdf&#39;</span>, <span class="at">height=</span><span class="dv">3</span>, <span class="at">width=</span><span class="dv">7</span>)</span></code></pre></div>
 <p>The phase is estimated for the two polyploid accessions xCystocarpium_7974 and C_tasmanica_6379. To the right of the tree, each column represents a locus, and the joint MAP phase assignment is shown as text within each box. Each box is colored by the marginal posterior probability of the phase assignment. These marginal posterior probabilities are useful to quantify the uncertainty within the joint MAP phasing assignment. For example, it may be that the joint MAP phase of a given polyploid has a low marginal posterior probability in some subgenomes but a high marginal posterior probability in other subgenomes. Adjacent to the heatmap is a column that shows the mean marginal probability across loci of the phasing assignment per tip, which summarizes the model’s overall confidence in the phasing of that tip.</p>
 
 </div>

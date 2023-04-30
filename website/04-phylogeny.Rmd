@@ -1,6 +1,6 @@
 # Visualizing the Phylogeny of Cystopteridaceae {#phylogeny-design}
 
-This chapter provides a detailed assessment of the results obtained following `homologizer`analysis.
+This chapter provides a detailed assessment of the results obtained following `homologizer`run.
 
 ## Summarizing the Results of `homologizer` Analysis
 
@@ -8,8 +8,9 @@ In any Bayesian phylogenetic analysis, It is always important to carefully asses
 
 ### Convergence Assessment
 
-Convergence of an MCMC analysis is crucial to assure that the chain has sampled from the stationary distribution and that we have sufficiently many samples to approximate the posterior distribution. That is, the MCMC has explored the parameter space long enough to reach the true posterior distribution of the parameters and the values we are sampling belong to that distribution. Theory says that a chain that runs through an infinite time, will reach convergence. An example of how to plot trace in `R`is seen below. The caterpillar-like look is a good sign, it shows that our run reached convergence. The MCMC run appears to converge after approximately 100 iterations. 
-The code chunk for plotting trace can be found below. Let's load in all the packages that are required for all our assessments before running the code. 
+Convergence of an MCMC analysis is crucial to assure that the chain has sampled from the stationary distribution and that we have sufficiently many samples to approximate the posterior distribution. That is, the MCMC has explored the parameter space long enough to reach the true posterior distribution of the parameters and the values we are sampling belong to that distribution. Theory says that a chain that runs through an infinite time, will reach convergence. An example of how to plot trace in `R` is seen below. The caterpillar-like look is a good sign, it shows that our run reached convergence and the MCMC run appears to converge after approximately 100 iterations. 
+The code chunk for plotting trace can be found below. 
+Let's load in all the packages that are required for all our assessments before running the code. 
 
 ```{r, include= FALSE}
 # Loading required packages
@@ -75,7 +76,7 @@ traceplot(trace_quant_MCMC, col = 3, smooth = T)
 
 ```
 
-```{r image4, eval = TRUE, echo = FALSE, fig.cap="MCMC trace from the Cystopteridaceae `r homologizer` analysis", fig.align='center', out.width='100%'}
+```{r image4, eval = TRUE, echo = FALSE, fig.cap="MCMC trace from the Cystopteridaceae `homologizer` analysis", fig.align='center', out.width='100%'}
 
 knitr::include_graphics("img/Rplot.png")
 
@@ -102,7 +103,7 @@ plotTrace(trace = trace_quant, vars = c("rate_multiplier[2]","rate_multiplier[3]
 
 ## Summarizing `homologizer` Phasing Estimates and Plotting it in `R`
 
-`homologizer` run ends with the creation of a tree file `homologizer_output/homologizer_map.tree` that can be plotted and rooted in software like [FigTree](http://tree.bio.ed.ac.uk/software/figtree/) or [APE](https://cran.r-project.org/web/packages/ape/index.html). However, these software (Figtree or Ape) can't be used to properly summarize the phasing estimates of `homologizer` run in the most visualistic way. `R` can be used to achieve this task. The chunk of `R` code below summarizes and plots the phasing estimates following `homologizer` analysis. This code can be found [here](https://github.com/Chinedum335/Semester_Project/tree/main/5_Code)
+`homologizer` run ends with the creation of a tree file `homologizer_output/homologizer_map.tree` that can be plotted and rooted in software like [FigTree](http://tree.bio.ed.ac.uk/software/figtree/) or [APE](https://cran.r-project.org/web/packages/ape/index.html). However, these software (Figtree or Ape) can't be used to clearly summarize the phasing estimates of `homologizer` run. `R` has features that could be used to achieve this task. The chunk of `R` code below summarizes and plots the phasing estimates following `homologizer` run. This code can be found [here](https://github.com/Chinedum335/Semester_Project/tree/main/5_Code)
 
 ```{r image7, eval = TRUE, echo = TRUE, warning=FALSE, fig.cap="Inferred phasing of gene copies into subgenomes summarized on the MAP phylogeny for the Cystopteridaceae dataset", fig.align='center', out.width='100%'}
 
@@ -361,7 +362,8 @@ p = p + theme(legend.text=element_text(size=6),
               legend.title=element_text(size=8))
 p
 
-ggsave('../Figures//homologized_joint_MAP.pdf', height=3, width=7)
+# Saving the output file
+ggsave('../Figures/homologized_joint_MAP.pdf', height=3, width=7)
 
 
 ```
